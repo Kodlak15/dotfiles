@@ -1,0 +1,6 @@
+[Info] /home/cody/.ssh/config: ENOENT: no such file or directory, open '/home/cody/.ssh/config'
+[Info] Registering git provider
+[Info] Looking for git repository
+[Info] Found 0 repositories during activation
+[Info] Git repository found, initializing review manager and pr tree view.
+[Info] Git initialization state changed: state=initialized

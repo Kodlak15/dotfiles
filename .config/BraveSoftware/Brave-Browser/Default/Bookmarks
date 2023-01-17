@@ -1,0 +1,95 @@
+{
+   "checksum": "97cc30357dc87c75476419ab58933f14",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13309822921000000",
+                  "date_last_used": "0",
+                  "guid": "1320b813-b51f-4a48-9edf-12edeb5c7c96",
+                  "id": "7",
+                  "name": "Introduction - The Rust Programming Language",
+                  "type": "url",
+                  "url": "https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/book/first-edition/README.html"
+               }, {
+                  "date_added": "13309822953000000",
+                  "date_last_used": "0",
+                  "guid": "275483e9-24df-4ffe-9283-bf599127dca0",
+                  "id": "8",
+                  "name": "Introduction - The Rust Programming Language",
+                  "type": "url",
+                  "url": "https://doc.rust-lang.org/book/ch00-00-introduction.html"
+               }, {
+                  "date_added": "13311937221000000",
+                  "date_last_used": "0",
+                  "guid": "58c80070-a62b-4c84-8d47-14d482b88c4b",
+                  "id": "9",
+                  "name": "CSS and JavaScript WASM Rust: Yew how to P2 - TMS Developer Blog",
+                  "type": "url",
+                  "url": "https://tms-dev-blog.com/css-and-javascript-wasm-rust-yew-how-to-p2/?utm_source=rss&utm_medium=rss&utm_campaign=css-and-javascript-wasm-rust-yew-how-to-p2"
+               } ],
+               "date_added": "13311979613351807",
+               "date_last_used": "0",
+               "date_modified": "0",
+               "guid": "9cbe7cc3-3a41-4301-ac63-3470514eb8f2",
+               "id": "6",
+               "name": "Rust",
+               "type": "folder"
+            } ],
+            "date_added": "13311979613351422",
+            "date_last_used": "0",
+            "date_modified": "13311979613351422",
+            "guid": "31e31d8d-fd29-40cf-b45f-eac0edf708ec",
+            "id": "5",
+            "name": "Resources",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13303841739000000",
+               "date_last_used": "0",
+               "guid": "e6543648-8a2f-4f2f-ab72-217bd4f23525",
+               "id": "11",
+               "name": "Welcome | StudioWeb",
+               "type": "url",
+               "url": "https://school.studioweb.com/user-dashboard"
+            } ],
+            "date_added": "13311979613351937",
+            "date_last_used": "0",
+            "date_modified": "0",
+            "guid": "92813800-d714-4693-a3be-59a161d3fda4",
+            "id": "10",
+            "name": "StudioWeb",
+            "type": "folder"
+         } ],
+         "date_added": "13311979576291798",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13311979576291799",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13311979576291800",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

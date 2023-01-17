@@ -1,0 +1,52 @@
+LSP Notebooks experiment is disabled -- not using Pylance
+LSP Notebooks interactive window support is disabled -- not in LSP Notebooks experiment
+> conda info --json
+Python interpreter path: /bin/python
+> /opt/anaconda/bin/conda info --json
+> /bin/python ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/interpreterInfo.py
+> /bin/python2 ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/interpreterInfo.py
+> /sbin/python ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/interpreterInfo.py
+> /sbin/python2 ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/interpreterInfo.py
+> /usr/bin/python ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/interpreterInfo.py
+> /usr/bin/python2 ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/interpreterInfo.py
+> /usr/sbin/python ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/interpreterInfo.py
+> /usr/sbin/python2 ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/interpreterInfo.py
+> /opt/anaconda/bin/conda run -n base --no-capture-output python ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/printEnvVariables.py
+> /opt/anaconda/bin/conda run -n base --no-capture-output python ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/printEnvVariables.py
+> /opt/anaconda/bin/conda run -n base --no-capture-output python ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/printEnvVariables.py
+> /opt/anaconda/bin/conda run -n base --no-capture-output python ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/printEnvVariables.py
+> /opt/anaconda/bin/python ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/get_output_via_markers.py ~/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/pythonFiles/interpreterInfo.py
+[ERROR 2022-10-21 15:26:57.156]: [
+  'Failed to activate a workspace, Class name = f, completed in 2678ms, has a falsy return value, Arg 1: <Uri:/home/cody/Documents/kenan-math/expected_value.ipynb>, Return Value: undefined',
+  Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+  Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+   The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+      at f (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:67541)
+      at Object.get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:106:33857)
+      at w.activate (/home/cody/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/out/client/extension.js:2:762542)
+      at /home/cody/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/out/client/extension.js:2:2251
+      at Array.map (<anonymous>)
+      at f.activateWorkspace (/home/cody/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/out/client/extension.js:2:2241)
+      at processTicksAndRejections (node:internal/process/task_queues:96:5)
+]
+[ERROR 2022-10-21 15:26:57.158]: Failure during activation. Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+    at f (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:67541)
+    at Object.get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:106:33857)
+    at w.activate (/home/cody/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/out/client/extension.js:2:762542)
+    at /home/cody/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/out/client/extension.js:2:2251
+    at Array.map (<anonymous>)
+    at f.activateWorkspace (/home/cody/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/out/client/extension.js:2:2241)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[ERROR 2022-10-21 15:26:57.158]: sendStartupTelemetry() failed. Error: Extension 'ms-python.python' CANNOT use API proposal: testObserver.
+Its package.json#enabledApiProposals-property declares:  but NOT testObserver.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-python.python
+    at f (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:83:67541)
+    at Object.get testResults [as testResults] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:106:33857)
+    at w.activate (/home/cody/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/out/client/extension.js:2:762542)
+    at /home/cody/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/out/client/extension.js:2:2251
+    at Array.map (<anonymous>)
+    at f.activateWorkspace (/home/cody/.vscode-oss/extensions/ms-python.python-2022.16.1-universal/out/client/extension.js:2:2241)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+Starting Jedi language server for default.

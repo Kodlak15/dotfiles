@@ -1,0 +1,21 @@
+00:00:00.266957 VirtualBox GUI VM Selector Window 7.0.4 r154605 linux.amd64 (Nov 18 2022 12:54:46) release log
+00:00:00.266958 Log opened 2023-01-16T03:01:25.650336000Z
+00:00:00.266958 Build Type: release
+00:00:00.266959 OS Product: Linux
+00:00:00.266960 OS Release: 5.15.80-1-lts
+00:00:00.266960 OS Version: #1 SMP Sat, 26 Nov 2022 20:23:30 +0000
+00:00:00.266970 DMI Product Name: XPS 15 9510
+00:00:00.266973 DMI Product Version: 
+00:00:00.266976 Firmware type: UEFI
+00:00:00.267573 Secure Boot: Disabled
+00:00:00.267594 Host RAM: 15725MB (15.3GB) total, 14542MB (14.2GB) available
+00:00:00.267596 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.267596 Process ID: 7193
+00:00:00.267596 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.267613 Qt version: 5.15.7
+00:00:00.268546 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.280615 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.635154 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 1155x42 x 564x996
+00:00:00.683713 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:02.400193 GUI: UICommon: Handling aboutToQuit request..
+00:00:03.565535 GUI: UICommon: aboutToQuit request handled!

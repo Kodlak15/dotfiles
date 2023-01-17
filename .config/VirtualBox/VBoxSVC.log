@@ -1,0 +1,56 @@
+00:00:00.000713 main     VirtualBox XPCOM Server 7.0.4 r154605 linux.amd64 (Nov 18 2022 12:54:46) release log
+00:00:00.000715 main     Log opened 2023-01-16T03:01:25.498546000Z
+00:00:00.000715 main     Build Type: release
+00:00:00.000716 main     OS Product: Linux
+00:00:00.000717 main     OS Release: 5.15.80-1-lts
+00:00:00.000717 main     OS Version: #1 SMP Sat, 26 Nov 2022 20:23:30 +0000
+00:00:00.000728 main     DMI Product Name: XPS 15 9510
+00:00:00.000732 main     DMI Product Version: 
+00:00:00.000734 main     Firmware type: UEFI
+00:00:00.001480 main     Secure Boot: Disabled
+00:00:00.001498 main     Host RAM: 15725MB (15.3GB) total, 14543MB (14.2GB) available
+00:00:00.001500 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.001500 main     Process ID: 7214
+00:00:00.001500 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.002396 main     IPC socket path: /tmp/.vbox-cody-ipc/ipcd
+00:00:00.108628 nspr-2   VirtualBox: object creation starts
+00:00:00.109468 nspr-2   Home directory: '/home/cody/.config/VirtualBox'
+00:00:00.109807 nspr-2   Loading settings file "/home/cody/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.117941 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.118969 nspr-2   HostDnsMonitor: initializing
+00:00:00.119195 nspr-2   NAT: resolv.conf: nameserver 103.86.96.100
+00:00:00.119222 nspr-2   HostDnsMonitor: updating information
+00:00:00.119249 nspr-2   HostDnsMonitor: old information
+00:00:00.119256 nspr-2     no server entries
+00:00:00.119259 nspr-2     no domain set
+00:00:00.119262 nspr-2     no search string entries
+00:00:00.119265 nspr-2   HostDnsMonitor: new information
+00:00:00.119268 nspr-2     server 1: 103.86.96.100
+00:00:00.119272 nspr-2     no domain set
+00:00:00.119275 nspr-2     no search string entries
+00:00:00.123339 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.127242 nspr-2   Loading settings file "/home/cody/VirtualBox VMs/Pop/Pop.vbox" with version "1.19-linux"
+00:00:00.128716 nspr-2   Loading settings file "/home/cody/VirtualBox VMs/AOE/AOE.vbox" with version "1.19-linux"
+00:00:00.129189 nspr-2   Loading settings file "/home/cody/disk-images/kali-linux-2022.4-virtualbox-amd64.vbox" with version "1.19-linux"
+00:00:00.129473 nspr-2   VirtualBox: object created
+00:00:00.572437 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true aResultDetail=0
+00:00:00.574345 nspr-4   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=false aResultDetail=0
+00:00:00.655750 nspr-3   ERROR [COM]: aRC=VBOX_E_INVALID_VM_STATE (0x80bb0002) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The machine is not mutable (state is PoweredOff)}, preserve=false aResultDetail=0
+00:00:00.719901 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true aResultDetail=0
+00:00:00.720481 nspr-3   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=true aResultDetail=0
+00:00:00.921534 nspr-3   Saving settings file "/home/cody/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.923804 nspr-3   Finished saving settings file "/home/cody/.config/VirtualBox/VirtualBox.xml"
+00:00:08.437904 main     VirtualBox: object deletion starts
+00:00:08.437992 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/cody/VirtualBox VMs/Pop/Snapshots/{4107346d-15e1-4786-8476-731f218e39fb}.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:08.438050 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/cody/VirtualBox VMs/Pop/Snapshots/{e4ae2098-54d7-4409-9794-0872d53cfd17}.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:08.438071 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/cody/VirtualBox VMs/Pop/Snapshots/{0af906f2-23ea-46fc-a029-bfc49bdba714}.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:08.438088 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/cody/VirtualBox VMs/Pop/Ubuntu.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:08.438516 main     ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={6cc49055-dad4-4496-85cf-3f76bcb3b5fa} aComponent={SnapshotWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:08.438651 main     ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={6cc49055-dad4-4496-85cf-3f76bcb3b5fa} aComponent={SnapshotWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:08.438673 main     ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={6cc49055-dad4-4496-85cf-3f76bcb3b5fa} aComponent={SnapshotWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:08.438753 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/cody/VirtualBox VMs/AOE/AOE.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:08.438904 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={ad47ad09-787b-44ab-b343-a082a3f2dfb1} aComponent={MediumWrap} aText={Medium '/home/cody/disk-images/kali-linux-2022.4-virtualbox-amd64.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false aResultDetail=0
+00:00:08.439666 main     HostDnsMonitor: shutting down ...
+00:00:08.479702 main     HostDnsMonitor: shut down
+00:00:08.491055 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={7682d5eb-f00e-44f1-8ca2-99d08b1cd607} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:08.491304 main     VirtualBox: object deleted

@@ -1,0 +1,21 @@
+{
+    "images": [
+        ".png",
+        ".jpg",
+        ".jpeg",
+        ".gif"
+    ],
+    "videos": [
+        ".mp4"
+    ],
+    "spreadsheets": [
+        ".xlsx",
+        ".csv"
+    ],
+    "word": [
+        ".docx"
+    ],
+    "pdf": [
+        ".pdf"
+    ]
+}

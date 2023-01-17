@@ -1,0 +1,217 @@
+Code - OSS (1.73.1, undefined, desktop)
+Jupyter Extension Version: 2022.7.1001890528.
+Python Extension Version: 2022.16.1.
+Workspace folder /home/cody/Documents/Projects/wordle-helper
+info 11:50:33.112: ZMQ install verified.
+error 11:50:33.424: Failure during activation. Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookCellExecutionState.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookCellExecutionState.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at u.onDidChangeNotebookCellExecutionState (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:113:54599)
+    at new m (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:41100)
+    at Object.t.resolveInstance (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1374020)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1375958
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1374876
+    at Array.map (<anonymous>)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1374848
+    at Array.map (<anonymous>)
+    at Object.t.resolveInstance (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1373794)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1375958
+    at Object.t.resolve (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1376221)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1359634
+    at e._get (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1359400)
+    at e.get (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1358043)
+    at a.get (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:31195)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:2896208
+error 11:50:33.447: sendStartupTelemetry() failed. Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookCellExecutionState.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookCellExecutionState.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at u.onDidChangeNotebookCellExecutionState (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:113:54599)
+    at new m (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:41100)
+    at Object.t.resolveInstance (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1374020)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1375958
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1374876
+    at Array.map (<anonymous>)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1374848
+    at Array.map (<anonymous>)
+    at Object.t.resolveInstance (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1373794)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1375958
+    at Object.t.resolve (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1376221)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1359634
+    at e._get (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1359400)
+    at e.get (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1358043)
+    at a.get (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:31195)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:2896208
+error 11:50:33.448: extension activation failed Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookCellExecutionState.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookCellExecutionState.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at u.onDidChangeNotebookCellExecutionState (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:113:54599)
+    at new m (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:41100)
+    at Object.t.resolveInstance (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1374020)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1375958
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1374876
+    at Array.map (<anonymous>)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1374848
+    at Array.map (<anonymous>)
+    at Object.t.resolveInstance (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1373794)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1375958
+    at Object.t.resolve (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1376221)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1359634
+    at e._get (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1359400)
+    at e.get (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1358043)
+    at a.get (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:31195)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:2896208
+error 11:50:33.449: Failed to active the Jupyter Extension Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookCellExecutionState.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookCellExecutionState.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at u.onDidChangeNotebookCellExecutionState (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:113:54599)
+    at new m (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:41100)
+    at Object.t.resolveInstance (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1374020)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1375958
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1374876
+    at Array.map (<anonymous>)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1374848
+    at Array.map (<anonymous>)
+    at Object.t.resolveInstance (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1373794)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1375958
+    at Object.t.resolve (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1376221)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1359634
+    at e._get (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1359400)
+    at e.get (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:1358043)
+    at a.get (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:31195)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:39:2896208
+error 11:50:33.675: Failed to create notebook controller for .jvsc74a57bd0e55666fbbf217aa3df372b978577f47b6009e2f78e2ec76a584f49cd54a1e62c./bin/python2./bin/python2.-m#ipykernel_launcher Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookControllerKind.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookControllerKind.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at Object.set kind [as kind] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:94:105107)
+    at new R (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:366087)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331563
+    at Array.forEach (<anonymous>)
+    at E.add (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331536)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323585
+    at Array.forEach (<anonymous>)
+    at C.createNotebookControllers (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323554)
+    at C.loadControllersImpl (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:322921)
+error 11:50:33.676: Failed to create notebook controller for .jvsc74a57bd007ebf75e1f06d59b091ecf4928fd6397d01a762bb7b518f3095c858035d59ca6./sbin/python2./sbin/python2.-m#ipykernel_launcher Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookControllerKind.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookControllerKind.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at Object.set kind [as kind] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:94:105107)
+    at new R (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:366087)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331563
+    at Array.forEach (<anonymous>)
+    at E.add (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331536)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323585
+    at Array.forEach (<anonymous>)
+    at C.createNotebookControllers (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323554)
+    at C.loadControllersImpl (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:322921)
+error 11:50:33.677: Failed to create notebook controller for .jvsc74a57bd0f92b2924b84ff19c1c3dc485f7644d4486f64738191026bf8e6de303969141b5./usr/bin/python2./usr/bin/python2.-m#ipykernel_launcher Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookControllerKind.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookControllerKind.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at Object.set kind [as kind] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:94:105107)
+    at new R (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:366087)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331563
+    at Array.forEach (<anonymous>)
+    at E.add (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331536)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323585
+    at Array.forEach (<anonymous>)
+    at C.createNotebookControllers (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323554)
+    at C.loadControllersImpl (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:322921)
+error 11:50:33.677: Failed to create notebook controller for .jvsc74a57bd07fafeef89233f6ac0dc51971731384c13891ae004cf59afaedb1f6f6b8ceae53./usr/sbin/python2./usr/sbin/python2.-m#ipykernel_launcher Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookControllerKind.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookControllerKind.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at Object.set kind [as kind] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:94:105107)
+    at new R (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:366087)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331563
+    at Array.forEach (<anonymous>)
+    at E.add (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331536)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323585
+    at Array.forEach (<anonymous>)
+    at C.createNotebookControllers (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323554)
+    at C.loadControllersImpl (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:322921)
+error 11:50:33.678: Failed to create notebook controller for .jvsc74a57bd0e7370f93d1d0cde622a1f8e1c04877d8463912d04d973331ad4851f04de6915a./bin/python./bin/python.-m#ipykernel_launcher Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookControllerKind.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookControllerKind.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at Object.set kind [as kind] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:94:105107)
+    at new R (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:366087)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331563
+    at Array.forEach (<anonymous>)
+    at E.add (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331536)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323585
+    at Array.forEach (<anonymous>)
+    at C.createNotebookControllers (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323554)
+    at C.loadControllersImpl (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:322921)
+error 11:50:33.678: Failed to create notebook controller for .jvsc74a57bd0d2152fd7f0bbc62aa1baff8c990435d1e2c7175d001561303988032604c11a48./sbin/python./sbin/python.-m#ipykernel_launcher Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookControllerKind.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookControllerKind.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at Object.set kind [as kind] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:94:105107)
+    at new R (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:366087)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331563
+    at Array.forEach (<anonymous>)
+    at E.add (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331536)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323585
+    at Array.forEach (<anonymous>)
+    at C.createNotebookControllers (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323554)
+    at C.loadControllersImpl (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:322921)
+error 11:50:33.679: Failed to create notebook controller for .jvsc74a57bd0767d51c1340bd893661ea55ea3124f6de3c7a262a8b4abca0554b478b1e2ff90./usr/bin/python./usr/bin/python.-m#ipykernel_launcher Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookControllerKind.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookControllerKind.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at Object.set kind [as kind] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:94:105107)
+    at new R (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:366087)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331563
+    at Array.forEach (<anonymous>)
+    at E.add (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331536)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323585
+    at Array.forEach (<anonymous>)
+    at C.createNotebookControllers (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323554)
+    at C.loadControllersImpl (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:322921)
+error 11:50:33.679: Failed to create notebook controller for .jvsc74a57bd04e1d9a8909477db77738c33245c29c7265277ef753467dede8cf3f814cde494e./usr/sbin/python./usr/sbin/python.-m#ipykernel_launcher Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookControllerKind.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookControllerKind.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at Object.set kind [as kind] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:94:105107)
+    at new R (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:366087)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331563
+    at Array.forEach (<anonymous>)
+    at E.add (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331536)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323585
+    at Array.forEach (<anonymous>)
+    at C.createNotebookControllers (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323554)
+    at C.loadControllersImpl (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:322921)
+error 11:50:33.680: Failed to create notebook controller for .jvsc74a57bd0586ad1ed5c97141e2437e681efbf1ec0adcd17d830cf5af2ca3d2819e743e158./opt/anaconda/python./opt/anaconda/python.-m#ipykernel_launcher Error: Extension 'ms-toolsai.jupyter' CANNOT use API proposal: notebookControllerKind.
+Its package.json#enabledApiProposals-property declares:  but NOT notebookControllerKind.
+ The missing proposal MUST be added and you must start in extension development mode or use the following command line switch: --enable-proposed-api ms-toolsai.jupyter
+    at m (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:88:44793)
+    at Object.set kind [as kind] (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:94:105107)
+    at new R (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:366087)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331563
+    at Array.forEach (<anonymous>)
+    at E.add (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:331536)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323585
+    at Array.forEach (<anonymous>)
+    at C.createNotebookControllers (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:323554)
+    at C.loadControllersImpl (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:322921)
+info 11:50:58.409: Execute Cell 0 /home/cody/Documents/Projects/wordle-helper/test.ipynb
+info 11:50:58.411: Starting Jupyter Session id = 'startUsingPythonInterpreter:.jvsc74a57bd0586ad1ed5c97141e2437e681efbf1ec0adcd17d830cf5af2ca3d2819e743e158./opt/anaconda/python./opt/anaconda/python.-m#ipykernel_launcher' (Python Path: /opt/anaconda, EnvType: Conda, EnvName: 'base', Version: 3.9.12) for '/home/cody/Documents/Projects/wordle-helper/test.ipynb' (disableUI=false)
+info 11:50:58.411: Creating raw notebook for resource '/home/cody/Documents/Projects/wordle-helper/test.ipynb'
+info 11:50:58.411: Computing working directory for resource '/home/cody/Documents/Projects/wordle-helper/test.ipynb'
+info 11:50:58.415: Starting raw kernel 'base (Python 3.9.12)' for interpreter /opt/anaconda/bin/python
+info 11:50:58.417: Kernel launching with ports 9000,9001,9002,9003,9004. Start port is 9000
+info 11:51:24.338: Shutting down notebooks for 3b186c37-5706-42b7-b3fe-6bf5e5e7d2c5
+info 11:51:24.338: Disposing HostJupyterExecution 9ff0ae7b-74a8-4422-bf31-1b887a3a87ca
+info 11:51:24.338: Disposing super HostJupyterExecution 9ff0ae7b-74a8-4422-bf31-1b887a3a87ca
+info 11:51:24.338: Dispose Kernel '/home/cody/Documents/Projects/wordle-helper/test.ipynb' associated with '/home/cody/Documents/Projects/wordle-helper/test.ipynb'
+info 11:51:24.339: Disposing HostJupyterExecution 9ff0ae7b-74a8-4422-bf31-1b887a3a87ca
+info 11:51:24.339: Finished disposing HostJupyterExecution  9ff0ae7b-74a8-4422-bf31-1b887a3a87ca
+info 11:51:24.339: Cleaning up server cache 9ff0ae7b-74a8-4422-bf31-1b887a3a87ca
+info 11:51:24.340: Finished disposing HostJupyterExecution  9ff0ae7b-74a8-4422-bf31-1b887a3a87ca
+info 11:51:24.347: Dispose Kernel '/home/cody/Documents/Projects/wordle-helper/test.ipynb' associated with '/home/cody/Documents/Projects/wordle-helper/test.ipynb'

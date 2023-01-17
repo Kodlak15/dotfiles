@@ -1,0 +1,21 @@
+[2022-11-19 10:45:14.145] [sharedprocess] [info] Starting worker process with pid 4822 (type: fileWatcher, window: 1).
+[2022-11-19 10:45:17.651] [sharedprocess] [info] Getting Manifest... akamud.vscode-theme-onedark
+[2022-11-19 10:45:17.652] [sharedprocess] [info] Getting Manifest... ms-python.python
+[2022-11-19 10:45:19.001] [sharedprocess] [info] Installing extension: akamud.vscode-theme-onedark
+[2022-11-19 10:45:19.517] [sharedprocess] [info] Installing extension: ms-python.python
+[2022-11-19 10:45:19.680] [sharedprocess] [info] Downloaded extension: akamud.vscode-theme-onedark /home/cody/.config/Code - OSS/CachedExtensionVSIXs/akamud.vscode-theme-onedark-2.3.0-universal
+[2022-11-19 10:45:19.704] [sharedprocess] [info] Extracted extension to /home/cody/.vscode-oss/extensions/.fc12e1a3-4c7a-4d98-bd29-206fcc884abc: akamud.vscode-theme-onedark
+[2022-11-19 10:45:19.707] [sharedprocess] [info] Renamed to /home/cody/.vscode-oss/extensions/akamud.vscode-theme-onedark-2.3.0-universal
+[2022-11-19 10:45:19.709] [sharedprocess] [info] Extracting completed. akamud.vscode-theme-onedark
+[2022-11-19 10:45:19.711] [sharedprocess] [info] Extension installed successfully: akamud.vscode-theme-onedark
+[2022-11-19 10:45:42.906] [sharedprocess] [info] Downloaded extension: ms-python.python /home/cody/.config/Code - OSS/CachedExtensionVSIXs/ms-python.python-2022.16.1-universal
+[2022-11-19 10:45:44.113] [sharedprocess] [info] Extracted extension to /home/cody/.vscode-oss/extensions/.d0ce1705-5796-4d94-aefb-a643daffed4a: ms-python.python
+[2022-11-19 10:45:44.118] [sharedprocess] [info] Renamed to /home/cody/.vscode-oss/extensions/ms-python.python-2022.16.1-universal
+[2022-11-19 10:45:44.121] [sharedprocess] [info] Extracting completed. ms-python.python
+[2022-11-19 10:45:44.125] [sharedprocess] [info] Extension installed successfully: ms-python.python
+[2022-11-19 10:48:35.116] [sharedprocess] [info] Getting Manifest... ms-python.python
+[2022-11-19 10:48:35.523] [sharedprocess] [info] Installing extension: ms-python.python
+[2022-11-19 10:48:35.706] [sharedprocess] [info] Extension installed successfully: ms-python.python
+[2022-11-19 10:48:42.822] [sharedprocess] [info] Getting Manifest... ms-python.python
+[2022-11-19 10:48:43.427] [sharedprocess] [info] Installing extension: ms-python.python
+[2022-11-19 10:48:43.602] [sharedprocess] [info] Extension installed successfully: ms-python.python

@@ -1,0 +1,6 @@
+2023/01/14-10:47:13.819 5a8 Creating DB /home/cody/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.amazon.com_0.indexeddb.leveldb since it was missing.
+2023/01/14-10:47:13.823 5a8 Reusing MANIFEST /home/cody/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.amazon.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/14-10:47:14.665 5ac Level-0 table #5: started
+2023/01/14-10:47:14.666 5ac Level-0 table #5: 528 bytes OK
+2023/01/14-10:47:14.666 5ac Delete type=0 #3
+2023/01/14-10:47:14.667 5ac Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)

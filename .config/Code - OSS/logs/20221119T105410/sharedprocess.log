@@ -1,0 +1,16 @@
+[2022-11-19 10:54:13.127] [sharedprocess] [info] Starting worker process with pid 5642 (type: fileWatcher, window: 1).
+[2022-11-19 10:54:13.434] [sharedprocess] [info] Deleted from disk akamud.vscode-theme-onedark /home/cody/.vscode-oss/extensions/akamud.vscode-theme-onedark-2.2.3
+[2022-11-19 10:54:13.500] [sharedprocess] [info] Deleted from disk ms-python.python /home/cody/.vscode-oss/extensions/ms-python.python-2022.14.0
+[2022-11-19 10:55:54.458] [sharedprocess] [info] Getting Manifest... luma.jupyter
+[2022-11-19 10:55:54.622] [sharedprocess] [info] Installing extension: luma.jupyter
+[2022-11-19 10:57:14.716] [sharedprocess] [info] Downloaded extension: luma.jupyter /home/cody/.config/Code - OSS/CachedExtensionVSIXs/luma.jupyter-2022.3.108-universal
+[2022-11-19 10:57:15.987] [sharedprocess] [info] Extracted extension to /home/cody/.vscode-oss/extensions/.c6b67a41-1bbd-41ca-8061-21df645321b5: luma.jupyter
+[2022-11-19 10:57:15.993] [sharedprocess] [info] Renamed to /home/cody/.vscode-oss/extensions/luma.jupyter-2022.3.108-universal
+[2022-11-19 10:57:16.000] [sharedprocess] [info] Extracting completed. luma.jupyter
+[2022-11-19 10:57:16.004] [sharedprocess] [info] Extension installed successfully: luma.jupyter
+[2022-11-19 10:58:13.315] [sharedprocess] [info] Starting worker process with pid 6220 (type: fileWatcher, window: 3).
+[2022-11-19 10:58:14.874] [sharedprocess] [info] Worker process with pid 5642 terminated normally (type: fileWatcher, window: 1).
+[2022-11-19 10:58:34.930] [sharedprocess] [info] Worker process with pid 6220 terminated normally (type: fileWatcher, window: 3).
+[2022-11-19 10:58:36.596] [sharedprocess] [info] Starting worker process with pid 6302 (type: fileWatcher, window: 3).
+[2022-11-19 10:59:28.428] [sharedprocess] [info] Starting worker process with pid 6537 (type: fileWatcher, window: 4).
+[2022-11-19 10:59:30.635] [sharedprocess] [info] Worker process with pid 6302 terminated normally (type: fileWatcher, window: 3).

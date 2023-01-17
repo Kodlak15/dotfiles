@@ -1,0 +1,14 @@
+[2022-10-01 11:04:40.217] [exthost] [info] Extension host with pid 4102 started
+[2022-10-01 11:04:40.217] [exthost] [info] Skipping acquiring lock for /home/cody/.config/Code - OSS/User/workspaceStorage/996172b8eff205cc2bb2cd9147771b9a.
+[2022-10-01 11:04:40.249] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-10-01 11:04:40.251] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+[2022-10-01 11:04:40.253] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-10-01 11:04:40.255] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: true, activationEvent: '*', root cause: GitHub.vscode-pull-request-github
+[2022-10-01 11:04:40.271] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-10-01 11:04:40.285] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-10-01 11:04:40.288] [exthost] [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: true, activationEvent: '*'
+[2022-10-01 11:04:40.385] [exthost] [info] Eager extensions activated
+[2022-10-01 11:04:40.391] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-01 11:04:40.395] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-10-01 11:05:33.501] [exthost] [info] Extension host terminating: received terminate message from renderer
+[2022-10-01 11:05:33.511] [exthost] [info] Extension host with pid 4102 exiting with code 0

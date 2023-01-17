@@ -1,0 +1,355 @@
+Code - OSS (1.69.2, undefined, desktop)
+Jupyter Extension Version: 2022.7.1001890528.
+Python Extension Version: 2022.16.1.
+Workspace folder /home/cody/Documents/kenan-math
+info 12:38:48.117: ZMQ install verified.
+info 12:38:48.354: LSP Notebooks experiment is disabled -- Pylance disabled or not installed
+info 12:38:49.204: Starting Jupyter Session id = 'startUsingPythonInterpreter:.jvsc74a57bd0586ad1ed5c97141e2437e681efbf1ec0adcd17d830cf5af2ca3d2819e743e158./opt/anaconda/python./opt/anaconda/python.-m#ipykernel_launcher' (Python Path: /opt/anaconda, EnvType: Conda, EnvName: 'base', Version: 3.9.12) for '/home/cody/Documents/kenan-math/expected_value.ipynb' (disableUI=true)
+info 12:38:49.206: Creating raw notebook for resource '/home/cody/Documents/kenan-math/expected_value.ipynb'
+info 12:38:49.206: Computing working directory for resource '/home/cody/Documents/kenan-math/expected_value.ipynb'
+info 12:38:49.289: Experiment status for python is {"enabled":true,"optInto":[],"optOutFrom":[]}
+info 12:38:49.295: Starting raw kernel 'base (Python 3.9.12)' for interpreter /opt/anaconda/bin/python
+info 12:38:49.299: Kernel launching with ports 9000,9001,9002,9003,9004. Start port is 9000
+info 12:38:49.330: Preferred Remote kernel for /home/cody/Documents/kenan-math/expected_value.ipynb is undefined
+info 12:38:49.330: Find preferred kernel for /home/cody/Documents/kenan-math/expected_value.ipynb with metadata {"kernelspec":{"display_name":"Python 3.9.12 ('base')","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.9.12"},"orig_nbformat":4,"vscode":{"interpreter":{"hash":"586ad1ed5c97141e2437e681efbf1ec0adcd17d830cf5af2ca3d2819e743e158"}}} & preferred interpreter /bin/python
+info 12:38:49.332: Preferred Remote kernel for /home/cody/Documents/kenan-math/expected_value.ipynb is undefined
+info 12:38:49.332: Preferred kernel .jvsc74a57bd0586ad1ed5c97141e2437e681efbf1ec0adcd17d830cf5af2ca3d2819e743e158./opt/anaconda/python./opt/anaconda/python.-m#ipykernel_launcher is exact match
+info 12:38:49.333: PreferredConnection: .jvsc74a57bd0586ad1ed5c97141e2437e681efbf1ec0adcd17d830cf5af2ca3d2819e743e158./opt/anaconda/python./opt/anaconda/python.-m#ipykernel_launcher found for NotebookDocument: /home/cody/Documents/kenan-math/expected_value.ipynb
+error 12:38:49.338: Failed to get activated environment variables ourselves Error: Command failed: conda activate base && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/pythonFiles/printEnvVariables.py
+bash: line 1: conda: command not found
+
+    at ChildProcess.exithandler (node:child_process:406:12)
+    at ChildProcess.emit (node:events:390:28)
+    at maybeClose (node:internal/child_process:1064:16)
+    at Socket.<anonymous> (node:internal/child_process:450:11)
+    at Socket.emit (node:events:390:28)
+    at Pipe.<anonymous> (node:net:687:12) {
+  killed: false,
+  code: 127,
+  signal: null,
+  cmd: "conda activate base && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/pythonFiles/printEnvVariables.py"
+}
+error 12:38:49.339: Execing shell command, Class name = h, completed in 35ms, has a falsy return value, Arg 1: "~/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/pythonFiles/printEnvVariables.py", Arg 2: {"env":{"ELECTRON_RUN_AS_NODE":"1","SHELL":"/bin/zsh","WINDOWID":"18874370","COLORTERM":"truecolor","XDG_SESSION_PATH":"/org/freedesktop/DisplayManager/Session0","I3SOCK":"/run/user/1000/i3/ipc-socket.884","DESKTOP_SESSION":"i3","EDITOR":"lvim","GTK_MODULES":"canberra-gtk-module","XDG_SEAT":"seat0","PWD":"/home/cody/Documents/kenan-math","LOGNAME":"cody","XDG_SESSION_DESKTOP":"i3","XDG_SESSION_TYPE":"x11","XAUTHORITY":"/home/cody/.Xauthority","XDG_GREETER_DATA_DIR":"/var/lib/lightdm-data/cody","MOTD_SHOWN":"pam","HOME":"/home/cody","LANG":"en_US.UTF-8","XDG_CURRENT_DESKTOP":"i3","XDG_SEAT_PATH":"/org/freedesktop/DisplayManager/Seat0","PERL5LIB":"/home/cody/perl5/lib/perl5","ALACRITTY_SOCKET":"/run/user/1000/Alacritty-:0-8684.sock","XDG_SESSION_CLASS":"user","TERM":"alacritty","PERL_MB_OPT":"--install_base \"/home/cody/perl5\"","USER":"cody","VISUAL":"lvim","PERL_MM_OPT":"INSTALL_BASE=/home/cody/perl5","DISPLAY":":0","SHLVL":"1","XDG_VTNR":"7","XDG_SESSION_ID":"3","XDG_RUNTIME_DIR":"/run/user/1000","GTK3_MODULES":"xapp-gtk3-module","PERL_LOCAL_LIB_ROOT":"/home/cody/perl5","PATH":"/home/cody/perl5/bin:/home/cody/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/cody/.local/bin","ALACRITTY_LOG":"/tmp/Alacritty-8684.log","GDMSESSION":"i3","DBUS_SESSION_BUS_ADDRESS":"unix:path=/run/user/1000/bus","MAIL":"/var/spool/mail/cody","OLDPWD":"/home/cody","VSCODE_CWD":"/home/cody/Documents/kenan-math","APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL":"true","VSCODE_CLI":"1","ELECTRON_NO_ATTACH_CONSOLE":"1","CHROME_DESKTOP":"code-oss.desktop","ORIGINAL_XDG_CURRENT_DESKTOP":"i3","GDK_BACKEND":"x11","NO_AT_BRIDGE":"1","VSCODE_NLS_CONFIG":"{\"locale\":\"en-us\",\"availableLanguages\":{},\"_languagePackSupport\":true}","VSCODE_CODE_CACHE_PATH":"/home/cody/.config/Code - OSS/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a","VSCODE_IPC_HOOK":"/run/user/1000/vscode-317b8a8d-1.69.2-main.sock","VSCODE_PID":"8824","VSCODE_AMD_ENTRYPOINT":"vs/workbench/api/node/extensionHostProcess","VSCODE_HANDLES_UNCAUGHT_ERRORS":"true","PYTHONWARNINGS":"ignore"},"shell":"bash","timeout":60000,"maxBuffer":1000000,"throwOnStdErr":false} Error: Command failed: conda activate base && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/pythonFiles/printEnvVariables.py
+bash: line 1: conda: command not found
+
+    at ChildProcess.exithandler (node:child_process:406:12)
+    at ChildProcess.emit (node:events:390:28)
+    at maybeClose (node:internal/child_process:1064:16)
+    at Socket.<anonymous> (node:internal/child_process:450:11)
+    at Socket.emit (node:events:390:28)
+    at Pipe.<anonymous> (node:net:687:12) {
+  killed: false,
+  code: 127,
+  signal: null,
+  cmd: "conda activate base && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/pythonFiles/printEnvVariables.py"
+}
+info 12:38:49.386: Process Execution: > /bin/python -m pip list
+> /bin/python -m pip list
+info 12:38:51.425: Preferred Remote kernel for /home/cody/Documents/kenan-math/expected_value.ipynb is undefined
+info 12:38:51.425: Find preferred kernel for /home/cody/Documents/kenan-math/expected_value.ipynb with metadata {"kernelspec":{"display_name":"Python 3.9.12 ('base')","language":"python","name":"python3"},"language_info":{"codemirror_mode":{"name":"ipython","version":3},"file_extension":".py","mimetype":"text/x-python","name":"python","nbconvert_exporter":"python","pygments_lexer":"ipython3","version":"3.9.12"},"orig_nbformat":4,"vscode":{"interpreter":{"hash":"586ad1ed5c97141e2437e681efbf1ec0adcd17d830cf5af2ca3d2819e743e158"}}} & preferred interpreter /bin/python
+info 12:38:51.426: Preferred Remote kernel for /home/cody/Documents/kenan-math/expected_value.ipynb is undefined
+info 12:38:51.426: Preferred kernel .jvsc74a57bd0586ad1ed5c97141e2437e681efbf1ec0adcd17d830cf5af2ca3d2819e743e158./opt/anaconda/python./opt/anaconda/python.-m#ipykernel_launcher is exact match
+info 12:38:51.428: Preferred Remote kernel for /home/cody/Documents/kenan-math/expected_value.ipynb is undefined
+info 12:38:52.317: Process Execution: > /opt/anaconda/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+> /opt/anaconda/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+info 12:38:52.334: Process Execution: > /opt/anaconda/bin/python -m pip list
+> /opt/anaconda/bin/python -m pip list
+info 12:38:52.342: Process Execution: > /opt/anaconda/bin/python -m ipykernel_launcher --ip=127.0.0.1 --stdin=9003 --control=9001 --hb=9000 --Session.signature_scheme="hmac-sha256" --Session.key=b"0991b054-3689-4293-a9de-c310a331656c" --shell=9002 --transport="tcp" --iopub=9004 --f=/home/cody/.local/share/jupyter/runtime/kernel-v2-8937CfzEb0F6xIYg.json
+> /opt/anaconda/bin/python -m ipykernel_launcher --ip=127.0.0.1 --stdin=9003 --control=9001 --hb=9000 --Session.signature_scheme="hmac-sha256" --Session.key=b"0991b054-3689-4293-a9de-c310a331656c" --shell=9002 --transport="tcp" --iopub=9004 --f=/home/cody/.local/share/jupyter/runtime/kernel-v2-8937CfzEb0F6xIYg.json
+info 12:38:52.342: Process Execution: cwd: ~/Documents/kenan-math
+cwd: ~/Documents/kenan-math
+info 12:38:52.424: ipykernel version 6.9.1 for /opt/anaconda/bin/python
+info 12:38:52.424: ipykernel location /opt/anaconda/lib/python3.9/site-packages/ipykernel/__init__.py for /opt/anaconda/bin/python
+warn 12:38:53.97: StdErr from Kernel Process /opt/anaconda/lib/python3.9/site-packages/traitlets/traitlets.py:2202: FutureWarning: Supporting extra quotes around strings is deprecated in traitlets 5.0. You can use 'hmac-sha256' instead of '"hmac-sha256"' if you require traitlets >=5.
+  warn(
+
+warn 12:38:53.98: StdErr from Kernel Process /opt/anaconda/lib/python3.9/site-packages/traitlets/traitlets.py:2157: FutureWarning: Supporting extra quotes around Bytes is deprecated in traitlets 5.0. Use '0991b054-3689-4293-a9de-c310a331656c' instead of 'b"0991b054-3689-4293-a9de-c310a331656c"'.
+  warn(
+
+info 12:38:53.102: Kernel Output: NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing kernel-v2-8937CfzEb0F6xIYg.json
+
+info 12:38:53.167: Started kernel base (Python 3.9.12)., (Raw session started and connected)
+info 12:38:53.167: Finished connecting cfe9c6e2-9438-40b4-8c8d-ae5099a47a0d
+info 12:38:53.169: UpdateWorkingDirectoryAndPath in Kernel
+info 12:38:53.169: Executing silently Code (idle) = import os\nimport sys\n%cd "//home/cody/Documents/kenan-math"\nif os.getcwd() not in sys.path:\nsys.
+info 12:38:53.178: Executing silently Code (completed) = import os\nimport sys\n%cd "//home/cody/Documents/kenan-math"\nif os.getcwd() not in sys.path:\nsys. with 1 output(s)
+info 12:38:53.178: Waiting for idle on (kernel): 87c85c96-977a-44a3-8d66-bfa9c871e0a9 -> idle
+info 12:38:53.178: Finished waiting for idle on (kernel): 87c85c96-977a-44a3-8d66-bfa9c871e0a9 -> idle
+info 12:38:53.186: Widget Message: Received IPyWidgets_kernelOptions in ScriptManager
+info 12:38:53.186: Widget Message: Received IPyWidgetMessages.IPyWidgets_kernelOptions
+info 12:38:53.211: Widget Message: data-base-url set to https://file%2B.vscode-resource.vscode-cdn.net/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/tmp/scripts/8682659ccab37d98d5431aa94f95d6f2d110aab9e612af4c543f7bed200e9d6c/jupyter
+info 12:41:23.241: Execute Cell 0 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 12:41:23.444: Cell 0 executed with state Success
+info 12:41:24.198: Execute Cell 1 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 12:41:24.217: Cell 1 executed with state Success
+info 12:48:9.816: Execute Cell 4 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 12:48:9.838: Cell 4 executed with state Success
+info 12:50:19.673: Execute Cell 4 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 12:50:19.731: Cell 4 executed with state Success
+info 12:52:15.207: Execute Cell 5 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 12:52:15.229: Cell 5 executed with state Success
+info 12:55:17.352: Execute Cell 6 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 12:55:17.371: Cell 6 executed with state Success
+info 13:2:13.903: Execute Cell 7 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:2:13.933: Cell 7 executed with state Success
+info 13:2:25.505: Execute Cell 7 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:2:25.564: Cell 7 executed with state Success
+info 13:4:10.454: Execute Cell 8 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:4:10.502: Cell 8 executed with state Success
+info 13:6:8.175: Execute Cell 9 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:6:8.201: Cell 9 executed with state Success
+info 13:7:17.159: Execute Cell 9 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:7:17.182: Cell 9 executed with state Success
+info 13:11:10.187: Execute Cell 8 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:11:10.223: Cell 8 executed with state Success
+info 13:12:21.358: Execute Cell 10 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:12:21.382: Cell 10 executed with state Success
+info 13:12:37.150: Execute Cell 10 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:12:37.174: Cell 10 executed with state Success
+info 13:16:2.960: Execute Cell 11 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:16:2.982: Cell 11 executed with state Success
+info 13:17:4.524: Execute Cell 11 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:17:4.613: Cell 11 executed with state Success
+info 13:18:26.253: Execute Cell 12 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:18:26.276: Cell 12 executed with state Success
+info 13:19:17.641: Execute Cell 13 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:19:17.670: Cell 13 executed with state Success
+info 13:20:54.897: Execute Cell 14 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:20:54.916: Cell 14 executed with state Success
+info 13:22:59.746: Execute Cell 15 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:23:0.18: Cancel all remaining cells true || Error || undefined
+info 13:23:0.18: Cancel pending cells
+info 13:23:0.18: Cell 15 executed with state Error
+info 13:24:46.923: Execute Cell 2 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:46.946: Cell 2 executed with state Success
+info 13:24:47.752: Execute Cell 4 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:47.776: Cell 4 executed with state Success
+info 13:24:48.241: Execute Cell 5 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:48.265: Cell 5 executed with state Success
+info 13:24:48.705: Execute Cell 6 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:48.730: Cell 6 executed with state Success
+info 13:24:49.110: Execute Cell 7 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:49.132: Cell 7 executed with state Success
+info 13:24:49.618: Execute Cell 8 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:49.641: Cell 8 executed with state Success
+info 13:24:50.38: Execute Cell 9 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:50.65: Cell 9 executed with state Success
+info 13:24:50.449: Execute Cell 10 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:50.473: Cell 10 executed with state Success
+info 13:24:51.247: Execute Cell 11 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:51.269: Cell 11 executed with state Success
+info 13:24:51.749: Execute Cell 12 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:51.778: Cell 12 executed with state Success
+info 13:24:52.574: Execute Cell 13 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:52.597: Cell 13 executed with state Success
+info 13:24:53.812: Execute Cell 14 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:53.841: Cell 14 executed with state Success
+info 13:24:54.680: Execute Cell 15 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:24:54.701: Cell 15 executed with state Success
+info 13:27:56.6: Execute Cell 16 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:27:56.26: Cell 16 executed with state Success
+info 13:30:38.454: Execute Cell 17 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:30:38.477: Cell 17 executed with state Success
+info 13:31:49.363: Execute Cell 18 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:31:49.385: Cell 18 executed with state Success
+info 13:34:4.472: Execute Cell 18 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:34:4.496: Cell 18 executed with state Success
+info 13:34:29.699: Execute Cell 19 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:34:29.723: Cell 19 executed with state Success
+info 13:34:54.244: Execute Cell 20 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 13:34:54.264: Cell 20 executed with state Success
+info 14:6:20.475: Execute Cell 4 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:6:20.502: Cell 4 executed with state Success
+info 14:6:26.294: Execute Cell 5 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:6:26.318: Cell 5 executed with state Success
+info 14:6:43.250: Execute Cell 6 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:6:43.272: Cell 6 executed with state Success
+info 14:6:47.836: Execute Cell 5 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:6:47.861: Cell 5 executed with state Success
+info 14:7:32.352: Execute Cell 2 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:7:32.376: Cell 2 executed with state Success
+info 14:7:34.233: Execute Cell 4 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:7:34.256: Cell 4 executed with state Success
+info 14:8:42.449: Execute Cell 2 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:8:42.473: Cell 2 executed with state Success
+info 14:8:43.361: Execute Cell 4 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:8:43.386: Cell 4 executed with state Success
+info 14:19:8.986: Execute Cell 3 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:19:9.16: Cancel all remaining cells true || Error || undefined
+info 14:19:9.16: Cancel pending cells
+info 14:19:9.16: Cell 3 executed with state Error
+info 14:19:11.613: Execute Cell 2 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:19:11.635: Cell 2 executed with state Success
+info 14:19:11.822: Execute Cell 3 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:19:11.902: Cancel all remaining cells true || Error || undefined
+info 14:19:11.902: Cancel pending cells
+info 14:19:11.902: Cell 3 executed with state Error
+info 14:19:26.364: Execute Cell 2 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:19:26.388: Cell 2 executed with state Success
+info 14:19:26.745: Execute Cell 3 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:19:26.862: Cell 3 executed with state Success
+info 14:24:32.198: Execute Cell 3 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:24:32.226: Cell 3 executed with state Success
+info 14:28:13.262: Execute Cell 3 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:28:13.286: Cell 3 executed with state Success
+info 14:32:10.10: Execute Cell 3 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:32:10.28: Cell 3 executed with state Idle
+info 14:46:34.604: Execute Cell 4 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:46:34.627: Cell 4 executed with state Success
+info 14:47:45.628: Execute Cell 5 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:47:45.653: Cell 5 executed with state Success
+info 14:49:59.490: Execute Cell 7 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:49:59.513: Cell 7 executed with state Success
+info 14:50:4.361: Execute Cell 7 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:50:4.390: Cell 7 executed with state Success
+info 14:51:3.615: Execute Cell 6 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:51:3.659: Cell 6 executed with state Success
+info 14:51:53.405: Execute Cell 6 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:51:53.432: Cell 6 executed with state Success
+info 14:57:19.623: Restart requested file:///home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:57:19.624: Restart kernel execution
+info 14:57:19.625: Cancel pending cells
+info 14:57:19.625: Restarting 87c85c96-977a-44a3-8d66-bfa9c871e0a9
+info 14:57:19.625: Starting raw kernel 'base (Python 3.9.12)' for interpreter /opt/anaconda/bin/python
+info 14:57:19.629: Kernel launching with ports 9005,9006,9007,9008,9009. Start port is 9000
+info 14:57:19.641: Process Execution: > /opt/anaconda/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+> /opt/anaconda/bin/python -c "import ipykernel; print(ipykernel.__version__); print("5dc3a68c-e34e-4080-9c3e-2a532b2ccb4d"); print(ipykernel.__file__)"
+info 14:57:19.779: Process Execution: > /opt/anaconda/bin/python -m ipykernel_launcher --ip=127.0.0.1 --stdin=9008 --control=9006 --hb=9005 --Session.signature_scheme="hmac-sha256" --Session.key=b"f5ffffeb-9216-4133-92a8-d57ab4d285a2" --shell=9007 --transport="tcp" --iopub=9009 --f=/home/cody/.local/share/jupyter/runtime/kernel-v2-8937RGzJpvfQIYwy.json
+> /opt/anaconda/bin/python -m ipykernel_launcher --ip=127.0.0.1 --stdin=9008 --control=9006 --hb=9005 --Session.signature_scheme="hmac-sha256" --Session.key=b"f5ffffeb-9216-4133-92a8-d57ab4d285a2" --shell=9007 --transport="tcp" --iopub=9009 --f=/home/cody/.local/share/jupyter/runtime/kernel-v2-8937RGzJpvfQIYwy.json
+info 14:57:19.779: Process Execution: cwd: ~/Documents/kenan-math
+cwd: ~/Documents/kenan-math
+info 14:57:19.823: ipykernel version 6.9.1 for /opt/anaconda/bin/python
+info 14:57:19.823: ipykernel location /opt/anaconda/lib/python3.9/site-packages/ipykernel/__init__.py for /opt/anaconda/bin/python
+warn 14:57:21.100: StdErr from Kernel Process /opt/anaconda/lib/python3.9/site-packages/traitlets/traitlets.py:2202: FutureWarning: Supporting extra quotes around strings is deprecated in traitlets 5.0. You can use 'hmac-sha256' instead of '"hmac-sha256"' if you require traitlets >=5.
+  warn(
+/opt/anaconda/lib/python3.9/site-packages/traitlets/traitlets.py:2157: FutureWarning: Supporting extra quotes around Bytes is deprecated in traitlets 5.0. Use 'f5ffffeb-9216-4133-92a8-d57ab4d285a2' instead of 'b"f5ffffeb-9216-4133-92a8-d57ab4d285a2"'.
+  warn(
+
+info 14:57:21.107: Kernel Output: NOTE: When using the `ipython kernel` entry point, Ctrl-C will not work.
+
+To exit, you will have to explicitly quit this process, by either sending
+"quit" from a client, or using Ctrl-\ in UNIX-like environments.
+
+To read more about this, see https://github.com/ipython/ipython/issues/2049
+
+
+To connect another client to this kernel, use:
+    --existing kernel-v2-8937RGzJpvfQIYwy.json
+
+info 14:57:21.204: Got new session 75a75abd-ff0c-4158-b557-da9e76c07697
+info 14:57:21.204: Started new restart session
+info 14:57:21.207: Executing silently Code (idle) = import sys\nprint(sys.executable)
+info 14:57:21.214: Widget Message: Received IPyWidgetMessages.IPyWidgets_onRestartKernel
+info 14:57:21.245: Widget Message: Received IPyWidgets_kernelOptions in ScriptManager
+info 14:57:21.245: Widget Message: Received IPyWidgetMessages.IPyWidgets_kernelOptions
+info 14:57:21.495: Executing silently Code (completed) = import sys\nprint(sys.executable) with 1 output(s)
+info 14:57:21.497: UpdateWorkingDirectoryAndPath in Kernel
+info 14:57:21.497: Executing silently Code (idle) = import os\nimport sys\n%cd "//home/cody/Documents/kenan-math"\nif os.getcwd() not in sys.path:\nsys.
+info 14:57:21.509: Executing silently Code (completed) = import os\nimport sys\n%cd "//home/cody/Documents/kenan-math"\nif os.getcwd() not in sys.path:\nsys. with 1 output(s)
+info 14:57:21.510: Waiting for idle on (kernel): 75a75abd-ff0c-4158-b557-da9e76c07697 -> idle
+info 14:57:21.510: Finished waiting for idle on (kernel): 75a75abd-ff0c-4158-b557-da9e76c07697 -> idle
+info 14:57:27.855: Execute Cell 0 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:57:28.88: Cell 0 executed with state Success
+info 14:57:28.296: Execute Cell 2 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:57:28.321: Cell 2 executed with state Success
+info 14:57:28.919: Execute Cell 4 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:57:28.972: Cell 4 executed with state Success
+info 14:57:29.278: Execute Cell 5 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:57:29.305: Cell 5 executed with state Success
+info 14:57:29.685: Execute Cell 6 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:57:29.722: Cell 6 executed with state Success
+info 14:57:30.968: Execute Cell 7 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:57:30.993: Cell 7 executed with state Success
+info 14:58:8.846: Execute Cell 7 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 14:58:8.873: Cell 7 executed with state Success
+info 15:1:10.163: Execute Cell 8 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:1:10.194: Cell 8 executed with state Success
+info 15:1:41.224: Execute Cell 8 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:1:41.256: Cell 8 executed with state Success
+info 15:1:51.8: Execute Cell 9 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:1:51.62: Cell 9 executed with state Success
+info 15:2:57.567: Execute Cell 8 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:2:57.643: Cell 8 executed with state Success
+info 15:3:1.441: Execute Cell 9 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:3:1.456: Cell 9 executed with state Idle
+info 15:4:0.733: Execute Cell 9 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:4:0.760: Cell 9 executed with state Success
+info 15:6:10.974: Execute Cell 10 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:6:11.344: Cancel all remaining cells true || Error || undefined
+info 15:6:11.344: Cancel pending cells
+info 15:6:11.344: Cell 10 executed with state Error
+info 15:6:22.159: Execute Cell 10 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:6:22.266: Cell 10 executed with state Success
+info 15:6:41.423: Execute Cell 10 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:6:41.448: Cell 10 executed with state Success
+info 15:7:47.367: Execute Cell 2 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:7:47.392: Cell 2 executed with state Success
+info 15:8:19.654: Execute Cell 11 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:8:19.677: Cell 11 executed with state Success
+info 15:11:24.821: Execute Cell 12 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:11:24.850: Cell 12 executed with state Success
+info 15:12:41.934: Execute Cell 13 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:12:41.959: Cell 13 executed with state Success
+info 15:13:55.18: Execute Cell 14 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:13:55.47: Cell 14 executed with state Success
+info 15:14:45.245: Execute Cell 14 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:14:45.269: Cell 14 executed with state Success
+info 15:14:54.790: Execute Cell 14 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:14:54.814: Cell 14 executed with state Success
+info 15:15:18.967: Execute Cell 15 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:15:18.995: Cell 15 executed with state Success
+info 15:15:23.212: Execute Cell 15 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:15:23.242: Cell 15 executed with state Success
+info 15:15:36.446: Execute Cell 14 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:15:36.475: Cell 14 executed with state Success
+info 15:15:41.125: Execute Cell 15 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:15:41.141: Cell 15 executed with state Idle
+info 15:18:5.849: Execute Cell 15 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:18:5.879: Cell 15 executed with state Success
+info 15:18:44.934: Execute Cell 16 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:18:44.970: Cell 16 executed with state Success
+info 15:22:10.919: Execute Cell 17 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:22:10.943: Cell 17 executed with state Success
+info 15:22:18.752: Execute Cell 17 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:22:18.779: Cell 17 executed with state Success
+info 15:23:23.442: Execute Cell 18 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:23:23.464: Cell 18 executed with state Success
+info 15:24:3.681: Execute Cell 18 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:24:3.710: Cell 18 executed with state Success
+info 15:26:7.800: Execute Cell 19 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:26:7.829: Cell 19 executed with state Success
+info 15:27:8.120: Execute Cell 20 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:27:8.143: Cell 20 executed with state Success
+info 15:28:20.636: Execute Cell 21 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:28:20.661: Cell 21 executed with state Success
+info 15:28:30.939: Execute Cell 21 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:28:30.956: Cell 21 executed with state Idle
+info 15:29:43.131: Execute Cell 21 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:29:43.153: Cell 21 executed with state Success
+info 15:33:12.415: Execute Cell 22 /home/cody/Documents/kenan-math/expected_value.ipynb
+info 15:33:12.439: Cell 22 executed with state Success
+info 15:53:35.443: Shutting down notebooks for cfe9c6e2-9438-40b4-8c8d-ae5099a47a0d
+info 15:53:35.443: Disposing HostJupyterExecution 1f92f6bf-9ca5-4338-87e4-1886f23b0f04
+info 15:53:35.443: Disposing super HostJupyterExecution 1f92f6bf-9ca5-4338-87e4-1886f23b0f04
+info 15:53:35.443: Dispose Kernel '/home/cody/Documents/kenan-math/expected_value.ipynb' associated with '/home/cody/Documents/kenan-math/expected_value.ipynb'
+info 15:53:35.443: Cancel pending cells
+info 15:53:35.445: Disposing HostJupyterExecution 1f92f6bf-9ca5-4338-87e4-1886f23b0f04
+info 15:53:35.445: Finished disposing HostJupyterExecution  1f92f6bf-9ca5-4338-87e4-1886f23b0f04
+info 15:53:35.448: Cleaning up server cache 1f92f6bf-9ca5-4338-87e4-1886f23b0f04
+info 15:53:35.449: Finished disposing HostJupyterExecution  1f92f6bf-9ca5-4338-87e4-1886f23b0f04
+warn 15:53:35.450: Failed to delete connection file /home/cody/.local/share/jupyter/runtime/kernel-v2-8937RGzJpvfQIYwy.json Canceled (FileSystemError): Canceled
+    at Function._handleError (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:87:29883)
+    at Object.stat (/usr/lib/code/out/vs/workbench/api/node/extensionHostProcess.js:87:27811)
+    at m.delete (/home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:29:14986)
+    at /home/cody/.vscode-oss/extensions/ms-toolsai.jupyter-2022.7.1001890528/out/extension.node.js:24:230929 {
+  code: 'Unknown'
+}

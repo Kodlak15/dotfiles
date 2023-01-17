@@ -1,0 +1,13 @@
+2023/01/15-10:42:54.950 57b Reusing MANIFEST /home/cody/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/15-10:42:54.950 57b Recovering log #14
+2023/01/15-10:42:54.950 57b Reusing old log /home/cody/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.facebook.com_0.indexeddb.leveldb/000014.log 
+2023/01/15-10:42:56.269 559 Level-0 table #19: started
+2023/01/15-10:42:56.271 559 Level-0 table #19: 519 bytes OK
+2023/01/15-10:42:56.272 559 Delete type=0 #14
+2023/01/15-10:42:56.272 559 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 182 : 1
+2023/01/15-10:42:56.272 559 Compacting 1@0 + 1@1 files
+2023/01/15-10:42:56.273 559 Generated table #20@0: 7 keys, 447 bytes
+2023/01/15-10:42:56.273 559 Compacted 1@0 + 1@1 files => 447 bytes
+2023/01/15-10:42:56.274 559 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/01/15-10:42:56.274 559 Delete type=2 #19
+2023/01/15-10:42:56.274 559 Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 182 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
