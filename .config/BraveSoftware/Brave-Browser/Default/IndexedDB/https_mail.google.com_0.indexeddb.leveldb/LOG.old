@@ -1,6 +1,0 @@
-2023/01/12-09:38:58.028 5a3 Reusing MANIFEST /home/cody/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/01/12-09:38:58.029 5a3 Recovering log #3
-2023/01/12-09:38:58.039 5a3 Reusing old log /home/cody/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/000003.log 
-2023/01/12-09:39:04.006 57b Level-0 table #5: started
-2023/01/12-09:39:04.020 57b Level-0 table #5: 2004047 bytes OK
-2023/01/12-09:39:04.022 57b Delete type=0 #3

@@ -1,8 +1,0 @@
-[2022-09-05 15:44:03.261] [sharedprocess] [info] Starting worker process with pid 2762 (type: fileWatcher, window: 1).
-[2022-09-05 15:44:06.025] [sharedprocess] [info] Getting Manifest... ms-python.python
-[2022-09-05 15:44:07.836] [sharedprocess] [info] Installing extension: ms-python.python
-[2022-09-05 15:44:13.277] [sharedprocess] [info] Downloaded extension: ms-python.python /home/cody/.config/Code - OSS/CachedExtensionVSIXs/ms-python.python-2022.14.0
-[2022-09-05 15:44:14.081] [sharedprocess] [info] Extracted extension to /home/cody/.vscode-oss/extensions/.b889f758-a2a7-47aa-975a-010288a11939: ms-python.python
-[2022-09-05 15:44:14.087] [sharedprocess] [info] Renamed to /home/cody/.vscode-oss/extensions/ms-python.python-2022.14.0
-[2022-09-05 15:44:14.089] [sharedprocess] [info] Extracting completed. ms-python.python
-[2022-09-05 15:44:14.092] [sharedprocess] [info] Extension installed successfully: ms-python.python
