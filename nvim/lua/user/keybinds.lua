@@ -67,8 +67,8 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 --
 -- Comments --
 --
-vim.keymap.set('n', '<leader>,', '<cmd>set operatorfunc=v:lua.__toggle_contextual<CR>g@l')
-vim.keymap.set('x', '<leader>,', '<cmd>set operatorfunc=v:lua.__toggle_contextual<CR>g@l')
+vim.keymap.set("n", "<leader>,", "<cmd>set operatorfunc=v:lua.__toggle_contextual<CR>g@l")
+vim.keymap.set("x", "<leader>,", "<cmd>set operatorfunc=v:lua.__toggle_contextual<CR>g@l")
 
 --
 -- Nvim tree --
@@ -76,6 +76,13 @@ vim.keymap.set('x', '<leader>,', '<cmd>set operatorfunc=v:lua.__toggle_contextua
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 --
--- Buffers
+-- Buffer navigation --
 --
-keymap("n", "<leader>c", "b#|bd#", opts)
+keymap("n", "<leader>c", "<cmd>Bdelete<CR>", opts)
+keymap("n", "<leader>nn", "<cmd>BufferLineCycleNext<CR>", opts)
+keymap("n", "<leader>bb", "<cmd>BufferLineCyclePrev<CR>", opts)
+
+--
+-- Formatting --
+--
+keymap("n", "<leader>f", ":Format<cr>", opts)
