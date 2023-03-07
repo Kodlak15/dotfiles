@@ -83,3 +83,8 @@ keymap("n", "<leader>bb", "<cmd>BufferLineCyclePrev<CR>", opts)
 -- Formatting --
 --
 keymap("n", "<leader>f", ":Format<cr>", opts)
+
+--
+-- Dashboard --
+--
+keymap("n", "<leader><leader>", ":Alpha<cr>", opts)

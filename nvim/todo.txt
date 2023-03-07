@@ -1,4 +1,6 @@
 Some of the following could use some work
-- Alpha (dashboard) does not start on launch 
+- Need to learn how to configure Alpha through seperate file 
+- Commenting is messed up with commenting style
+- Set up nvim-tree such that it does not open every time a new file is opened
+- Automatic indenting is not working as desired for some file types (ex: .css)
 - Optimize keybinds for various plugins
-- Optimize behavior of nvim-tree
