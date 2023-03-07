@@ -44,6 +44,12 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim"
     use "nvim-lua/popup.nvim"
     use "nvim-lua/plenary.nvim"
+    use "windwp/nvim-autopairs"
+    use "numToStr/Comment.nvim"
+    use 'kyazdani42/nvim-web-devicons'
+    use 'kyazdani42/nvim-tree.lua'
+    use "akinsho/bufferline.nvim"
+    use "moll/vim-bbye"
 
     -- Colorschemes
     use "folke/tokyonight.nvim"
@@ -67,6 +73,22 @@ return packer.startup(function(use)
     use "williamboman/mason-lspconfig.nvim"
     use "jose-elias-alvarez/null-ls.nvim"
     use "simrat39/rust-tools.nvim"
+
+    -- Telescope (Fuzzy finding)
+    use "nvim-telescope/telescope.nvim"
+    use 'nvim-telescope/telescope-media-files.nvim'
+
+    -- Treesitter (Syntax highlighting)
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate",
+    }
+    use "p00f/nvim-ts-rainbow"
+    use "nvim-treesitter/playground"
+    use "JoosepAlviste/nvim-ts-context-commentstring"
+
+    -- Git 
+    use "lewis6991/gitsigns.nvim"
 
     ----------------------------------------------------------------------
 
