@@ -1,0 +1,4 @@
+Some of the following could use some work
+- Alpha (dashboard) does not start on launch 
+- Optimize keybinds for various plugins
+- Optimize behavior of nvim-tree

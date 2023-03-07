@@ -20,22 +20,18 @@ vim.g.maplocalleader = " "
 -- Insert --
 --
 
-vim.keymap.set("i", "jk", "<Esc>")
-vim.keymap.set("i", "kj", "<Esc>")
+--vim.keymap.set("i", "jk", "<Esc>")
+keymap("i", "jk", "<Esc>", opts)
+--vim.keymap.set("i", "kj", "<Esc>")
+keymap("i", "kj", "<Esc>", opts)
 
 --
 -- Normal --
 --
 
--- Open file explorer
--- vim.keymap.set("n", "<leader><leader>", vim.cmd.Ex)
-
 -- Navigate buffers
-keymap("n", "<S-h>", ":bnext<CR>", opts)
-keymap("n", "<S-l>", ":bprevious<CR>", opts)
-
--- Open file tree
--- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+keymap("n", "<S-l>", ":bnext<CR>", opts)
+keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 --
 -- Visual --
@@ -67,8 +63,9 @@ keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 --
 -- Comments --
 --
-vim.keymap.set("n", "<leader>,", "<cmd>set operatorfunc=v:lua.__toggle_contextual<CR>g@l")
-vim.keymap.set("x", "<leader>,", "<cmd>set operatorfunc=v:lua.__toggle_contextual<CR>g@l")
+-- Need to learn how to set these
+-- keymap("n", "<leader><leader>", "gcc", opts)
+-- keymap("v", "<leader><leader>", "gc", opts)
 
 --
 -- Nvim tree --
