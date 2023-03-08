@@ -76,6 +76,7 @@ keymap("n", "<leader>bb", "<cmd>BufferLineCyclePrev<CR>", opts)
 
 -- Formatting --
 keymap("n", "<leader>f", ":Format<cr>", opts)
+-- keymap("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
 
 -- Dashboard --
 keymap("n", "<leader><leader>", ":Alpha<cr>", opts)
