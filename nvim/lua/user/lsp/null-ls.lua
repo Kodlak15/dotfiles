@@ -12,7 +12,7 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 null_ls.setup {
     debug = false,
     sources = {
-        formatting.eslint,
+        -- formatting.eslint,
         formatting.prettier.with {
             extra_filetypes = { "toml" },
             extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
