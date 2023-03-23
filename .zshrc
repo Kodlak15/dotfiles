@@ -33,6 +33,7 @@ alias hypr='start.sh'
 alias ff="(firefox &) && exit"
 alias bb="(brave &) && exit"
 alias spotify="(spotify &) && exit"
+alias discord="(discord &) && exit"
 alias e='nvim $(fzf)'
 alias o='cd $(find * -type d | fzf)'
 alias ls='exa -l'
