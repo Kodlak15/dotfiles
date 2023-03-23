@@ -37,7 +37,7 @@ alias e='nvim $(fzf)'
 alias o='cd $(find * -type d | fzf)'
 alias ls='exa -l'
 alias lsa='exa -la'
-alias sdn='shutdown now'
+alias v='nvim'
 
 # Git status info
 autoload -Uz vcs_info
