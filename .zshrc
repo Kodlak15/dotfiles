@@ -47,7 +47,9 @@ zstyle ':vcs_info:git:*' formats " %F{#ffff00} %b%f"
 setopt prompt_subst
 
 # Theme
-PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff}  %f'
+# PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff}  %f'
+# PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff} 󰄾 %f'
+PROMPT='%F{#0f94d2} % %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff} 󰄾 %f'
 
 # Set default text editor
 export VISUAL=nvim
