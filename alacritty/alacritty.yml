@@ -1,8 +1,7 @@
 window:
-  # Add padding to the interior of the terminal
   padding:
-    x: 15
-    y: 15
+    x: 5
+    y: 5
 
 font:
   size: 12.0

@@ -183,9 +183,10 @@ mode "resize" {
 
 # Remove title bar
 default_border pixel 0
+# default_border pixel 5
 
 # Add gaps
-default_border pixel 0
+# default_border pixel 0
 gaps inner 5px
 gaps outer 5px
 
