@@ -59,7 +59,8 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 --
 
 -- Telescope --
-keymap("n", "<leader>;", "<cmd>Telescope find_files<cr>", opts)
+-- keymap("n", "<leader>;", "<cmd>Telescope find_files<cr>", opts)
+keymap("n", "<leader><leader>", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Comments --
@@ -79,4 +80,5 @@ keymap("n", "<leader>f", ":Format<cr>", opts)
 -- keymap("n", "<leader>f", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
 
 -- Dashboard --
-keymap("n", "<leader><leader>", ":Alpha<cr>", opts)
+-- keymap("n", "<leader><leader>", ":Alpha<cr>", opts)
+keymap("n", "<leader>;", ":Alpha<cr>", opts)

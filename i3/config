@@ -199,6 +199,10 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 # Start wallpaper with feh
 exec_always $HOME/.fehbg &
 
+# This seems like an extremely jank way to do this
+# LightDM prevents .zprofile from being sourced on login
+exec_always source /home/cody/.zprofile
+
 bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
