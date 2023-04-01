@@ -17,10 +17,11 @@ zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u' 
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b' 
-# source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source $HOME/git/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ### Add PATH directories ###
 export PATH="$HOME/bin:$PATH"
@@ -49,7 +50,7 @@ setopt prompt_subst
 # Theme
 # PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff}  %f'
 # PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff} 󰄾 %f'
-PROMPT='%F{#0f94d2} % %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff} 󰄾 %f'
+PROMPT='%F{#dddaeb}  % %F{#dddaeb}%~${vcs_info_msg_0_}%f%F{#54487a} 󰄾 %f'
 
 # Set default text editor
 export VISUAL=nvim
