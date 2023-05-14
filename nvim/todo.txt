@@ -1,3 +1,0 @@
-Some of the following could use some work
-- Set up nvim-tree such that it does not open every time a new file is opened
-- Optimize keybinds for various plugins

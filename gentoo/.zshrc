@@ -25,6 +25,10 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ### Add PATH directories ###
 export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin/scripts/:$PATH"
+ 
+### Set GTK Theme ###
+export GTK_THEME=Adwaita:dark
 
 ### Aliases ###
 alias start='start_hyprland.sh'
@@ -50,7 +54,7 @@ setopt prompt_subst
 # Theme
 # PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff}  %f'
 # PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff} 󰄾 %f'
-PROMPT='%F{#dddaeb}  % %F{#dddaeb}%~${vcs_info_msg_0_}%f%F{#54487a} 󰄾 %f'
+PROMPT='%F{#dddaeb} % %F{#dddaeb}%~${vcs_info_msg_0_}%f%F{#54487a} 󰄾 %f'
 
 # Set default text editor
 export VISUAL=nvim

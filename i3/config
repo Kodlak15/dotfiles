@@ -199,7 +199,10 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh &
 # Start wallpaper with feh
 exec_always $HOME/.fehbg &
 
-# This seems like an extremely jank way to do this
+# Start redshift (protect your eyes)
+exec_always redshift -O 4000
+
+# This seems like an extremely jank way to do this, but it gets the job done
 # LightDM prevents .zprofile from being sourced on login
 exec_always source /home/cody/.zprofile
 

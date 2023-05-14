@@ -20,9 +20,9 @@ vim.g.maplocalleader = " "
 -- Insert mode
 --
 
---vim.keymap.set("i", "jk", "<Esc>")
+-- NOTE: having an issue with delay after exiting insert mode when final key
+-- pressed is either j or k
 keymap("i", "jk", "<Esc>", opts)
---vim.keymap.set("i", "kj", "<Esc>")
 keymap("i", "kj", "<Esc>", opts)
 
 --

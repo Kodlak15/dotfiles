@@ -17,19 +17,17 @@ zstyle ':completion:*' menu select
 zstyle ':completion::complete:*' gain-privileges 1
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u' 
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b' 
-# source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source $HOME/git/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ### Add PATH directories ###
 export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/bin/scripts:$PATH"
+
+### Set GTK Theme ###
+export GTK_THEME=Adwaita:dark
 
 ### Aliases ###
-alias start='start_hyprland.sh'
-alias setup='setup.sh'
-alias hypr='start.sh'
-
 alias ff="(firefox &) && exit"
 alias bb="(brave &) && exit"
 alias spotify="(spotify &) && exit"
@@ -39,6 +37,10 @@ alias o='cd $(find * -type d | fzf)'
 alias ls='exa -l'
 alias lsa='exa -la'
 alias v='nvim'
+alias gp="(gparted &) && exit"
+alias iommu='/home/cody/bin/scripts/iommu.sh'
+# alias watch_virtio='/home/cody/bin/scripts/watchvirtio.sh'
+# alias watch_vidmods='/home/cody/bin/scripts/watchvideomodules.sh'
 
 # Git status info
 autoload -Uz vcs_info
@@ -47,8 +49,6 @@ zstyle ':vcs_info:git:*' formats " %F{#ffff00} %b%f"
 setopt prompt_subst
 
 # Theme
-# PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff}  %f'
-# PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff} 󰄾 %f'
 PROMPT='%F{#0f94d2} % %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff} 󰄾 %f'
 
 # Set default text editor

@@ -1,0 +1,90 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  min-height: 16px;
+  margin-top: 2px;
+}
+
+window#waybar {
+  background: rgba(0, 0, 0, 0);
+  color: white;
+}
+
+tooltip {
+  background: rgba(43, 48, 59, 0.5);
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  background: transparent;
+  color: white;
+  border-bottom: 3px solid transparent;
+}
+
+#workspaces button.focused {
+  background: #64727d;
+  border-bottom: 3px solid white;
+}
+
+#mode,
+#clock,
+#battery {
+  padding: 0 10px;
+}
+
+#mode {
+  background: #64727d;
+  border-bottom: 3px solid white;
+}
+
+#clock {
+  font-weight: bold;
+  background-color: #4e476e;
+  border-radius: 100px;
+  padding: 5px 10px;
+  margin-right: 10px;
+}
+
+#window {
+  color: white;
+  font-weight: bold;
+  background-color: #4e476e;
+  border-radius: 100px;
+  padding: 5px 10px;
+}
+
+#disk {
+  color: white;
+  font-weight: bold;
+  background-color: #4e476e;
+  border-radius: 100px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+#custom-theme--default {
+  font-size: 20px;
+  color: #4e476e;
+  /* border: 5px solid white; */
+  /* border-radius: 100px; */
+  padding: 5px 5px;
+}
+
+#custom-theme--forest {
+  font-size: 20px;
+  color: green;
+  padding: 5px 5px;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: black;
+  }
+}
