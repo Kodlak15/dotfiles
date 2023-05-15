@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 1);
   color: white;
 }
 
@@ -45,7 +45,7 @@ tooltip label {
 
 #clock {
   font-weight: bold;
-  background-color: #4e476e;
+  /* background-color: #4e476e; */
   border-radius: 100px;
   padding: 5px 10px;
   margin-right: 10px;
@@ -54,7 +54,7 @@ tooltip label {
 #window {
   color: white;
   font-weight: bold;
-  background-color: #4e476e;
+  /* background-color: #4e476e; */
   border-radius: 100px;
   padding: 5px 10px;
 }
@@ -62,7 +62,7 @@ tooltip label {
 #disk {
   color: white;
   font-weight: bold;
-  background-color: #4e476e;
+  /* background-color: #4e476e; */
   border-radius: 100px;
   padding: 5px 10px;
   margin-left: 10px;
@@ -73,13 +73,13 @@ tooltip label {
   color: #4e476e;
   /* border: 5px solid white; */
   /* border-radius: 100px; */
-  padding: 5px 5px;
+  padding: 2px 2px;
 }
 
 #custom-theme--forest {
   font-size: 20px;
   color: green;
-  padding: 5px 5px;
+  padding: 2px 2px;
 }
 
 @keyframes blink {

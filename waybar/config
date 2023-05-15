@@ -24,10 +24,10 @@
     },
     "custom/theme--default": {
         "format": "{icon} ",
-        "on-click": "/home/cody/bin/scripts/swww_init.sh",
+        "on-click": "/home/cody/bin/scripts/set_theme.sh",
     },
     "custom/theme--forest": {
         "format": "{icon} ",
-        "on-click": "/home/cody/bin/scripts/swww_init.sh -t forest",
+        "on-click": "/home/cody/bin/scripts/set_theme.sh -t forest",
     },
 }
