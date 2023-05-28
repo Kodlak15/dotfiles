@@ -1,3 +1,6 @@
+import:
+ - ~/.config/alacritty/themes/themes/gotham.yaml
+
 window:
   padding:
     x: 5
