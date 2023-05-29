@@ -1,0 +1,23 @@
+warning: queue 0x7f2f18000ca0 destroyed while proxies still attached:
+  wl_data_offer@4278190080 still attached
+  zwp_primary_selection_device_v1@30 still attached
+  zwp_primary_selection_device_manager_v1@24 still attached
+  wl_data_device@29 still attached
+  wl_seat@27 still attached
+  wl_data_device_manager@26 still attached
+  wl_registry@23 still attached
+warning: queue 0x564cffde1100 destroyed while proxies still attached:
+  xdg_wm_base@35 still attached
+  wl_output@15 still attached
+  wp_fractional_scale_manager_v1@14 still attached
+  xdg_activation_v1@13 still attached
+  zwp_text_input_manager_v3@12 still attached
+  zwp_relative_pointer_manager_v1@11 still attached
+  zwp_pointer_constraints_v1@10 still attached
+  zxdg_decoration_manager_v1@9 still attached
+  wl_seat@8 still attached
+  wp_viewporter@7 still attached
+  wl_subcompositor@6 still attached
+  wl_compositor@5 still attached
+  wl_shm@4 still attached
+  wl_registry@2 still attached

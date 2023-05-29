@@ -25,6 +25,9 @@
         :halign "center"
         (hyprland)
         (firefox)
+        (alacritty)
+        (discord)
+        (spotify)
     )
 )
 
@@ -90,24 +93,60 @@
 (defwidget hyprland []
     (eventbox
         ;; :onclick "bash ~/.config/eww/scripts/rofi/open_app_menu.sh"
-        :onclick "bash ~/.config/eww/scripts/themes/click_to_switch.sh"
+        :onclick "bash ~/.config/eww/scripts/themes/click_to_switch.sh 2> ./logs/click_to_switch"
         (image
             :class "hypr-logo"
             :path "./images/icon.ico"
-            :image-width 30
-            :image-height 30
+            :image-width 25
+            :image-height 25
         )
     )
 )
 
 (defwidget firefox []
    (eventbox
-       :onclick "bash firefox"
+       :onclick "bash firefox 2> ./logs/firefox"
        (image
            :class "firefox-logo"
            :path "./images/firefox.svg"
-           :image-width 30
-           :image-height 30
+           :image-width 25
+           :image-height 25
+       )
+   )
+)
+
+(defwidget alacritty []
+   (eventbox
+       :onclick "/usr/bin/alacritty 2> ./logs/alacritty.log"
+       (image
+           :class "alacritty-logo"
+           :path "./images/alacritty.svg"
+           :image-width 25
+           :image-height 25
+       )
+   )
+)
+
+(defwidget discord []
+   (eventbox
+       :onclick "/usr/bin/discord 2> ./logs/discord.log"
+       (image
+           :class "discord-logo"
+           :path "./images/discord.png"
+           :image-width 25
+           :image-height 25
+       )
+   )
+)
+
+(defwidget spotify []
+   (eventbox
+       :onclick "/usr/bin/spotify 2> ./logs/spotify.log"
+       (image
+           :class "spotify-logo"
+           :path "./images/spotify.png"
+           :image-width 25
+           :image-height 25
        )
    )
 )
@@ -161,7 +200,7 @@
         :x "0%"
         :y "0%"
         :width "100%"
-        :height "3%"
+        :height "5%"
         :anchor "top center"
     )
     :stacking "bg"
