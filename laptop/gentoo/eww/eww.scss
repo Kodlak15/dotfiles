@@ -7,96 +7,119 @@
     all: unset;
 }
 
-// Left container
-
 .bar {
     font-size: 16px;
-    background: rgba($color: #000000, $alpha: 1.0);
-    margin: 0.75em;
+    background: rgba($color: mountains.$accent-dark, $alpha: 1.0);
+    margin: 1.0em;
     font-family: Fira Code Nerd Font;
 }
 
+// Left container
+
 .workspaces {
     color: white;
+    // background-color: black;
+    // border: 0.12em solid mountains.$accent;
+    // border-radius: 100em;
+}
+
+.workspaces > *:hover {
+    // background-color: #444444;
+    border-bottom: 0.2em solid mountains.$accent;
 }
 
 .workspace-entry {
-    background-color: #222222;
-    border: 0.12em solid white;
-    border-radius: 500em;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 5px;
+    // background-color: #222222;
+    // border: 0.12em solid white;
+    border-radius: 100em;
+    // padding-left: 5px;
+    // padding-right: 5px;
+    margin: 10px;
+}
+
+.workspace-entry:hover {
+    border-bottom: 0.2em solid mountains.$accent;
 }
 
 .occupied {
     color: white;
-    border: 0.12em solid space.$accent-dark;
+    // border: 0.12em solid mountains.$accent-dark;
 }
 
 .current {
-    color: space.$alert;
+    color: mountains.$alert;
 }
 
 // Center container
 
 .center-container {
+    // background-color: black;
+    // border: 0.12em solid mountains.$accent;
     border-radius: 100em;
+}
+
+.center-container > *:hover {
+    // background-color: #444444;
+    border-bottom: 0.2em solid mountains.$accent;
 }
 
 .hypr-logo,
 .firefox-logo,
 .alacritty-logo,
 .discord-logo,
-.spotify-logo {
-    background-color: #222222;
-    border-radius: 100em;
-    border: 0.12em solid white;
+.spotify-logo,
+.neovim-logo {
+    // background-color: #222222;
+    // border-radius: 100em;
+    // border: 0.12em solid white;
     padding: 10px;
     margin-left: 2.5px;
     margin-right: 2.5px;
 }
 
 .hypr-logo {
-    padding: 10px;
+    // padding: 10px;
 }
 
 .firefox-logo {
     border-radius: 100em;
-    padding: 10px;
-    // padding-left: 10px;
-    // padding-right: 10px;
+    // padding: 10px;
 }
 
 .alacritty-logo {
     border-radius: 100em;
-    padding: 10px;
+    // padding: 10px;
 }
 
 .alacritty-logo:hover {
     background-color: #444444;
+    border-bottom: 1.2em solid white;
 }
 
 // Right container
 
 .right-container {
+    // background-color: black;
+    // border: 0.12em solid mountains.$accent;
     border-radius: 100em;
+}
+
+.time,
+.battery {
+    margin: 10px;
 }
 
 .time {
-    background-color: #222222;
-    border: 0.12em solid white;
-    border-radius: 100em;
+    // background-color: #222222;
+    // border: 0.12em solid white;
+    // border-radius: 100em;
     padding-left: 10px;
-    padding-right: 10px;
-    margin-right: 5px;
 }
 
 .battery {
-    background-color: #222222;
-    border: 0.12em solid white;
+    // background-color: #222222;
+    // border: 0.12em solid white;
     border-radius: 100em;
-    padding-left: 10px;
 }
 
 .battery.charging {

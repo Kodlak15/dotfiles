@@ -28,6 +28,7 @@
         (alacritty)
         (discord)
         (spotify)
+        (neovim)
     )
 )
 
@@ -97,8 +98,8 @@
         (image
             :class "hypr-logo"
             :path "./images/icon.ico"
-            :image-width 25
-            :image-height 25
+            :image-width 30
+            :image-height 30
         )
     )
 )
@@ -109,32 +110,33 @@
        (image
            :class "firefox-logo"
            :path "./images/firefox.svg"
-           :image-width 25
-           :image-height 25
+           :image-width 30
+           :image-height 30
        )
    )
 )
 
 (defwidget alacritty []
-   (eventbox
-       :onclick "/usr/bin/alacritty 2> ./logs/alacritty.log"
-       (image
-           :class "alacritty-logo"
-           :path "./images/alacritty.svg"
-           :image-width 25
-           :image-height 25
-       )
-   )
+    ;; :active true
+    (eventbox
+        :onclick "/usr/bin/alacritty 2> ./logs/alacritty.log"
+        (image
+            :class "alacritty-logo"
+            :path "./images/alacritty.svg"
+            :image-width 30
+            :image-height 30
+        )
+    )
 )
 
 (defwidget discord []
    (eventbox
-       :onclick "/usr/bin/discord 2> ./logs/discord.log"
+       :onclick "/home/cody/bin/discord.sh 2> ./logs/discord.log"
        (image
            :class "discord-logo"
            :path "./images/discord.png"
-           :image-width 25
-           :image-height 25
+           :image-width 30
+           :image-height 30
        )
    )
 )
@@ -145,8 +147,20 @@
        (image
            :class "spotify-logo"
            :path "./images/spotify.png"
-           :image-width 25
-           :image-height 25
+           :image-width 30
+           :image-height 30
+       )
+   )
+)
+
+(defwidget neovim []
+   (eventbox
+       :onclick "/usr/bin/alacritty -e $SHELL -c nvim 2> ./logs/nvim"
+       (image
+           :class "neovim-logo"
+           :path "./images/neovim.png"
+           :image-width 30
+           :image-height 30
        )
    )
 )

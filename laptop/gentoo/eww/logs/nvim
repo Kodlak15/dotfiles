@@ -1,4 +1,4 @@
-warning: queue 0x7f38a4000ca0 destroyed while proxies still attached:
+warning: queue 0x7fb9b0000ca0 destroyed while proxies still attached:
   zwp_primary_selection_offer_v1@4278190084 still attached
   wl_data_offer@4278190081 still attached
   zwp_primary_selection_device_v1@26 still attached
@@ -7,7 +7,7 @@ warning: queue 0x7f38a4000ca0 destroyed while proxies still attached:
   wl_seat@24 still attached
   wl_data_device_manager@23 still attached
   wl_registry@21 still attached
-warning: queue 0x56241d6b1410 destroyed while proxies still attached:
+warning: queue 0x56102d595f70 destroyed while proxies still attached:
   wl_shm_pool@30 still attached
   xdg_wm_base@35 still attached
   wl_output@15 still attached
