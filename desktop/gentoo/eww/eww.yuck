@@ -1,0 +1,223 @@
+(defwidget bar []
+    (box 
+        :class "bar"
+        :orientation "h"
+        (left_container)
+        (center_container)
+        (right_container)
+    )
+)
+
+(defwidget right_container []
+    (box
+        :class "right-container"
+        :space-evenly false
+        :halign "end"
+        (time)
+        (battery)
+    )
+)
+
+(defwidget center_container []
+    (box
+        :class "center-container"
+        :space-evenly false
+        :halign "center"
+        (firefox)
+        (alacritty)
+        (discord)
+        (spotify)
+        (neovim)
+    )
+)
+
+(defwidget left_container [] 
+    (box
+        :class "left-container"
+        :space-evenly false
+        (hyprland)
+        (workspaces)
+    )
+)
+
+;; Utils
+
+(defwidget metric [label value onchange]
+    (box 
+        :orientation "h"
+        :class "metric"
+        :space-evenly false
+        (box :class "label" label)
+        (scale 
+            :min 0
+            :max 101
+            :active {onchange != ""}
+            :value value
+            :onchange onchange
+        )
+    )
+)
+
+;; Left container items
+
+(deflisten workspaces :initial "[]" "bash ~/.config/eww/scripts/get_workspaces.sh")
+(deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/get_active_workspace.sh")
+(defwidget workspaces []
+    (eventbox 
+        :onscroll "bash ~/.config/eww/scripts/change_active_workspace.sh {} ${current_workspace}" :class "workspaces"
+        (box 
+            :space-evenly true
+            (label 
+                :text "${workspaces}${current_workspace}" 
+                :visible false)
+            (for workspace in workspaces
+                (eventbox :onclick "hyprctl dispatch workspace ${workspace.id}"
+                    (box :class "workspace-entry ${workspace.id == current_workspace ? "current" : ""} ${workspace.windows > 0 ? "occupied" : "empty"}"
+                        (label :text "${workspace.id}")
+                    )
+                )
+            )
+        )
+    )
+)
+
+
+(deflisten window :initial "..." "sh ~/.config/eww/scripts/get_window_title.sh")
+(defwidget window_w []
+    (box
+        (label :text "${window}")
+    )
+)
+
+;; Center container items
+
+(defwidget hyprland []
+    (eventbox
+        ;; :onclick "bash ~/.config/eww/scripts/rofi/open_app_menu.sh"
+        :onclick "bash ~/.config/eww/scripts/themes/click_to_switch.sh 2> ./logs/click_to_switch"
+        (image
+            :class "hypr-logo"
+            :path "./images/icon.ico"
+            :image-width 30
+            :image-height 30
+        )
+    )
+)
+
+(defwidget firefox []
+   (eventbox
+       :onclick "bash firefox 2> ./logs/firefox"
+       (image
+           :class "firefox-logo"
+           :path "./images/firefox.svg"
+           :image-width 30
+           :image-height 30
+       )
+   )
+)
+
+(defwidget alacritty []
+    ;; :active true
+    (eventbox
+        :onclick "/usr/bin/alacritty --working-directory ~ 2> ./logs/alacritty.log"
+        (image
+            :class "alacritty-logo"
+            :path "./images/alacritty.svg"
+            :image-width 30
+            :image-height 30
+        )
+    )
+)
+
+(defwidget discord []
+   (eventbox
+       :onclick "$SHELL /home/cody/bin/discord.sh"
+       (image
+           :class "discord-logo"
+           :path "./images/discord.png"
+           :image-width 30
+           :image-height 30
+       )
+   )
+)
+
+(defwidget spotify []
+   (eventbox
+       :onclick "/usr/bin/spotify 2> ./logs/spotify.log"
+       (image
+           :class "spotify-logo"
+           :path "./images/spotify.png"
+           :image-width 30
+           :image-height 30
+       )
+   )
+)
+
+(defwidget neovim []
+   (eventbox
+       :onclick "/usr/bin/alacritty -e $SHELL -c 'nvim && exec $SHELL' & 2> ./logs/nvim"
+       (image
+           :class "neovim-logo"
+           :path "./images/neovim.png"
+           :image-width 30
+           :image-height 30
+       )
+   )
+)
+
+;; Right container items
+
+(defpoll show_time 
+    :interval "10s"
+    :class "time"
+    "date '+%H:%M %b %d, %Y'"
+)
+
+(defwidget time []
+    (box
+        :space-evenly false
+        :halign "center"
+        :class "time"
+        show_time
+    )
+)
+
+(defpoll battery_remaining 
+    :interval "10s"
+    "acpi -b | grep -Po '\d+(?=%)"
+)
+
+(defpoll battery_charging
+    :interval "10s"
+    "./scripts/battery/is_charging.sh"
+)
+
+(defwidget battery []
+    (box
+        :class "battery"
+        (metric 
+            :orientation "horizontal"
+            :halign "center"
+            :label "  "
+            :value 100
+            :onchange "acpi -b"
+        )
+    )
+)
+
+;; Windows
+
+(defwindow bar
+    :monitor 2
+    :windowtype "dock"
+    :geometry (geometry 
+        :x "0%"
+        :y "0%"
+        :width "100%"
+        :height "5%"
+        :anchor "top center"
+    )
+    :stacking "bg"
+    :exclusive true
+    (bar)
+)

@@ -23,7 +23,6 @@
         :class "center-container"
         :space-evenly false
         :halign "center"
-        (hyprland)
         (firefox)
         (alacritty)
         (discord)
@@ -36,6 +35,7 @@
     (box
         :class "left-container"
         :space-evenly false
+        (hyprland)
         (workspaces)
     )
 )
@@ -119,7 +119,7 @@
 (defwidget alacritty []
     ;; :active true
     (eventbox
-        :onclick "/usr/bin/alacritty 2> ./logs/alacritty.log"
+        :onclick "/usr/bin/alacritty --working-directory ~ 2> ./logs/alacritty.log"
         (image
             :class "alacritty-logo"
             :path "./images/alacritty.svg"
@@ -131,7 +131,7 @@
 
 (defwidget discord []
    (eventbox
-       :onclick "/home/cody/bin/discord.sh 2> ./logs/discord.log"
+       :onclick "$SHELL /home/cody/bin/discord.sh"
        (image
            :class "discord-logo"
            :path "./images/discord.png"
@@ -155,7 +155,7 @@
 
 (defwidget neovim []
    (eventbox
-       :onclick "/usr/bin/alacritty -e $SHELL -c nvim 2> ./logs/nvim"
+       :onclick "/usr/bin/alacritty -e $SHELL -c 'nvim && exec $SHELL' & 2> ./logs/nvim"
        (image
            :class "neovim-logo"
            :path "./images/neovim.png"
