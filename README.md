@@ -1,1 +1,1 @@
-This repository contains some of my preferred software configurations on Linux.
+This repository contains configurations that I have used for my various system setups. 
