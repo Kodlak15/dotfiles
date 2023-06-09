@@ -2,8 +2,9 @@
 
 # Automate the creation of symbolic links for each configuration
 
+USERNAME=$(whoami)
+
 function setup () {
-    USERNAME=$(whoami)
     echo "Configuring desktop for Gentoo..."
     ln -sf /home/$USERNAME/dotfiles/laptop/gentoo/alacritty /home/$USERNAME/.config/
     ln -sf /home/$USERNAME/dotfiles/laptop/gentoo/nvim /home/$USERNAME/.config/
@@ -15,7 +16,6 @@ function setup () {
 }
 
 function setup_no_replace () {
-    USERNAME=$(whoami)
     echo "Configuring desktop for Gentoo..."
     ln -s /home/$USERNAME/dotfiles/laptop/gentoo/alacritty /home/$USERNAME/.config/
     ln -s /home/$USERNAME/dotfiles/laptop/gentoo/nvim /home/$USERNAME/.config/

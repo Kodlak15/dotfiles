@@ -14,7 +14,6 @@
         :space-evenly false
         :halign "end"
         (time)
-        (battery)
     )
 )
 
@@ -179,29 +178,6 @@
         :halign "center"
         :class "time"
         show_time
-    )
-)
-
-(defpoll battery_remaining 
-    :interval "10s"
-    "acpi -b | grep -Po '\d+(?=%)"
-)
-
-(defpoll battery_charging
-    :interval "10s"
-    "./scripts/battery/is_charging.sh"
-)
-
-(defwidget battery []
-    (box
-        :class "battery"
-        (metric 
-            :orientation "horizontal"
-            :halign "center"
-            :label "  "
-            :value 100
-            :onchange "acpi -b"
-        )
     )
 )
 

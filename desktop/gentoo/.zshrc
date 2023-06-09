@@ -37,8 +37,10 @@ alias start='start_hyprland.sh'
 alias setup='setup.sh'
 alias hypr='start.sh'
 
+alias firefox="(firefox &) && exit"
 alias ff="(firefox &) && exit"
-alias bb="(brave &) && exit"
+alias brave="(brave-bin --enable-features=UseOzonePlatform --ozone-platform=wayland &) && exit"
+alias bb="(brave-bin --enable-features=UseOzonePlatform --ozone-platform=wayland &) && exit"
 # alias spotify="(spotify &) && exit"
 # alias discord="(discord &) && exit"
 alias e='nvim $(fzf)'
