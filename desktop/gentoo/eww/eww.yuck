@@ -22,7 +22,8 @@
         :class "center-container"
         :space-evenly false
         :halign "center"
-        (firefox)
+        ;; (firefox)
+        (librewolf)
         (alacritty)
         (discord)
         (spotify)
@@ -97,8 +98,8 @@
         (image
             :class "hypr-logo"
             :path "./images/icon.ico"
-            :image-width 30
-            :image-height 30
+            :image-width 25
+            :image-height 25
         )
     )
 )
@@ -109,8 +110,20 @@
        (image
            :class "firefox-logo"
            :path "./images/firefox.svg"
-           :image-width 30
-           :image-height 30
+           :image-width 25
+           :image-height 25
+       )
+   )
+)
+
+(defwidget librewolf []
+   (eventbox
+       :onclick "bash librewolf 2> ./logs/librewolf"
+       (image
+           :class "firefox-logo"
+           :path "./images/librewolf.svg"
+           :image-width 25
+           :image-height 25
        )
    )
 )
@@ -122,8 +135,8 @@
         (image
             :class "alacritty-logo"
             :path "./images/alacritty.svg"
-            :image-width 30
-            :image-height 30
+            :image-width 25
+            :image-height 25
         )
     )
 )
@@ -134,8 +147,8 @@
        (image
            :class "discord-logo"
            :path "./images/discord.png"
-           :image-width 30
-           :image-height 30
+           :image-width 25
+           :image-height 25
        )
    )
 )
@@ -146,8 +159,8 @@
        (image
            :class "spotify-logo"
            :path "./images/spotify.png"
-           :image-width 30
-           :image-height 30
+           :image-width 25
+           :image-height 25
        )
    )
 )
@@ -158,8 +171,8 @@
        (image
            :class "neovim-logo"
            :path "./images/neovim.png"
-           :image-width 30
-           :image-height 30
+           :image-width 25
+           :image-height 25
        )
    )
 )
@@ -190,7 +203,7 @@
         :x "0%"
         :y "0%"
         :width "100%"
-        :height "5%"
+        :height "2%"
         :anchor "top center"
     )
     :stacking "bg"
