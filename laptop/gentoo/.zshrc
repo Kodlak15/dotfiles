@@ -18,10 +18,6 @@ zstyle ':completion::complete:*' gain-privileges 1
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u' 
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b' 
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
-# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source $HOME/git/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/repos/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ### Add PATH directories ###
@@ -39,8 +35,7 @@ alias hypr='start.sh'
 
 alias ff="(firefox &) && exit"
 alias bb="(brave &) && exit"
-# alias spotify="(spotify &) && exit"
-# alias discord="(discord &) && exit"
+alias lbw="(librewolf &) && exit"
 alias e='nvim $(fzf)'
 alias o='cd $(find * -type d | fzf)'
 alias ls='exa -l'
