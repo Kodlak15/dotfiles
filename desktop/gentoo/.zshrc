@@ -41,6 +41,8 @@ alias firefox="(firefox &) && exit"
 alias ff="(firefox &) && exit"
 alias brave="(brave-bin --enable-features=UseOzonePlatform --ozone-platform=wayland &) && exit"
 alias bb="(brave-bin --enable-features=UseOzonePlatform --ozone-platform=wayland &) && exit"
+alias librewolf="(librewolf &) && exit"
+alias lbw="(librewolf &) && exit"
 # alias spotify="(spotify &) && exit"
 # alias discord="(discord &) && exit"
 alias e='nvim $(fzf)'
