@@ -10,7 +10,7 @@
 
 .bar {
     font-size: 16px;
-    background: rgba($color: space2.$accent-dark, $alpha: 1.0);
+    background: rgba($color: space.$accent-dark, $alpha: 1.0);
     font-family: Fira Code Nerd Font;
 }
 
@@ -25,7 +25,7 @@
 
 .workspaces > *:hover {
     // background-color: #444444;
-    border-bottom: 0.2em solid space2.$accent;
+    border-bottom: 0.2em solid space.$accent;
 }
 
 .workspace-entry {
@@ -39,7 +39,7 @@
 }
 
 .workspace-entry:hover {
-    border-bottom: 0.2em solid space2.$accent;
+    border-bottom: 0.2em solid space.$accent;
 }
 
 .occupied {
@@ -48,7 +48,7 @@
 }
 
 .current {
-    color: space2.$alert;
+    color: space.$alert;
 }
 
 // Center container
@@ -61,18 +61,19 @@
 
 .center-container > *:hover {
     // background-color: #444444;
-    border-bottom: 0.2em solid space2.$accent;
+    border-bottom: 0.2em solid space.$accent;
 }
 
-.hypr-logo,
+.hypr-logo {
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
 .firefox-logo,
 .alacritty-logo,
 .discord-logo,
 .spotify-logo,
 .neovim-logo {
-    // background-color: #222222;
-    // border-radius: 100em;
-    // border: 0.12em solid white;
     padding: 10px;
     margin-left: 2.5px;
     margin-right: 2.5px;

@@ -29,6 +29,7 @@
         ;; (discord)
         ;; (spotify)
         (neovim)
+        (virt-manager)
     )
 )
 
@@ -65,7 +66,8 @@
 (deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/get_active_workspace.sh")
 (defwidget workspaces []
     (eventbox 
-        :onscroll "bash ~/.config/eww/scripts/change_active_workspace.sh {} ${current_workspace}" :class "workspaces"
+        :onscroll "bash ~/.config/eww/scripts/change_active_workspace.sh {} ${current_workspace}" 
+        :class "workspaces"
         (box 
             :space-evenly true
             (label 
@@ -123,6 +125,18 @@
        (image
            :class "firefox-logo"
            :path "./images/librewolf.svg"
+           :image-width 25
+           :image-height 25
+       )
+   )
+)
+
+(defwidget virt-manager []
+   (eventbox
+       :onclick "/usr/bin/virt-manager"
+       (image
+           :class "firefox-logo"
+           :path "./images/virt-manager.png"
            :image-width 25
            :image-height 25
        )
