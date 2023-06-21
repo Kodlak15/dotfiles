@@ -22,12 +22,12 @@
         :class "center-container"
         :space-evenly false
         :halign "center"
-        ;; (firefox)
         (librewolf)
         (alacritty)
-        (discord)
-        (spotify)
+        ;; (discord)
+        ;; (spotify)
         (neovim)
+        (virt-manager)
     )
 )
 
@@ -122,6 +122,18 @@
        (image
            :class "firefox-logo"
            :path "./images/librewolf.svg"
+           :image-width 25
+           :image-height 25
+       )
+   )
+)
+
+(defwidget virt-manager []
+   (eventbox
+       :onclick "/usr/bin/virt-manager"
+       (image
+           :class "firefox-logo"
+           :path "./images/virt-manager.png"
            :image-width 25
            :image-height 25
        )
