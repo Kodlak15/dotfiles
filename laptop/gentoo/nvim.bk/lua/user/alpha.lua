@@ -34,3 +34,5 @@ dashboard.section.buttons.opts.hl = "Keyword"
 
 dashboard.opts.opts.noautocmd = true
 alpha.setup(dashboard.opts)
+
+-- vim.cmd "Alpha"
