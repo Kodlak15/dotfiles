@@ -17,7 +17,7 @@ null_ls.setup {
             extra_filetypes = { "toml" },
             extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
         },
-        formatting.black.with { extra_args = { "--fast" } },
+        -- formatting.black.with { extra_args = { "--fast" } },
         formatting.stylua,
         formatting.yamlfmt.lua,
         formatting.json_tool,
