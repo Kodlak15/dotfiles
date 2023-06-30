@@ -43,8 +43,6 @@ alias brave="(brave-bin --enable-features=UseOzonePlatform --ozone-platform=wayl
 alias bb="(brave-bin --enable-features=UseOzonePlatform --ozone-platform=wayland &) && exit"
 alias librewolf="(librewolf &) && exit"
 alias lbw="(librewolf &) && exit"
-# alias spotify="(spotify &) && exit"
-# alias discord="(discord &) && exit"
 alias e='nvim $(fzf)'
 alias o='cd $(find * -type d | fzf)'
 alias ls='exa -l'
@@ -58,9 +56,6 @@ zstyle ':vcs_info:git:*' formats " %F{#ffff00} %b%f"
 setopt prompt_subst
 
 # Theme
-# PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff}  %f'
-# PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff} 󰄾 %f'
-# PROMPT='%F{#dddaeb} % %F{#dddaeb}%~${vcs_info_msg_0_}%f%F{#54487a} 󰄾 %f'
 PROMPT='%F{#7da6ff} % %F{#ffffff}%~${vcs_info_msg_0_}%f%F{#ff9e64} 󰄾 %f'
 
 # Set default text editor
