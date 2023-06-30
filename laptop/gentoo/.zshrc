@@ -23,7 +23,8 @@ source ~/repos/zsh-autosuggestions/zsh-autosuggestions.zsh
 ### Add PATH directories ###
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/bin/scripts/:$PATH"
+export PATH="$HOME/bin/swww_manager/:$PATH"
+# export PATH="$HOME/bin/scripts/:$PATH"
  
 ### Set GTK Theme ###
 export GTK_THEME=Adwaita:dark
@@ -34,7 +35,8 @@ alias setup='setup.sh'
 alias hypr='start.sh'
 
 alias ff="(firefox &) && exit"
-alias bb="(brave &) && exit"
+alias brave="(brave-bin --enable-features=UseOzonePlatform --ozone-platform=wayland &) && exit"
+alias bb="(brave-bin --enable-features=UseOzonePlatform --ozone-platform=wayland &) && exit"
 alias lbw="(librewolf &) && exit"
 alias e='nvim $(fzf)'
 alias o='cd $(find * -type d | fzf)'
@@ -49,10 +51,8 @@ zstyle ':vcs_info:git:*' formats " %F{#ffff00} %b%f"
 setopt prompt_subst
 
 # Theme
-# PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff}  %f'
-# PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff} 󰄾 %f'
-# PROMPT='%F{#dddaeb} % %F{#dddaeb}%~${vcs_info_msg_0_}%f%F{#54487a} 󰄾 %f'
-PROMPT='%F{#00ffff} % %F{#ffffff}%~${vcs_info_msg_0_}%f%F{#00ffff} 󰄾 %f'
+# PROMPT='%F{#00ffff} % %F{#ffffff}%~${vcs_info_msg_0_}%f%F{#00ffff} 󰄾 %f'
+PROMPT='%F{#0db9d7} % %F{#ffffff}%~${vcs_info_msg_0_}%f%F{#ff9e64} 󰄾 %f'
 
 # Set default text editor
 export VISUAL=nvim
