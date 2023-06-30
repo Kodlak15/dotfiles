@@ -61,7 +61,7 @@ setopt prompt_subst
 # PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff}  %f'
 # PROMPT=' %F{#fdfdfd}%~${vcs_info_msg_0_}%f%F{#00aaff} 󰄾 %f'
 # PROMPT='%F{#dddaeb} % %F{#dddaeb}%~${vcs_info_msg_0_}%f%F{#54487a} 󰄾 %f'
-PROMPT='%F{#00ffff} % %F{#ffffff}%~${vcs_info_msg_0_}%f%F{#00ffff} 󰄾 %f'
+PROMPT='%F{#7da6ff} % %F{#ffffff}%~${vcs_info_msg_0_}%f%F{#ff9e64} 󰄾 %f'
 
 # Set default text editor
 export VISUAL=nvim
