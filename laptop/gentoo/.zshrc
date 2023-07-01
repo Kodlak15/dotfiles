@@ -52,7 +52,7 @@ setopt prompt_subst
 
 # Theme
 # PROMPT='%F{#00ffff} % %F{#ffffff}%~${vcs_info_msg_0_}%f%F{#00ffff} 󰄾 %f'
-PROMPT='%F{#7da6ff} % %F{#ffffff}%~${vcs_info_msg_0_}%f%F{#ff9e64} 󰄾 %f'
+PROMPT='%F{#7aa2f7} % %F{#ffffff}%~${vcs_info_msg_0_}%f%F{#f7768e} 󰄾 %f'
 
 # Set default text editor
 export VISUAL=nvim
