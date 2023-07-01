@@ -23,10 +23,11 @@
         :class "center-container"
         :space-evenly false
         :halign "center"
-        (librewolf)
-        (alacritty)
-        (neovim)
-        (virt-manager)
+        (window_w)
+        ;; (librewolf)
+        ;; (alacritty)
+        ;; (neovim)
+        ;; (virt-manager)
     )
 )
 
@@ -82,14 +83,14 @@
 )
 
 
+;; Center container items
+
 (deflisten window :initial "..." "sh ~/.config/eww/scripts/get_window_title.sh")
 (defwidget window_w []
-    (box
-        (label :text "${window}")
-    )
+  (box
+    (label :text "${window}")
+  )
 )
-
-;; Center container items
 
 (defwidget hyprland []
     (eventbox

@@ -4,7 +4,10 @@
 @use '/home/cody/dotfiles/laptop/gentoo/eww/themes/space2.scss';
 @use '/home/cody/dotfiles/laptop/gentoo/eww/themes/ocean.scss';
 
+//
 // Theme colors (Tokyonight-Night)
+//
+
 // Default colors
 $background: #1a1b26;
 $foreground: #c0caf5;
@@ -29,9 +32,9 @@ $magenta-bright: #bb9af7;
 $cyan-bright: #7dcfff;
 $white-bright: #c0caf5;
 
-// indexed_colors:
-//   - { index: 16, color: #ff9e64' }
-//   - { index: 17, color: #db4b4b' }
+//
+//
+//
 
 * {
   all: unset;
@@ -47,23 +50,15 @@ $white-bright: #c0caf5;
 
 .workspaces {
   color: $white-bright;
-  // background-color: black;
-  // border: 0.12em solid space2.$accent;
-  // border-radius: 100em;
 }
 
 .workspaces > *:hover {
-  // background-color: #444444;
   border-bottom: 0.2em solid $magenta-bright;
 }
 
 .workspace-entry {
   color: $black-bright;
-  // background-color: #222222;
-  // border: 0.12em solid white;
   border-radius: 100em;
-  // padding-left: 5px;
-  // padding-right: 5px;
   margin: 5px;
 }
 
@@ -73,23 +68,19 @@ $white-bright: #c0caf5;
 
 .occupied {
   color: $white-bright;
-  // border: 0.12em solid space2.$accent-dark;
 }
 
 .current {
-  color: $magenta-bright;
+  color: $red-bright;
 }
 
 // Center container
 
 .center-container {
-  // background-color: black;
-  // border: 0.12em solid space2.$accent;
-  border-radius: 100em;
+  color: $red-bright;
 }
 
 .center-container > *:hover {
-  // background-color: #444444;
   border-bottom: 0.2em solid $yellow-bright;
 }
 
@@ -98,40 +89,9 @@ $white-bright: #c0caf5;
   padding-right: 5px;
 }
 
-.firefox-logo,
-.alacritty-logo,
-.discord-logo,
-.spotify-logo,
-.neovim-logo {
-  padding: 10px;
-  margin-left: 2.5px;
-  margin-right: 2.5px;
-}
-
-.hypr-logo {
-  // padding: 10px;
-}
-
-.firefox-logo {
-  border-radius: 100em;
-  // padding: 10px;
-}
-
-.alacritty-logo {
-  border-radius: 100em;
-  // padding: 10px;
-}
-
-.alacritty-logo:hover {
-  // background-color: #444444;
-  // border-bottom: 1.2em solid white;
-}
-
 // Right container
 
 .right-container {
-  // background-color: black;
-  // border: 0.12em solid space2.$accent;
   border-radius: 100em;
 }
 
@@ -141,10 +101,7 @@ $white-bright: #c0caf5;
 }
 
 .time {
-  // background-color: #222222;
-  // border: 0.12em solid white;
-  // border-radius: 100em;
-  color: $white-bright;
+  color: $blue-bright;
   padding-left: 10px;
 }
 
@@ -154,12 +111,9 @@ $white-bright: #c0caf5;
 }
 
 .battery {
-  // background-color: #222222;
-  // border: 0.12em solid white;
-  color: $white-bright;
-  border-radius: 100em;
+  color: $white;
 }
 
 .battery.charging {
-  color: $white-bright;
+  color: $green;
 }
