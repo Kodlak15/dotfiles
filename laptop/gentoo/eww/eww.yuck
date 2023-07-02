@@ -79,7 +79,6 @@
     )
 )
 
-
 ;; Center container items
 
 (deflisten window :initial "..." "sh ~/.config/eww/scripts/get_window_title.sh")
@@ -108,7 +107,7 @@
 (defpoll show_time 
     :interval "10s"
     :class "time"
-    "date '+%H:%M %b %d, %Y'"
+    "date '+%I:%M %p %b %d, %Y'"
 )
 
 (defwidget time []
