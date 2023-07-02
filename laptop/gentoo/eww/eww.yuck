@@ -24,10 +24,6 @@
         :space-evenly false
         :halign "center"
         (window_w)
-        ;; (librewolf)
-        ;; (alacritty)
-        ;; (neovim)
-        ;; (virt-manager)
     )
 )
 
@@ -88,6 +84,7 @@
 (deflisten window :initial "..." "sh ~/.config/eww/scripts/get_window_title.sh")
 (defwidget window_w []
   (box
+    :class "window_w"
     (label :text "${window}")
   )
 )
@@ -103,91 +100,6 @@
             :image-height 25
         )
     )
-)
-
-(defwidget firefox []
-   (eventbox
-       :onclick "bash firefox 2> ./logs/firefox"
-       (image
-           :class "firefox-logo"
-           :path "./images/firefox.svg"
-           :image-width 25
-           :image-height 25
-       )
-   )
-)
-
-(defwidget librewolf []
-   (eventbox
-       :onclick "bash librewolf 2> ./logs/librewolf"
-       (image
-           :class "firefox-logo"
-           :path "./images/librewolf.svg"
-           :image-width 25
-           :image-height 25
-       )
-   )
-)
-
-(defwidget virt-manager []
-   (eventbox
-       :onclick "/usr/bin/virt-manager"
-       (image
-           :class "firefox-logo"
-           :path "./images/virt-manager.png"
-           :image-width 25
-           :image-height 25
-       )
-   )
-)
-
-(defwidget alacritty []
-    ;; :active true
-    (eventbox
-        :onclick "/usr/bin/alacritty --working-directory ~ 2> ./logs/alacritty.log"
-        (image
-            :class "alacritty-logo"
-            :path "./images/alacritty.svg"
-            :image-width 25
-            :image-height 25
-        )
-    )
-)
-
-(defwidget discord []
-   (eventbox
-       :onclick "$SHELL /home/cody/bin/discord.sh"
-       (image
-           :class "discord-logo"
-           :path "./images/discord.png"
-           :image-width 25
-           :image-height 25
-       )
-   )
-)
-
-(defwidget spotify []
-   (eventbox
-       :onclick "/usr/bin/spotify 2> ./logs/spotify.log"
-       (image
-           :class "spotify-logo"
-           :path "./images/spotify.png"
-           :image-width 25
-           :image-height 25
-       )
-   )
-)
-
-(defwidget neovim []
-   (eventbox
-       :onclick "/usr/bin/alacritty -e $SHELL -c 'nvim && exec $SHELL' & 2> ./logs/nvim"
-       (image
-           :class "neovim-logo"
-           :path "./images/neovim.png"
-           :image-width 25
-           :image-height 25
-       )
-   )
 )
 
 ;; Right container items
