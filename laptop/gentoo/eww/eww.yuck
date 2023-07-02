@@ -63,6 +63,7 @@
         :onscroll "bash ~/.config/eww/scripts/change_active_workspace.sh {} ${current_workspace}" 
         :class "workspaces"
         (box 
+            :class "workspaces-container"
             :space-evenly true
             (label 
                 :text "${workspaces}${current_workspace}" 

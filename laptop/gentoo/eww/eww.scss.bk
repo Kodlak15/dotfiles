@@ -42,30 +42,18 @@ $white-bright: #c0caf5;
 
 .bar {
   font-size: 12px;
-  background: transparent;
+  background: rgba($color: $black, $alpha: 1);
   font-family: Fira Code Nerd Font;
-  margin-top: 10px;
 }
 
 // Left container
 
-.hypr-logo {
-  background: $black;
-  border: 1px solid $cyan-bright;
-  border-radius: 100em;
-  margin: 0 10px;
-  padding: 2px 10px;
-}
-
 .workspaces {
-  background: $black;
   color: $white-bright;
-  border: 1px solid $cyan;
-  border-radius: 100em;
 }
 
-.workspaces-container {
-  padding: 2px 10px;
+.workspaces > *:hover {
+  border-bottom: 0.2em solid $magenta-bright;
 }
 
 .workspace-entry {
@@ -88,15 +76,16 @@ $white-bright: #c0caf5;
 // Center container
 
 .center-container {
-  background: $black;
   color: $red-bright;
-  border: 1px solid $cyan;
-  border-radius: 100em;
-  padding: 2px 10px;
 }
 
 .center-container > *:hover {
   border-bottom: 0.2em solid $yellow-bright;
+}
+
+.hypr-logo {
+  padding-left: 10px;
+  padding-right: 5px;
 }
 
 // Right container
@@ -107,27 +96,21 @@ $white-bright: #c0caf5;
 
 .time,
 .battery {
-  margin-right: 10px;
+  margin: 10px;
 }
 
 .time {
-  background: $black;
   color: $blue-bright;
-  border: 1px solid $cyan;
-  border-radius: 100em;
-  padding: 2px 10px;
+  padding-left: 10px;
 }
 
 .battery_remaining {
   color: $white-bright;
+  padding-right: 10px;
 }
 
 .battery {
-  background: $black;
   color: $blue-bright;
-  border: 1px solid $cyan;
-  border-radius: 100em;
-  padding: 2px 10px;
 }
 
 .battery.charging {
