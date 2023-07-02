@@ -44,23 +44,23 @@ $white-bright: #c0caf5;
   font-size: 12px;
   background: transparent;
   font-family: Fira Code Nerd Font;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 // Left container
 
 .hypr-logo {
   background: $black;
-  border: 1px solid $cyan-bright;
+  border: 2px solid $cyan-bright;
   border-radius: 100em;
-  margin: 0 10px;
+  margin: 0 5px;
   padding: 2px 10px;
 }
 
 .workspaces {
   background: $black;
   color: $white-bright;
-  border: 1px solid $cyan;
+  border: 2px solid $cyan;
   border-radius: 100em;
 }
 
@@ -90,7 +90,7 @@ $white-bright: #c0caf5;
 .center-container {
   background: $black;
   color: $red-bright;
-  border: 1px solid $cyan;
+  border: 2px solid $cyan;
   border-radius: 100em;
   padding: 2px 10px;
 }
@@ -107,13 +107,13 @@ $white-bright: #c0caf5;
 
 .time,
 .battery {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .time {
   background: $black;
   color: $blue-bright;
-  border: 1px solid $cyan;
+  border: 2px solid $cyan;
   border-radius: 100em;
   padding: 2px 10px;
 }
@@ -125,7 +125,7 @@ $white-bright: #c0caf5;
 .battery {
   background: $black;
   color: $blue-bright;
-  border: 1px solid $cyan;
+  border: 2px solid $cyan;
   border-radius: 100em;
   padding: 2px 10px;
 }
