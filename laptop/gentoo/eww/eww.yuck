@@ -126,13 +126,13 @@
 )
 
 (defpoll battery_charging
-    :interval "10s"
+    :interval "3s"
     "./scripts/battery/is_charging.sh"
 )
 
 (defwidget battery []
     (box
-        :class "battery"
+        :class {battery_charging == "true" ? "battery charging" : "battery"}
         (metric 
             :orientation "horizontal"
             :halign "center"
