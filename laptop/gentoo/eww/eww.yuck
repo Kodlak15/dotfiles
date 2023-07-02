@@ -96,8 +96,8 @@
         (image
             :class "hypr-logo"
             :path "./images/icon.ico"
-            :image-width 25
-            :image-height 25
+            :image-width 20
+            :image-height 20
         )
     )
 )
