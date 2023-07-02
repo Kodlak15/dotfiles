@@ -85,7 +85,10 @@
 (defwidget window_w []
   (box
     :class "window_w"
-    (label :text "${window}")
+    (label 
+      :text "${window}"
+      :limit-width 60
+    )
   )
 )
 
