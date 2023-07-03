@@ -10,6 +10,7 @@ function setup () {
     ln -sf /home/$USERNAME/dotfiles/laptop/gentoo/nvim /home/$USERNAME/.config/
     ln -sf /home/$USERNAME/dotfiles/laptop/gentoo/eww /home/$USERNAME/.config/
     ln -sf /home/$USERNAME/dotfiles/laptop/gentoo/hypr /home/$USERNAME/.config/
+    ln -sf /home/$USERNAME/dotfiles/laptop/gentoo/rofi /home/$USERNAME/.config/
     ln -sf /home/$USERNAME/dotfiles/laptop/gentoo/.zshrc /home/$USERNAME/
     ln -sf /home/$USERNAME/dotfiles/laptop/gentoo/.zprofile /home/$USERNAME/
     echo "Successfully configured desktop for Gentoo!"
@@ -21,6 +22,7 @@ function setup_no_replace () {
     ln -s /home/$USERNAME/dotfiles/laptop/gentoo/nvim /home/$USERNAME/.config/
     ln -s /home/$USERNAME/dotfiles/laptop/gentoo/eww /home/$USERNAME/.config/
     ln -s /home/$USERNAME/dotfiles/laptop/gentoo/hypr /home/$USERNAME/.config/
+    ln -s /home/$USERNAME/dotfiles/laptop/gentoo/rofi /home/$USERNAME/.config/
     ln -s /home/$USERNAME/dotfiles/laptop/gentoo/.zshrc /home/$USERNAME/
     ln -s /home/$USERNAME/dotfiles/laptop/gentoo/.zprofile /home/$USERNAME/
     echo "Successfully configured desktop for Gentoo!"
