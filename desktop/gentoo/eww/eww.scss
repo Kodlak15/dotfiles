@@ -1,129 +1,142 @@
-@use '/home/cody/dotfiles/laptop/gentoo/eww/themes/mountains.scss';
-@use '/home/cody/dotfiles/laptop/gentoo/eww/themes/forest.scss';
-@use '/home/cody/dotfiles/laptop/gentoo/eww/themes/space.scss';
-@use '/home/cody/dotfiles/laptop/gentoo/eww/themes/space2.scss';
-@use '/home/cody/dotfiles/laptop/gentoo/eww/themes/ocean.scss';
+// Theme colors (Tokyonight-Night)
+
+// Default colors
+$background: #1a1b26;
+$foreground: #c0caf5;
+
+// Normal colors
+$black: #15161e;
+$red: #f7768e;
+$green: #9ece6a;
+$yellow: #e0af68;
+$blue: #7aa2f7;
+$magenta: #bb9af7;
+$cyan: #7dcfff;
+$white: #a9b1d6;
+
+// Bright colors
+$black-bright: #414868;
+$red-bright: #f7768e;
+$green-bright: #9ece6a;
+$yellow-bright: #e0af68;
+$blue-bright: #7aa2f7;
+$magenta-bright: #bb9af7;
+$cyan-bright: #7dcfff;
+$white-bright: #c0caf5;
 
 * {
   all: unset;
 }
 
 .bar {
-  font-size: 16px;
-  background: rgba($color: space.$accent-dark, $alpha: 1);
-  // margin: 1.0em;
+  font-size: 12px;
+  background: transparent;
   font-family: Fira Code Nerd Font;
+  margin-top: 5px;
 }
 
 // Left container
 
-.workspaces {
-  color: white;
-  // background-color: black;
-  // border: 0.12em solid space2.$accent;
-  // border-radius: 100em;
+.left-container {
+  margin-left: 5px;
 }
 
-.workspaces > *:hover {
-  // background-color: #444444;
-  border-bottom: 0.2em solid space.$accent;
+.power {
+  font-size: 14px;
+  color: $yellow-bright;
+  background: $black;
+  border: 2px solid $cyan-bright;
+  border-radius: 100em;
+  padding: 2px 12px 2px 9px;
+  margin-right: 5px;
+}
+
+.hypr-logo {
+  background: $black;
+  border: 2px solid $cyan-bright;
+  border-radius: 100em;
+  margin: 0 5px;
+  padding: 2px 4px;
+}
+
+.workspaces {
+  background: $black;
+  color: $white-bright;
+  border: 2px solid $cyan;
+  border-radius: 100em;
+}
+
+.workspaces-container {
+  padding: 2px 10px;
 }
 
 .workspace-entry {
-  color: #666666;
-  // background-color: #222222;
-  // border: 0.12em solid white;
-  border-radius: 100em;
-  // padding-left: 5px;
-  // padding-right: 5px;
+  color: $black-bright;
   margin: 5px;
 }
 
 .workspace-entry:hover {
-  border-bottom: 0.2em solid space.$accent;
+  border-bottom: 0.2em solid $magenta-bright;
 }
 
 .occupied {
-  color: white;
-  // border: 0.12em solid space2.$accent-dark;
+  color: $white-bright;
 }
 
 .current {
-  color: space.$alert;
+  color: $red-bright;
 }
 
 // Center container
 
 .center-container {
-  // background-color: black;
-  // border: 0.12em solid space2.$accent;
+  background: $black;
+  color: $red-bright;
+  border: 2px solid $cyan;
   border-radius: 100em;
+  padding: 2px 10px;
 }
 
 .center-container > *:hover {
-  // background-color: #444444;
-  border-bottom: 0.2em solid space.$accent;
-}
-
-.hypr-logo,
-.firefox-logo,
-.alacritty-logo,
-.discord-logo,
-.spotify-logo,
-.neovim-logo {
-  // background-color: #222222;
-  // border-radius: 100em;
-  // border: 0.12em solid white;
-  padding: 10px;
-  margin-left: 2.5px;
-  margin-right: 2.5px;
-}
-
-.hypr-logo {
-  // padding: 10px;
-}
-
-.firefox-logo {
-  border-radius: 100em;
-  // padding: 10px;
-}
-
-.alacritty-logo {
-  border-radius: 100em;
-  // padding: 10px;
-}
-
-.alacritty-logo:hover {
-  background-color: #444444;
-  border-bottom: 1.2em solid white;
+  border-bottom: 0.2em solid $yellow-bright;
 }
 
 // Right container
 
 .right-container {
-  // background-color: black;
-  // border: 0.12em solid space2.$accent;
   border-radius: 100em;
 }
 
 .time,
 .battery {
-  margin: 10px;
+  margin-right: 5px;
 }
 
 .time {
-  // background-color: #222222;
-  // border: 0.12em solid white;
-  // border-radius: 100em;
-  padding-left: 10px;
+  background: $black;
+  color: $blue-bright;
+  border: 2px solid $cyan;
+  border-radius: 100em;
+  padding: 2px 10px;
+}
+
+.battery_remaining {
+  color: $white-bright;
 }
 
 .battery {
-  // background-color: #222222;
-  // border: 0.12em solid white;
+  font-size: 14px;
+  background: $black;
+  color: $blue-bright;
+  border: 2px solid $cyan;
   border-radius: 100em;
+  padding: 2px 10px;
 }
 
 .battery.charging {
-  color: #00ff00;
+  color: $green-bright;
+}
+
+.battery.low {
+  color: $red-bright;
 }

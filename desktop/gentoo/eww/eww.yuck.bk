@@ -14,7 +14,6 @@
         :space-evenly false
         :halign "end"
         (time)
-        ;; (battery)
     )
 )
 
@@ -23,7 +22,12 @@
         :class "center-container"
         :space-evenly false
         :halign "center"
-        (window_w)
+        (librewolf)
+        (alacritty)
+        ;; (discord)
+        ;; (spotify)
+        (neovim)
+        (virt-manager)
     )
 )
 
@@ -31,8 +35,7 @@
     (box
         :class "left-container"
         :space-evenly false
-        ;; (hyprland)
-        (power)
+        (hyprland)
         (workspaces)
     )
 )
@@ -57,24 +60,12 @@
 
 ;; Left container items
 
-(defwidget power []
-  (eventbox
-    :onclick "$HOME/.config/rofi/powermenu/type-1/powermenu.sh & > ./logs/rofi/power.log"
-    (box
-      :class "power"
-      (label :text "⏻")
-    )
-  )
-)
-
 (deflisten workspaces :initial "[]" "bash ~/.config/eww/scripts/get_workspaces.sh")
 (deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/get_active_workspace.sh")
 (defwidget workspaces []
     (eventbox 
-        :onscroll "bash ~/.config/eww/scripts/change_active_workspace.sh {} ${current_workspace}" 
-        :class "workspaces"
+        :onscroll "bash ~/.config/eww/scripts/change_active_workspace.sh {} ${current_workspace}" :class "workspaces"
         (box 
-            :class "workspaces-container"
             :space-evenly true
             (label 
                 :text "${workspaces}${current_workspace}" 
@@ -90,29 +81,112 @@
     )
 )
 
-;; Center container items
 
 (deflisten window :initial "..." "sh ~/.config/eww/scripts/get_window_title.sh")
 (defwidget window_w []
-  (box
-    :class "window_w"
-    (label 
-      :text "${window}"
-      :limit-width 60
+    (box
+        (label :text "${window}")
     )
-  )
 )
+
+;; Center container items
 
 (defwidget hyprland []
     (eventbox
+        ;; :onclick "bash ~/.config/eww/scripts/rofi/open_app_menu.sh"
         :onclick "bash ~/.config/eww/scripts/themes/click_to_switch.sh 2> ./logs/click_to_switch"
         (image
             :class "hypr-logo"
             :path "./images/icon.ico"
-            :image-width 20
-            :image-height 20
+            :image-width 25
+            :image-height 25
         )
     )
+)
+
+(defwidget firefox []
+   (eventbox
+       :onclick "bash firefox 2> ./logs/firefox"
+       (image
+           :class "firefox-logo"
+           :path "./images/firefox.svg"
+           :image-width 25
+           :image-height 25
+       )
+   )
+)
+
+(defwidget librewolf []
+   (eventbox
+       :onclick "bash librewolf 2> ./logs/librewolf"
+       (image
+           :class "firefox-logo"
+           :path "./images/librewolf.svg"
+           :image-width 25
+           :image-height 25
+       )
+   )
+)
+
+(defwidget virt-manager []
+   (eventbox
+       :onclick "/usr/bin/virt-manager"
+       (image
+           :class "firefox-logo"
+           :path "./images/virt-manager.png"
+           :image-width 25
+           :image-height 25
+       )
+   )
+)
+
+(defwidget alacritty []
+    ;; :active true
+    (eventbox
+        :onclick "/usr/bin/alacritty --working-directory ~ 2> ./logs/alacritty.log"
+        (image
+            :class "alacritty-logo"
+            :path "./images/alacritty.svg"
+            :image-width 25
+            :image-height 25
+        )
+    )
+)
+
+(defwidget discord []
+   (eventbox
+       :onclick "$SHELL /home/cody/bin/discord.sh"
+       (image
+           :class "discord-logo"
+           :path "./images/discord.png"
+           :image-width 25
+           :image-height 25
+       )
+   )
+)
+
+(defwidget spotify []
+   (eventbox
+       :onclick "/usr/bin/spotify 2> ./logs/spotify.log"
+       (image
+           :class "spotify-logo"
+           :path "./images/spotify.png"
+           :image-width 25
+           :image-height 25
+       )
+   )
+)
+
+(defwidget neovim []
+   (eventbox
+       :onclick "/usr/bin/alacritty -e $SHELL -c 'nvim && exec $SHELL' & 2> ./logs/nvim"
+       (image
+           :class "neovim-logo"
+           :path "./images/neovim.png"
+           :image-width 25
+           :image-height 25
+       )
+   )
 )
 
 ;; Right container items
@@ -120,7 +194,7 @@
 (defpoll show_time 
     :interval "10s"
     :class "time"
-    "date '+%I:%M %b %d, %Y'"
+    "date '+%H:%M %b %d, %Y'"
 )
 
 (defwidget time []
@@ -131,42 +205,6 @@
         show_time
     )
 )
-
-;; (defpoll battery_remaining 
-;;     :class "battery_remaining"
-;;     :interval "10s"
-;;     "acpi -b | awk -F ', ' '{print$2}'"
-;; )
-;;
-;; (defpoll battery_charging
-;;     :interval "3s"
-;;     "./scripts/battery/is_charging.sh"
-;; )
-;;
-;; (defpoll battery_low
-;;     :interval "3s"
-;;     "./scripts/battery/is_low.sh"
-;; )
-;;
-;; (defwidget battery []
-;;   (eventbox
-;;     :onclick "$HOME/.config/rofi/applets/bin/battery.sh & > $HOME/.config/eww/logs/rofi/battery.log"
-;;     (box
-;;       :class {
-;;         battery_charging == "true" ? "battery charging" : 
-;;         battery_low == "true" ? "battery low" : 
-;;         "battery"}
-;;       (metric 
-;;             :orientation "horizontal"
-;;             :halign "center"
-;;             :label " "
-;;             :value 100
-;;             :onchange "acpi -b"
-;;       )
-;;       ;; battery_remaining
-;;     )
-;;   )
-;; )
 
 ;; Windows
 
