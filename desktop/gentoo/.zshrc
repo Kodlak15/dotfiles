@@ -52,11 +52,11 @@ alias v='nvim'
 # Git status info
 autoload -Uz vcs_info
 precmd() { vcs_info }
-zstyle ':vcs_info:git:*' formats " %F{#ffff00} %b%f"
+zstyle ':vcs_info:git:*' formats " %F{#ff9e64} %b%f"
 setopt prompt_subst
 
 # Theme
-PROMPT='%F{#7da6ff} % %F{#ffffff}%~${vcs_info_msg_0_}%f%F{#ff9e64} 󰄾 %f'
+PROMPT='%F{#7da6ff} % %F{#ffffff}%~${vcs_info_msg_0_}%f%F{#f7768e} 󰄾 %f'
 
 # Set default text editor
 export VISUAL=nvim
