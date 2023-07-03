@@ -31,7 +31,8 @@
     (box
         :class "left-container"
         :space-evenly false
-        (hyprland)
+        ;; (hyprland)
+        (power)
         (workspaces)
     )
 )
@@ -55,6 +56,16 @@
 )
 
 ;; Left container items
+
+(defwidget power []
+  (eventbox
+    :onclick "$HOME/.config/rofi/powermenu/type-1/powermenu.sh"
+    (box
+      :class "power"
+      (label :text "⏻")
+    )
+  )
+)
 
 (deflisten workspaces :initial "[]" "bash ~/.config/eww/scripts/get_workspaces.sh")
 (deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/get_active_workspace.sh")
@@ -94,7 +105,6 @@
 
 (defwidget hyprland []
     (eventbox
-        ;; :onclick "bash ~/.config/eww/scripts/rofi/open_app_menu.sh"
         :onclick "bash ~/.config/eww/scripts/themes/click_to_switch.sh 2> ./logs/click_to_switch"
         (image
             :class "hypr-logo"
@@ -110,7 +120,7 @@
 (defpoll show_time 
     :interval "10s"
     :class "time"
-    "date '+%I:%M %p %b %d, %Y'"
+    "date '+%I:%M %b %d, %Y'"
 )
 
 (defwidget time []
@@ -133,18 +143,29 @@
     "./scripts/battery/is_charging.sh"
 )
 
+(defpoll battery_low
+    :interval "3s"
+    "./scripts/battery/is_low.sh"
+)
+
 (defwidget battery []
+  (eventbox
+    :onclick "$HOME/.config/rofi/applets/bin/battery.sh & 2> $HOME/.config/eww/logs/rofi/battery.log"
     (box
-        :class {battery_charging == "true" ? "battery charging" : "battery"}
-        (metric 
+      :class {
+        battery_charging == "true" ? "battery charging" : 
+        battery_low == "true" ? "battery low" : 
+        "battery"}
+      (metric 
             :orientation "horizontal"
             :halign "center"
-            :label "  "
+            :label " "
             :value 100
             :onchange "acpi -b"
-        )
-        battery_remaining
+      )
+      ;; battery_remaining
     )
+  )
 )
 
 ;; Windows

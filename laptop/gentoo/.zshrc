@@ -24,6 +24,7 @@ source ~/repos/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin/swww_manager/:$PATH"
+export PATH="$HOME/bin/wofi/:$PATH"
 # export PATH="$HOME/bin/scripts/:$PATH"
  
 ### Set GTK Theme ###
