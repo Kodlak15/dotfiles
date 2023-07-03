@@ -59,7 +59,7 @@
 
 (defwidget power []
   (eventbox
-    :onclick "$HOME/.config/rofi/powermenu/type-1/powermenu.sh"
+    :onclick "$HOME/.config/rofi/powermenu/type-1/powermenu.sh & > ./logs/rofi/power.log"
     (box
       :class "power"
       (label :text "⏻")
@@ -150,7 +150,7 @@
 
 (defwidget battery []
   (eventbox
-    :onclick "$HOME/.config/rofi/applets/bin/battery.sh & 2> $HOME/.config/eww/logs/rofi/battery.log"
+    :onclick "$HOME/.config/rofi/applets/bin/battery.sh & > $HOME/.config/eww/logs/rofi/battery.log"
     (box
       :class {
         battery_charging == "true" ? "battery charging" : 
