@@ -91,7 +91,7 @@ $white-bright: #c0caf5;
 
 .center-container {
   background: $black;
-  color: $red-bright;
+  color: $magenta-bright;
   border: 2px solid $cyan;
   border-radius: 100em;
   padding: 2px 10px;
@@ -103,18 +103,28 @@ $white-bright: #c0caf5;
 
 // Right container
 
+.weather {
+  background: $black;
+  color: $red;
+  border: 2px solid $cyan;
+  border-radius: 100em;
+  padding: 2px 5px 2px 10px;
+}
+
 .right-container {
   border-radius: 100em;
 }
 
 .time,
-.battery {
+.battery,
+.weather {
   margin-right: 5px;
 }
 
 .time {
   background: $black;
-  color: $blue-bright;
+  // color: $blue-bright;
+  color: $yellow-bright;
   border: 2px solid $cyan;
   border-radius: 100em;
   padding: 2px 10px;
@@ -127,7 +137,8 @@ $white-bright: #c0caf5;
 .battery {
   font-size: 14px;
   background: $black;
-  color: $blue-bright;
+  // color: $blue-bright;
+  color: $white-bright;
   border: 2px solid $cyan;
   border-radius: 100em;
   padding: 2px 10px;
