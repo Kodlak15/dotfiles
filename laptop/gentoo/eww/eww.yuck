@@ -29,13 +29,13 @@
 )
 
 (defwidget left_container [] 
-    (box
-        :class "left-container"
-        :space-evenly false
-        ;; (hyprland)
-        (power)
-        (workspaces)
-    )
+  (box
+    :class "left-container"
+    :space-evenly false
+    (power)
+    (workspaces)
+    (hardware)
+  )
 )
 
 ;; Utils
@@ -92,6 +92,48 @@
     )
 )
 
+(defwidget hardware []
+  (eventbox
+    :class "hardware-event"
+    (box
+      :class "hardware"
+      (cpu)
+      (ram)
+    )
+  )
+)
+
+(defwidget cpu []
+  (eventbox
+    :class "cpu-event"
+    (box
+      :class "cpu"
+      (label
+        :class "cpu-label"
+        :text " "
+      )
+      {round(EWW_CPU["avg"], 1)}
+      (label
+        :text "GHz"
+      )
+    )
+  )
+)
+
+(defwidget ram []
+  (eventbox
+    :class "ram-event"
+    (box
+      :class "ram"
+      (label
+        :class "ram-label"
+        :text "󰧑 "
+      )
+      {round(EWW_RAM["used_mem_perc"], 1)}"%"
+    )
+  )
+)
+
 ;; Center container items
 
 (deflisten window :initial "..." "sh ~/.config/eww/scripts/get_window_title.sh")
@@ -123,12 +165,12 @@
 
 (defpoll show_temp
   :interval "30s"
-  "./scripts/weather/get_temp.sh"
+  "$HOME/.config/eww/scripts/weather/get_temp.sh"
 )
 
 (defpoll show_icon
   :interval "30s"
-  "./scripts/weather/get_icon.sh"
+  "$HOME/.config/eww/scripts/weather/get_icon.sh"
 )
 
 (defwidget weather []
@@ -197,8 +239,14 @@
           battery_remaining < 20 ? " " :
           battery_remaining < 40 ? " " : 
           battery_remaining < 60 ? " " :
-          battery_remaining < 80 ? " " : 
+          battery_remaining < 80 ? " " : 
           " " 
+          ;; Should fix this:
+          ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 0 ? " " :
+          ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 1 ? " " :
+          ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 2 ? " " :
+          ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 3 ? " " :
+          ;; " " 
         }
         :value 100
         :onchange "acpi -b"

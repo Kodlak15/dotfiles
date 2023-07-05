@@ -97,6 +97,32 @@ $white-bright: #c0caf5;
   color: $red-bright;
 }
 
+.hardware {
+  background: $black;
+  color: $yellow-bright;
+  border: 2px solid $cyan;
+  border-radius: 10em;
+  padding: 2px 10px;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+
+.cpu {
+  padding-right: 5px;
+}
+
+.cpu-label {
+  color: $green;
+}
+
+.ram-label {
+  color: $blue;
+}
+
+.hardware-event:hover > * {
+  border: 2px solid $magenta-bright;
+}
+
 // Center container
 
 // .center-container {
