@@ -1,30 +1,30 @@
 (defwidget bar []
-    (box 
-        :class "bar"
-        :orientation "h"
-        (left_container)
-        (center_container)
-        (right_container)
-    )
+  (box 
+    :class "bar"
+    :orientation "h"
+    (left_container)
+    (center_container)
+    (right_container)
+  )
 )
 
 (defwidget right_container []
-    (box
-        :class "right-container"
-        :space-evenly false
-        :halign "end"
-        (weather)
-        (time)
-        (battery)
-    )
+  (box
+    :class "right-container"
+    :space-evenly false
+    :halign "end"
+    (weather)
+    (time)
+    (battery)
+  )
 )
 
 (defwidget center_container []
   (box
     :class "center-container"
-      :space-evenly false
-      :halign "center"
-      (window_w)
+    :space-evenly false
+    :halign "center"
+    (window_w)
   )
 )
 
@@ -41,25 +41,27 @@
 ;; Utils
 
 (defwidget metric [label value onchange]
-    (box 
-        :orientation "h"
-        :class "metric"
-        :space-evenly false
-        (box :class "label" label)
-        (scale 
-            :min 0
-            :max 101
-            :active {onchange != ""}
-            :value value
-            :onchange onchange
-        )
+  (box 
+    :orientation "h"
+    :class "metric"
+    :space-evenly false
+    (box :class "label" label)
+    (scale 
+      :min 0
+      :max 101
+      :active {onchange != ""}
+      :value value
+      :onchange onchange
     )
+  )
 )
 
 ;; Left container items
 
 (defwidget power []
   (eventbox
+    ;; This is broken, best to open rofi with keybind
+    ;; Command times out and clicking anywhere on bar will open this menu until reload
     :onclick "$HOME/.config/rofi/powermenu/type-1/powermenu.sh"
     :class "power-event"
     (box
@@ -72,24 +74,24 @@
 (deflisten workspaces :initial "[]" "bash ~/.config/eww/scripts/get_workspaces.sh")
 (deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/get_active_workspace.sh")
 (defwidget workspaces []
-    (eventbox 
-        :onscroll "bash ~/.config/eww/scripts/change_active_workspace.sh {} ${current_workspace}" 
-        :class "workspaces"
-        (box 
-            :class "workspaces-container"
-            :space-evenly true
-            (label 
-                :text "${workspaces}${current_workspace}" 
-                :visible false)
-            (for workspace in workspaces
-                (eventbox :onclick "hyprctl dispatch workspace ${workspace.id}"
-                    (box :class "workspace-entry ${workspace.id == current_workspace ? "current" : ""} ${workspace.windows > 0 ? "occupied" : "empty"}"
-                        (label :text "${workspace.id}")
-                    )
-                )
-            )
+  (eventbox 
+    :onscroll "bash ~/.config/eww/scripts/change_active_workspace.sh {} ${current_workspace}" 
+    :class "workspaces"
+    (box 
+      :class "workspaces-container"
+      :space-evenly true
+      (label 
+        :text "${workspaces}${current_workspace}" 
+        :visible false)
+      (for workspace in workspaces
+        (eventbox :onclick "hyprctl dispatch workspace ${workspace.id}"
+          (box :class "workspace-entry ${workspace.id == current_workspace ? "current" : ""} ${workspace.windows > 0 ? "occupied" : "empty"}"
+            (label :text "${workspace.id}")
+          )
         )
+      )
     )
+  )
 )
 
 (defwidget hardware []
@@ -189,9 +191,9 @@
 )
 
 (defpoll show_time 
-    :interval "10s"
-    :class "time"
-    "date '+%I:%M %b %d, %Y'"
+  :interval "10s"
+  :class "time"
+  "date '+%I:%M %b %d, %Y'"
 )
 
 (defwidget time []
@@ -207,23 +209,25 @@
 )
 
 (defpoll battery_remaining 
-    :class "battery_remaining"
-    :interval "10s"
-    "acpi -b | awk -F ', ' '{print$2}' | awk -F '%' '{print$1}'"
+  :class "battery_remaining"
+  :interval "10s"
+  "acpi -b | awk -F ', ' '{print$2}' | awk -F '%' '{print$1}'"
 )
 
 (defpoll battery_charging
-    :interval "3s"
-    "./scripts/battery/is_charging.sh"
+  :interval "3s"
+  "./scripts/battery/is_charging.sh"
 )
 
 (defpoll battery_low
-    :interval "3s"
-    "./scripts/battery/is_low.sh"
+  :interval "3s"
+  "./scripts/battery/is_low.sh"
 )
 
 (defwidget battery []
   (eventbox
+    ;; This is broken, best to open rofi with keybind
+    ;; Command times out and clicking anywhere on bar will open this menu until reload
     :onclick "$HOME/.config/rofi/applets/bin/battery.sh" 
     :class "battery-event"
     (box
@@ -241,7 +245,7 @@
           battery_remaining < 60 ? " " :
           battery_remaining < 80 ? " " : 
           " " 
-          ;; Should fix this:
+          ;; Should fix code below, as code above causes error in logs
           ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 0 ? " " :
           ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 1 ? " " :
           ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 2 ? " " :
@@ -258,16 +262,16 @@
 ;; Windows
 
 (defwindow bar
-    :monitor 0
-    :windowtype "dock"
-    :geometry (geometry 
-        :x "0%"
-        :y "0%"
-        :width "100%"
-        :height "2%"
-        :anchor "top center"
-    )
-    :stacking "bg"
-    :exclusive true
-    (bar)
+  :monitor 0
+  :windowtype "dock"
+  :geometry (geometry 
+    :x "0%"
+    :y "0%"
+    :width "100%"
+    :height "2%"
+    :anchor "top center"
+  )
+  :stacking "bg"
+  :exclusive true
+  (bar)
 )
