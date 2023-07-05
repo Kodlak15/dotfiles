@@ -49,6 +49,11 @@ $white-bright: #c0caf5;
   border-radius: 100em;
   padding: 2px 12px 2px 9px;
   margin-right: 5px;
+  transition: 0.5s;
+}
+
+.power-event:hover > * {
+  border: 2px solid $magenta;
 }
 
 .hypr-logo {
@@ -64,6 +69,11 @@ $white-bright: #c0caf5;
   color: $white-bright;
   border: 2px solid $cyan;
   border-radius: 100em;
+}
+
+.workspaces:hover {
+  border: 2px solid $magenta;
+  transition: 0.5s;
 }
 
 .workspaces-container {
@@ -89,16 +99,27 @@ $white-bright: #c0caf5;
 
 // Center container
 
-.center-container {
+// .center-container {
+//   background: $black;
+//   color: $magenta-bright;
+//   border: 2px solid $cyan;
+//   border-radius: 100em;
+//   padding: 2px 10px;
+//   transition: 1s;
+// }
+
+.window_w {
   background: $black;
   color: $magenta-bright;
   border: 2px solid $cyan;
   border-radius: 100em;
   padding: 2px 10px;
+  transition: 1s;
+  transition: 0.5s;
 }
 
-.center-container > *:hover {
-  border-bottom: 0.2em solid $yellow-bright;
+.window_w-event:hover > * {
+  border: 2px solid $red;
 }
 
 // Right container
@@ -109,6 +130,11 @@ $white-bright: #c0caf5;
   border: 2px solid $cyan;
   border-radius: 100em;
   padding: 2px 5px 2px 10px;
+  transition: 0.5s;
+}
+
+.weather-event:hover > * {
+  border: 2px solid $magenta-bright;
 }
 
 .right-container {
@@ -123,11 +149,14 @@ $white-bright: #c0caf5;
 
 .time {
   background: $black;
-  // color: $blue-bright;
   color: $yellow-bright;
   border: 2px solid $cyan;
   border-radius: 100em;
   padding: 2px 10px;
+}
+
+.time-event:hover > * {
+  border: 2px solid $magenta-bright;
 }
 
 .battery_remaining {
@@ -150,4 +179,8 @@ $white-bright: #c0caf5;
 
 .battery.low {
   color: $red-bright;
+}
+
+.battery-event:hover > * {
+  border: 2px solid $magenta-bright;
 }

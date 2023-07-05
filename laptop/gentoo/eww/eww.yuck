@@ -20,12 +20,12 @@
 )
 
 (defwidget center_container []
-    (box
-        :class "center-container"
-        :space-evenly false
-        :halign "center"
-        (window_w)
-    )
+  (box
+    :class "center-container"
+      :space-evenly false
+      :halign "center"
+      (window_w)
+  )
 )
 
 (defwidget left_container [] 
@@ -60,7 +60,8 @@
 
 (defwidget power []
   (eventbox
-    :onclick "$HOME/.config/rofi/powermenu/type-1/powermenu.sh & > ./logs/rofi/power.log"
+    :onclick "$HOME/.config/rofi/powermenu/type-1/powermenu.sh"
+    :class "power-event"
     (box
       :class "power"
       (label :text "⏻")
@@ -95,47 +96,52 @@
 
 (deflisten window :initial "..." "sh ~/.config/eww/scripts/get_window_title.sh")
 (defwidget window_w []
-  (box
-    :class "window_w"
-    (label 
-      :text "${window}"
-      :limit-width 60
+  (eventbox
+    :class "window_w-event"
+    (box
+      :class "window_w"
+      (label 
+        :text "${window}"
+        :limit-width 60
+      )
     )
   )
 )
 
 (defwidget hyprland []
-    (eventbox
-        ;; :onclick "bash ~/.config/eww/scripts/themes/click_to_switch.sh 2> ./logs/click_to_switch"
-        (image
-            :class "hypr-logo"
-            :path "./images/icon.ico"
-            :image-width 20
-            :image-height 20
-        )
+  (eventbox
+    (image
+     :class "hypr-logo"
+     :path "./images/icon.ico"
+     :image-width 20
+     :image-height 20
     )
+  )
 )
 
 ;; Right container items
 
 (defpoll show_temp
-  :interval "300s"
+  :interval "30s"
   "./scripts/weather/get_temp.sh"
 )
 
 (defpoll show_icon
-  :interval "300s"
+  :interval "30s"
   "./scripts/weather/get_icon.sh"
 )
 
 (defwidget weather []
-  (box
-    :class "weather"
-    show_temp
-    (image 
-      :path show_icon
-      :image-height 20
-      :image-width 20
+  (eventbox
+    :class "weather-event"
+    (box
+      :class "weather"
+      show_temp
+      (image 
+        :path show_icon
+        :image-height 20
+        :image-width 20
+      )
     )
   )
 )
@@ -147,18 +153,21 @@
 )
 
 (defwidget time []
+  (eventbox
+    :class "time-event"
     (box
-        :space-evenly false
-        :halign "center"
-        :class "time"
-        show_time
+     :space-evenly false
+     :halign "center"
+     :class "time"
+     show_time
     )
+  )
 )
 
 (defpoll battery_remaining 
     :class "battery_remaining"
     :interval "10s"
-    "acpi -b | awk -F ', ' '{print$2}'"
+    "acpi -b | awk -F ', ' '{print$2}' | awk -F '%' '{print$1}'"
 )
 
 (defpoll battery_charging
@@ -173,20 +182,27 @@
 
 (defwidget battery []
   (eventbox
-    :onclick "$HOME/.config/rofi/applets/bin/battery.sh & > $HOME/.config/eww/logs/rofi/battery.log"
+    :onclick "$HOME/.config/rofi/applets/bin/battery.sh" 
+    :class "battery-event"
     (box
       :class {
         battery_charging == "true" ? "battery charging" : 
         battery_low == "true" ? "battery low" : 
-        "battery"}
+        "battery"
+      }
       (metric 
-            :orientation "horizontal"
-            :halign "center"
-            :label " "
-            :value 100
-            :onchange "acpi -b"
+        :orientation "horizontal"
+        :halign "center"
+        :label {
+          battery_remaining < 20 ? " " :
+          battery_remaining < 40 ? " " : 
+          battery_remaining < 60 ? " " :
+          battery_remaining < 80 ? " " : 
+          " " 
+        }
+        :value 100
+        :onchange "acpi -b"
       )
-      ;; battery_remaining
     )
   )
 )
