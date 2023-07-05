@@ -22,17 +22,17 @@ USE_ICON=NO
 
 /*****----- Main Window -----*****/
 window {
-    transparency:                "real";
-    location:                    center;
-    anchor:                      center;
+    transparency:                transparent;
+    location:                    northeast;
+    anchor:                      northeast;
     fullscreen:                  false;
     width:                       400px;
-    x-offset:                    0px;
-    y-offset:                    0px;
+    x-offset:                    -5px;
+    y-offset:                    5px;
     margin:                      0px;
     padding:                     0px;
-    border:                      1px solid;
-    border-radius:               0px;
+    border:                      2px solid;
+    border-radius:               10px;
     border-color:                @selected;
     cursor:                      "default";
     background-color:            @background;

@@ -1,2 +1,2 @@
 
-(librewolf:4945): Gtk-WARNING **: 04:52:14.162: Failed to parse /home/cody/.config/gtk-3.0/settings.ini: Key file does not have group “Settings”
+(librewolf:5756): Gtk-WARNING **: 09:49:53.959: Failed to parse /home/cody/.config/gtk-3.0/settings.ini: Key file does not start with a group

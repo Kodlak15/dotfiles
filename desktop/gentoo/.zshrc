@@ -28,6 +28,7 @@ source ~/repos/zsh-autosuggestions/zsh-autosuggestions.zsh
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin/scripts/:$PATH"
+export PATH="$HOME/.cargo/:$PATH"
  
 ### Set GTK Theme ###
 export GTK_THEME=Adwaita:dark

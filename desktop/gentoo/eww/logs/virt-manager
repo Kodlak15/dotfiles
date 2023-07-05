@@ -1,0 +1,4 @@
+/usr/bin/virt-manager: line 3: import: command not found
+/usr/bin/virt-manager: line 4: import: command not found
+/usr/bin/virt-manager: line 5: syntax error near unexpected token `0,'
+/usr/bin/virt-manager: line 5: `sys.path.insert(0, "/usr/share/virt-manager")'

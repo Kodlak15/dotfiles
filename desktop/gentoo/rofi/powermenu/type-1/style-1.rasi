@@ -20,19 +20,19 @@ configuration {
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    center;
-    anchor:                      center;
+    location:                    northwest;
+    anchor:                      northwest;
     fullscreen:                  false;
     width:                       400px;
-    x-offset:                    0px;
-    y-offset:                    0px;
+    x-offset:                    5px;
+    y-offset:                    5px;
 
     /* properties for all widgets */
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border:                      0px solid;
-    border-radius:               12px;
+    border:                      2px solid;
+    border-radius:               10px;
     border-color:                @selected;
     cursor:                      "default";
     background-color:            @background;

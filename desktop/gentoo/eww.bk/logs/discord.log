@@ -1,0 +1,7 @@
+[4919:0528/220628.957490:ERROR:gpu_init.cc(523)] Passthrough is not supported, GL is egl, ANGLE is 
+MESA-LOADER: failed to open nvidia-drm: /usr/lib64/gbm/nvidia-drm_gbm.so: cannot open shared object file: No such file or directory (search paths /usr/lib64/gbm, suffix _gbm)
+[4876:0528/220629.304544:ERROR:browser_main_loop.cc(271)] Gtk: gtk_widget_get_scale_factor: assertion 'GTK_IS_WIDGET (widget)' failed
+[0528/220630.489002:ERROR:directory_reader_posix.cc(42)] opendir /home/cody/.config/discord/Crashpad/attachments/8d469611-273d-44ea-aed3-a80ccf1ace0f: No such file or directory (2)
+[WebContents] crashed (reason: crashed, exitCode: 11)... reloading
+[0528/220631.456909:ERROR:directory_reader_posix.cc(42)] opendir /home/cody/.config/discord/Crashpad/attachments/21da6f07-4387-46ab-8616-48dd9186b183: No such file or directory (2)
+[WebContents] double crashed (reason: crashed, exitCode: 11)... RIP =(
