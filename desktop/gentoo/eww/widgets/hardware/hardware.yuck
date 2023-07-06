@@ -1,0 +1,42 @@
+(defwidget cpu []
+  (eventbox
+    :class "cpu-event"
+    (box
+      :class "cpu"
+      (label
+        :class "cpu-label"
+        :text " "
+      )
+      {round(EWW_CPU["avg"], 1)}
+      (label
+        :text "GHz"
+      )
+    )
+  )
+)
+
+(defwidget ram []
+  (eventbox
+    :class "ram-event"
+    (box
+      :class "ram"
+      (label
+        :class "ram-label"
+        :text "󰧑 "
+      )
+      {round(EWW_RAM["used_mem_perc"], 1)}"%"
+    )
+  )
+)
+
+(defwidget hardware []
+  (eventbox
+    :class "hardware-event"
+    (box
+      :class "hardware"
+      (cpu)
+      (ram)
+    )
+  )
+)
+

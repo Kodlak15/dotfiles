@@ -1,0 +1,13 @@
+(deflisten window :initial "..." "sh ~/.config/eww/scripts/get_window_title.sh")
+(defwidget window_w []
+  (eventbox
+    :class "window_w-event"
+    (box
+      :class "window_w"
+      (label 
+        :text "${window}"
+        :limit-width 60
+      )
+    )
+  )
+)

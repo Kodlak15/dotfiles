@@ -12,8 +12,8 @@
   (box
     :class "left-container"
     :space-evenly false
-    (power)
-    (workspaces)
+    ;; (power)
+    ;; (workspaces)
     (hardware)
   )
 )
@@ -23,7 +23,7 @@
     :class "center-container"
     :space-evenly false
     :halign "center"
-    (window_w)
+    ;; (window_w)
   )
 )
 
@@ -56,18 +56,82 @@
 )
 
 ;; Left container items
+;; (include "./widgets/power/power.yuck")
+;; (include "./widgets/hyprland/workspaces.yuck")
+;; (include "./widgets/hyprland/window.yuck")
 
-(include "./widgets/power/power.yuck")
-(include "./widgets/hyprland/workspaces.yuck")
-(include "./widgets/hardware/hardware.yuck")
+(defwidget hardware []
+  (eventbox
+    :class "hardware-event"
+    (box
+      :class "hardware"
+      (cpu)
+      (ram)
+    )
+  )
+)
+
+(defwidget cpu []
+  (eventbox
+    :class "cpu-event"
+    (box
+      :class "cpu"
+      (label
+        :class "cpu-label"
+        :text " "
+      )
+      {round(EWW_CPU["avg"], 1)}
+      (label
+        :text "GHz"
+      )
+    )
+  )
+)
+
+(defwidget ram []
+  (eventbox
+    :class "ram-event"
+    (box
+      :class "ram"
+      (label
+        :class "ram-label"
+        :text "󰧑 "
+      )
+      {round(EWW_RAM["used_mem_perc"], 1)}"%"
+    )
+  )
+)
 
 ;; Center container items
-
-(include "./widgets/hyprland/window.yuck")
+;; (include "./widgets/hyprland/window.yuck")
 
 ;; Right container items
 
-(include "./widgets/weather/weather.yuck")
+(defpoll show_temp
+  :interval "30s"
+  "$HOME/.config/eww/scripts/weather/get_temp.sh"
+)
+
+(defpoll show_icon
+  :interval "30s"
+  "$HOME/.config/eww/scripts/weather/get_icon.sh"
+)
+
+(defwidget weather []
+  (eventbox
+    :class "weather-event"
+    (box
+      :class "weather"
+      show_temp
+      (image 
+        :path show_icon
+        :image-height 20
+        :image-width 20
+      )
+    )
+  )
+)
+
 (defpoll show_time 
   :interval "10s"
   :class "time"
@@ -90,6 +154,7 @@
 
 (defwindow bar
   :monitor 2
+  :windowtype "dock"
   :geometry (geometry 
     :x "0%"
     :y "0%"
