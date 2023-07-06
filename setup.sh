@@ -2,8 +2,6 @@
 
 # Automate the creation of symbolic links for each configuration
 
-USERNAME=$(whoami)
-
 function setup () {
     echo "Setting up configurations..."
     ln -sf $HOME/dotfiles/alacritty $HOME/.config/
