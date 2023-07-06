@@ -2,7 +2,8 @@
   (eventbox
     ;; Onclick is broken, best to open rofi with keybind for now
     ;; Command times out and clicking anywhere on bar will open this menu until reload
-    :onclick "$HOME/.config/rofi/powermenu/type-1/powermenu.sh"
+    ;; :onclick "$HOME/.config/rofi/powermenu/type-1/powermenu.sh"
+    :onclick "/home/cody/bin/eww open powermenu --config /home/cody/.config/eww/bars/default/"
     :class "power-event"
     :timeout "10s"
     (box
@@ -13,15 +14,17 @@
 )
 
 (defwidget powermenu []
-  (box
-    :class "powermenu"
+  (button
+    :onclick "/home/cody/bin/eww close powermenu --config /home/cody/.config/eww/bars/default/"
     (box
+      :class "powermenu" 
       :width 100
       :height 200
-      (label 
-        :class "power-icon" 
-        :text "⏻"
-        ;; :visible false
+      (box
+        (label 
+          :class "power-icon" 
+          :text "⏻"
+        )
       )
     )
   )
