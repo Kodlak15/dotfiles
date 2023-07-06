@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -e 
+
+CONFIG="$HOME/.config/eww/bars/default"
+WIDGETS="$HOME/.config/eww/widgets"
+
+if [[ ! "pidof eww" ]]; then
+    eww daemon
+    sleep 1
+fi
+
+windows="default power"
+
+run_eww() {
+    eww open $windows --config $CONFIG
+}
+
+run_eww

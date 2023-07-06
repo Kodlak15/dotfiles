@@ -1,0 +1,14 @@
+(defwidget ram []
+  (eventbox
+    :class "ram-event"
+    (box
+      :class "ram"
+      (label
+        :class "ram-label"
+        :text "󰧑 "
+      )
+      {round(EWW_RAM["used_mem_perc"], 1)}"%"
+    )
+  )
+)
+

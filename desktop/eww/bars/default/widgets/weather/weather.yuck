@@ -1,0 +1,24 @@
+(defpoll show_temp
+  :interval "30s"
+  "$HOME/.config/eww/bars/default/widgets/weather/scripts/get_temp.sh"
+)
+
+(defpoll show_icon
+  :interval "30s"
+  "$HOME/.config/eww/bars/default/widgets/weather/scripts/get_icon.sh"
+)
+
+(defwidget weather []
+  (eventbox
+    :class "weather-event"
+    (box
+      :class "weather"
+      show_temp
+      (image 
+        :path show_icon
+        :image-height 20
+        :image-width 20
+      )
+    )
+  )
+)

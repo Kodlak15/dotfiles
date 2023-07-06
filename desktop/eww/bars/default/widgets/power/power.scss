@@ -1,0 +1,14 @@
+@use "../../../../themes/tokyo-night-night.scss" as tnn;
+
+.powermenu {
+    // padding-left: 50px;
+    background: tnn.$black;
+    border: 2px solid tnn.$cyan-bright;
+    border-radius: 10px;
+    padding-right: 5px;
+
+    .power-icon {
+        font-size: 20px;
+        color: tnn.$red-bright;
+    }
+}
