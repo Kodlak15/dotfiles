@@ -4,8 +4,9 @@ set -e
 
 CONFIG="$HOME/.config/eww/bars/default"
 WIDGETS="$HOME/.config/eww/widgets"
+EWW=$(which eww)
 
-if [[ ! "pidof eww" ]]; then
+if [[ ! $(pidof $EWW) ]]; then
     eww daemon
     sleep 1
 fi
@@ -13,7 +14,7 @@ fi
 windows="bar powermenu"
 
 run_eww() {
-    eww open-many $windows --config $CONFIG
+    $EWW open-many $windows --config $CONFIG
 }
 
-run_eww
+run_eww 2> $HOME/logs/eww_launch_default.log

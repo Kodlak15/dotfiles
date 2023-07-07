@@ -1,3 +1,4 @@
+(include "./widgets/battery/battery.yuck")
 (include "./widgets/power/power.yuck")
 (include "./widgets/hyprland/workspaces.yuck")
 (include "./widgets/hardware/hardware.yuck")
@@ -45,6 +46,7 @@
     :halign "end"
     (weather)
     (time)
+    (battery)
   )
 )
 

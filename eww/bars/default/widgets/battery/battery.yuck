@@ -1,0 +1,54 @@
+(defpoll battery_remaining 
+  :class "battery_remaining"
+  :interval "10s"
+  "acpi -b | awk -F ', ' '{print$2}' | awk -F '%' '{print$1}'"
+)
+
+(defpoll battery_charging
+  :interval "3s"
+  "$HOME/.config/eww/bars/default/widgets/battery/scripts/is_charging.sh"
+)
+
+(defpoll battery_low
+  :interval "3s"
+  "$HOME/.config/eww/bars/default/widgets/battery/scripts/is_low.sh"
+)
+
+(defpoll is_laptop
+  :interval "24h"
+  "$HOME/.config/eww/bars/default/widgets/battery/scripts/is_laptop.sh"
+)
+
+(defwidget battery []
+  (eventbox
+    ;; This is broken, best to open rofi with keybind
+    ;; Command times out and clicking anywhere on bar will open this menu until reload
+    :onclick "$HOME/.config/rofi/applets/bin/battery.sh" 
+    :class "battery-event"
+    (box
+      :class {
+        is_laptop == "false" ? "" :
+        battery_charging == "true" ? "battery charging" : 
+        battery_low == "true" ? "battery low" : 
+        "battery"
+      }
+      (label
+        :text {
+          is_laptop == "false" ? "" :
+          battery_remaining < 20 ? " " :
+          battery_remaining < 40 ? " " : 
+          battery_remaining < 60 ? " " :
+          battery_remaining < 80 ? " " : 
+          " " 
+          ;; Should fix code below, as code above causes error in logs
+          ;; is_laptop == "false" ? "" :
+          ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 0 ? " " :
+          ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 1 ? " " :
+          ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 2 ? " " :
+          ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 3 ? " " :
+          ;; " " 
+        }
+      )
+    )
+  )
+)
