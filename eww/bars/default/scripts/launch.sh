@@ -11,7 +11,7 @@ if [[ ! $(pidof $EWW) ]]; then
     sleep 1
 fi
 
-windows="bar powermenu"
+windows="bar"
 
 run_eww() {
     $EWW open-many $windows --config $CONFIG
