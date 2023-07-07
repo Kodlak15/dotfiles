@@ -1,4 +1,6 @@
 #!/bin/bash
 
-temp=$($HOME/bin/openweathercli --print temp)
+OWCLI=$(which openweathercli)
+
+temp=$($OWCLI --print temp)
 echo "${temp%.*}F"

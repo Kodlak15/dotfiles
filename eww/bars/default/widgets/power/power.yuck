@@ -29,17 +29,3 @@
     )
   )
 )
-
-(defwindow powermenu
-  :monitor 2
-  :geometry (geometry 
-    :x "5px"
-    :y "5px"
-    :width "50px"
-    :height "10%"
-    :anchor "top left"
-  )
-  :stacking "fg"
-  :exclusive true
-  (powermenu)
-)

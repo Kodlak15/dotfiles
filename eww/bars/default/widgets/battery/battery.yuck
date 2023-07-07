@@ -19,6 +19,11 @@
   "$HOME/.config/eww/bars/default/widgets/battery/scripts/is_laptop.sh"
 )
 
+(defpoll bat_level
+  :interval "3s"
+  "$HOME/.config/eww/bars/default/widgets/battery/scripts/get_level.sh"
+)
+
 (defwidget battery []
   (eventbox
     ;; This is broken, best to open rofi with keybind
@@ -35,18 +40,11 @@
       (label
         :text {
           is_laptop == "false" ? "" :
-          battery_remaining < 20 ? " " :
-          battery_remaining < 40 ? " " : 
-          battery_remaining < 60 ? " " :
-          battery_remaining < 80 ? " " : 
+          bat_level == "0" ? " " :
+          bat_level == "1" ? " " :
+          bat_level == "2" ? " " :
+          bat_level == "3" ? " " :
           " " 
-          ;; Should fix code below, as code above causes error in logs
-          ;; is_laptop == "false" ? "" :
-          ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 0 ? " " :
-          ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 1 ? " " :
-          ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 2 ? " " :
-          ;; "$HOME/.config/eww/scripts/battery/get_level.sh" == 3 ? " " :
-          ;; " " 
         }
       )
     )

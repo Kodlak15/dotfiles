@@ -3,7 +3,7 @@
 set -e 
 
 CONFIG="$HOME/.config/eww/bars/default"
-WIDGETS="$HOME/.config/eww/widgets"
+WIDGETS="$HOME/.config/eww/bars/default/widgets"
 EWW=$(which eww)
 
 if [[ ! $(pidof $EWW) ]]; then
@@ -17,4 +17,4 @@ run_eww() {
     $EWW open-many $windows --config $CONFIG
 }
 
-run_eww 2> $HOME/logs/eww_launch_default.log
+run_eww

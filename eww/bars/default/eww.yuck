@@ -53,7 +53,7 @@
 ;; Windows
 
 (defwindow bar
-  :monitor 2
+  :monitor 0
   :geometry (geometry 
     :x "0%"
     :y "0%"
@@ -64,4 +64,18 @@
   :stacking "bg"
   :exclusive true
   (bar)
+)
+
+(defwindow powermenu
+  :monitor 0
+  :geometry (geometry 
+    :x "5px"
+    :y "5px"
+    :width "50px"
+    :height "10%"
+    :anchor "top left"
+  )
+  :stacking "fg"
+  :exclusive true
+  (powermenu)
 )

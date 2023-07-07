@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "$HOME/.config/owcli/icons/$($HOME/bin/openweathercli --print icon).png"
+OWCLI=$(which openweathercli)
+
+echo "$HOME/.config/owcli/icons/$($OWCLI --print icon).png"
