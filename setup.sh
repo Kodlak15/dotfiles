@@ -2,15 +2,17 @@
 
 # Automate the creation of symbolic links for each configuration
 
-set -e
+if [[ ! -d "$HOME/.config/hypr/" ]]; then
+    mkdir $HOME/.config/hypr
+fi
 
 function setup() {
     echo "Setting up configurations..."
     ln -sf $HOME/dotfiles/alacritty $HOME/.config/
     ln -sf $HOME/dotfiles/nvim $HOME/.config/
-    ln -sf $HOME/dotfiles/eww/ $HOME/.config/eww
-    ln -sf $HOME/dotfiles/hypr/$1 $HOME/.config/hypr
-    ln -sf $HOME/dotfiles/rofi/$1 $HOME/.config/rofi
+    ln -sf $HOME/dotfiles/eww/ $HOME/.config/
+    ln -sf $HOME/dotfiles/hypr/$1/hyprland.conf $HOME/.config/hypr/
+    ln -sf $HOME/dotfiles/rofi/$1 $HOME/.config/rofi/
     ln -sf $HOME/dotfiles/zsh/$1/.zshrc $HOME/
     ln -sf $HOME/dotfiles/zsh/$1/.zprofile $HOME/
     echo "Successfully set up configurations!"
@@ -20,9 +22,9 @@ function setup_no_replace() {
     echo "Setting up configurations..."
     ln -s $HOME/dotfiles/alacritty $HOME/.config/
     ln -s $HOME/dotfiles/nvim $HOME/.config/
-    ln -s $HOME/dotfiles/eww/ $HOME/.config/eww
-    ln -s $HOME/dotfiles/hypr/$1 $HOME/.config/hypr
-    ln -s $HOME/dotfiles/rofi/$1 $HOME/.config/rofi
+    ln -s $HOME/dotfiles/eww/ $HOME/.config/
+    ln -s $HOME/dotfiles/hypr/$1/hyprland.conf $HOME/.config/hypr/
+    ln -s $HOME/dotfiles/rofi/$1 $HOME/.config/rofi/
     ln -s $HOME/dotfiles/zsh/$1/.zshrc $HOME/
     ln -s $HOME/dotfiles/zsh/$1/.zprofile $HOME/
     echo "Successfully set up configurations!"
