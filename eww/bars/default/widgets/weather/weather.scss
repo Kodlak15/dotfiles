@@ -104,14 +104,16 @@
 
 .dashboard {
   .weather {
-    font-size: 100px;
+    font-size: 50px;
     background: tnn.$black;
     border: 2px solid tnn.$red;
     border-radius: 10px;
+    padding: 0 30px;
     margin: 10px;
   }
 
   .weather-icon {
-    font-size: 100px;
+    font-size: 50px;
+    padding: 0;
   }
 }
