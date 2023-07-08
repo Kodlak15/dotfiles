@@ -1,8 +1,40 @@
 @use '../../../../themes/tokyo-night-night.scss' as tnn;
 
+.weather {
+  background: tnn.$black;
+  border: 2px solid tnn.$cyan;
+  border-radius: 100em;
+  padding: 2px 5px 2px 5px;
+  transition: 0.5s;
+}
+
+.weather-event:hover > * {
+  border: 2px solid tnn.$magenta-bright;
+}
+
 .weather-icon {
-  font-size: 16px;
+  font-size: 32px;
   padding-right: 5px;
   padding-bottom: 1px;
   color: tnn.$blue;
+}
+
+.cold {
+  color: tnn.$magenta-bright;
+}
+
+.cool {
+  color: tnn.$cyan-bright;
+}
+
+.moderate {
+  color: tnn.$green-bright;
+}
+
+.warm {
+  color: tnn.$yellow-bright;
+}
+
+.hot {
+  color: tnn.$red-bright;
 }

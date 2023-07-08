@@ -3,6 +3,11 @@
   "$HOME/.config/eww/bars/default/widgets/weather/scripts/get_temp.sh"
 )
 
+(defpoll temp_level
+  :interval "30s"
+  "$HOME/.config/eww/bars/default/widgets/weather/scripts/get_temp_level.sh"
+)
+
 (defpoll get_icon
   :interval "30s"
   "$HOME/bin/openweathercli --print icon"
@@ -12,50 +17,55 @@
   (eventbox
     :class "weather-event"
     (box
-      :class "weather"
+      :class {
+        temp_level == "0" ? "weather cold" :
+        temp_level == "1" ? "weather cool" :
+        temp_level == "2" ? "weather moderate" :
+        temp_level == "3" ? "weather warm" :
+        "weather hot"
+      }
       get_temp
       (label 
         :text {
-          get_icon == "01d" ? "/home/cody/.config/owcli/icons/01d.png" :
-          get_icon == "01n" ? "/home/cody/.config/owcli/icons/01n.png" :
-          get_icon == "02d" ? "/home/cody/.config/owcli/icons/02d.png" :
-          get_icon == "02n" ? "/home/cody/.config/owcli/icons/02n.png" :
-          get_icon == "03d" ? "/home/cody/.config/owcli/icons/03d.png" :
-          get_icon == "03n" ? "/home/cody/.config/owcli/icons/03n.png" :
-          get_icon == "04d" ? "/home/cody/.config/owcli/icons/04d.png" :
-          get_icon == "04n" ? "/home/cody/.config/owcli/icons/04n.png" :
-          get_icon == "09d" ? "/home/cody/.config/owcli/icons/09d.png" :
-          get_icon == "09n" ? "/home/cody/.config/owcli/icons/09n.png" :
-          get_icon == "10d" ? "/home/cody/.config/owcli/icons/10d.png" :
-          get_icon == "10n" ? "/home/cody/.config/owcli/icons/10n.png" :
-          get_icon == "11d" ? "/home/cody/.config/owcli/icons/11d.png" :
-          get_icon == "11n" ? "/home/cody/.config/owcli/icons/11n.png" :
-          get_icon == "13d" ? "/home/cody/.config/owcli/icons/13d.png" :
-          get_icon == "13n" ? "/home/cody/.config/owcli/icons/13n.png" :
-          get_icon == "50d" ? "" :
-          "/home/cody/.config/owcli/icons/50n.png"
+          get_icon == "01d" ? "" :
+          get_icon == "01n" ? "" :
+          get_icon == "02d" ? "󰖕" :
+          get_icon == "02n" ? "󰼱" :
+          get_icon == "03d" ? "󰖐" :
+          get_icon == "03n" ? "" :
+          get_icon == "04d" ? "" :
+          get_icon == "04n" ? "" :
+          get_icon == "09d" ? "" :
+          get_icon == "09n" ? "" :
+          get_icon == "10d" ? "" :
+          get_icon == "10n" ? "" :
+          get_icon == "11d" ? "" :
+          get_icon == "11n" ? "" :
+          get_icon == "13d" ? "" :
+          get_icon == "13n" ? "" :
+          get_icon == "50d" ? "" :
+          "" 
         }
         ;; Make classes for each icon
         :class {
-          ;; get_icon == "01d" ? "/home/cody/.config/owcli/icons/01d.png" :
-          ;; get_icon == "01n" ? "/home/cody/.config/owcli/icons/01n.png" :
-          ;; get_icon == "02d" ? "/home/cody/.config/owcli/icons/02d.png" :
-          ;; get_icon == "02n" ? "/home/cody/.config/owcli/icons/02n.png" :
-          ;; get_icon == "03d" ? "/home/cody/.config/owcli/icons/03d.png" :
-          ;; get_icon == "03n" ? "/home/cody/.config/owcli/icons/03n.png" :
-          ;; get_icon == "04d" ? "/home/cody/.config/owcli/icons/04d.png" :
-          ;; get_icon == "04n" ? "/home/cody/.config/owcli/icons/04n.png" :
-          ;; get_icon == "09d" ? "/home/cody/.config/owcli/icons/09d.png" :
-          ;; get_icon == "09n" ? "/home/cody/.config/owcli/icons/09n.png" :
-          ;; get_icon == "10d" ? "/home/cody/.config/owcli/icons/10d.png" :
-          ;; get_icon == "10n" ? "/home/cody/.config/owcli/icons/10n.png" :
-          ;; get_icon == "11d" ? "/home/cody/.config/owcli/icons/11d.png" :
-          ;; get_icon == "11n" ? "/home/cody/.config/owcli/icons/11n.png" :
-          ;; get_icon == "13d" ? "/home/cody/.config/owcli/icons/13d.png" :
-          ;; get_icon == "13n" ? "/home/cody/.config/owcli/icons/13n.png" :
-          ;; get_icon == "50d" ? "" :
-          ;; "/home/cody/.config/owcli/icons/50n.png"
-          ""
+          get_icon == "01d" ? "sunny" :
+          get_icon == "01n" ? "sunny night" :
+          get_icon == "02d" ? "partly-cloudy" :
+          get_icon == "02n" ? "partly-cloudy night" :
+          get_icon == "03d" ? "cloudy" :
+          get_icon == "03n" ? "cloudy night" :
+          get_icon == "04d" ? "mostly-cloudy" :
+          get_icon == "04n" ? "mostly-cloudy night" :
+          get_icon == "09d" ? "showers" :
+          get_icon == "09n" ? "showers night" :
+          get_icon == "10d" ? "rain" :
+          get_icon == "10n" ? "rain night" :
+          get_icon == "11d" ? "thunderstorm" :
+          get_icon == "11n" ? "thunderstorm night" :
+          get_icon == "13d" ? "snow" :
+          get_icon == "13n" ? "snow night" :
+          get_icon == "50d" ? "haze" :
+          "haze night"
         }
       )
     )
