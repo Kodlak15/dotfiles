@@ -1,5 +1,6 @@
-@use "../../themes/tokyo-night-night.scss" as tnn;
-@use "./widgets/power/power.scss" as *;
+@use '../../themes/tokyo-night-night.scss' as tnn;
+@use './widgets/power/power.scss' as *;
+@use './widgets/weather/weather.scss' as *;
 
 * {
   all: unset;

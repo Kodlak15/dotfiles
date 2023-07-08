@@ -1,0 +1,8 @@
+@use '../../../../themes/tokyo-night-night.scss' as tnn;
+
+.weather-icon {
+  font-size: 16px;
+  padding-right: 5px;
+  padding-bottom: 1px;
+  color: tnn.$blue;
+}

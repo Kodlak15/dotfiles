@@ -1,11 +1,11 @@
-(defpoll show_temp
+(defpoll get_temp
   :interval "30s"
   "$HOME/.config/eww/bars/default/widgets/weather/scripts/get_temp.sh"
 )
 
-(defpoll show_icon
+(defpoll get_icon
   :interval "30s"
-  "$HOME/.config/eww/bars/default/widgets/weather/scripts/get_icon.sh"
+  "$HOME/bin/openweathercli --print icon"
 )
 
 (defwidget weather []
@@ -13,11 +13,50 @@
     :class "weather-event"
     (box
       :class "weather"
-      show_temp
-      (image 
-        :path show_icon
-        :image-height 20
-        :image-width 20
+      get_temp
+      (label 
+        :text {
+          get_icon == "01d" ? "/home/cody/.config/owcli/icons/01d.png" :
+          get_icon == "01n" ? "/home/cody/.config/owcli/icons/01n.png" :
+          get_icon == "02d" ? "/home/cody/.config/owcli/icons/02d.png" :
+          get_icon == "02n" ? "/home/cody/.config/owcli/icons/02n.png" :
+          get_icon == "03d" ? "/home/cody/.config/owcli/icons/03d.png" :
+          get_icon == "03n" ? "/home/cody/.config/owcli/icons/03n.png" :
+          get_icon == "04d" ? "/home/cody/.config/owcli/icons/04d.png" :
+          get_icon == "04n" ? "/home/cody/.config/owcli/icons/04n.png" :
+          get_icon == "09d" ? "/home/cody/.config/owcli/icons/09d.png" :
+          get_icon == "09n" ? "/home/cody/.config/owcli/icons/09n.png" :
+          get_icon == "10d" ? "/home/cody/.config/owcli/icons/10d.png" :
+          get_icon == "10n" ? "/home/cody/.config/owcli/icons/10n.png" :
+          get_icon == "11d" ? "/home/cody/.config/owcli/icons/11d.png" :
+          get_icon == "11n" ? "/home/cody/.config/owcli/icons/11n.png" :
+          get_icon == "13d" ? "/home/cody/.config/owcli/icons/13d.png" :
+          get_icon == "13n" ? "/home/cody/.config/owcli/icons/13n.png" :
+          get_icon == "50d" ? "" :
+          "/home/cody/.config/owcli/icons/50n.png"
+        }
+        ;; Make classes for each icon
+        :class {
+          ;; get_icon == "01d" ? "/home/cody/.config/owcli/icons/01d.png" :
+          ;; get_icon == "01n" ? "/home/cody/.config/owcli/icons/01n.png" :
+          ;; get_icon == "02d" ? "/home/cody/.config/owcli/icons/02d.png" :
+          ;; get_icon == "02n" ? "/home/cody/.config/owcli/icons/02n.png" :
+          ;; get_icon == "03d" ? "/home/cody/.config/owcli/icons/03d.png" :
+          ;; get_icon == "03n" ? "/home/cody/.config/owcli/icons/03n.png" :
+          ;; get_icon == "04d" ? "/home/cody/.config/owcli/icons/04d.png" :
+          ;; get_icon == "04n" ? "/home/cody/.config/owcli/icons/04n.png" :
+          ;; get_icon == "09d" ? "/home/cody/.config/owcli/icons/09d.png" :
+          ;; get_icon == "09n" ? "/home/cody/.config/owcli/icons/09n.png" :
+          ;; get_icon == "10d" ? "/home/cody/.config/owcli/icons/10d.png" :
+          ;; get_icon == "10n" ? "/home/cody/.config/owcli/icons/10n.png" :
+          ;; get_icon == "11d" ? "/home/cody/.config/owcli/icons/11d.png" :
+          ;; get_icon == "11n" ? "/home/cody/.config/owcli/icons/11n.png" :
+          ;; get_icon == "13d" ? "/home/cody/.config/owcli/icons/13d.png" :
+          ;; get_icon == "13n" ? "/home/cody/.config/owcli/icons/13n.png" :
+          ;; get_icon == "50d" ? "" :
+          ;; "/home/cody/.config/owcli/icons/50n.png"
+          ""
+        }
       )
     )
   )
