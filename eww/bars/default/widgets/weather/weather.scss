@@ -19,6 +19,8 @@
   color: tnn.$blue;
 }
 
+// Temperature modifiers
+
 .cold {
   color: tnn.$magenta-bright;
 }
@@ -37,4 +39,62 @@
 
 .hot {
   color: tnn.$red-bright;
+}
+
+// Weather modifiers
+
+.sunny {
+  color: tnn.$yellow-bright;
+
+  &.night {
+    color: tnn.$white-bright;
+  }
+}
+
+.partly-cloudy {
+  color: tnn.$white-bright;
+
+  &.night {
+    color: tnn.$white-bright;
+  }
+}
+
+.cloudy {
+  color: tnn.$white-bright;
+
+  &.night {
+    color: tnn.$white-bright;
+  }
+}
+
+.mostly-cloudy {
+  color: tnn.$white-bright;
+
+  &.night {
+    color: tnn.$white-bright;
+  }
+}
+
+.thunderstorm {
+  color: tnn.$white-bright;
+
+  &.night {
+    color: tnn.$white-bright;
+  }
+}
+
+.snow {
+  color: tnn.$cyan-bright;
+
+  &.night {
+    color: tnn.$cyan-bright;
+  }
+}
+
+.haze {
+  color: tnn.$white-bright;
+
+  &.night {
+    color: tnn.$white-bright;
+  }
 }

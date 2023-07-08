@@ -7,7 +7,7 @@
         :class "cpu-label"
         :text " "
       )
-      {round(EWW_CPU["avg"], 1)}
+      {round(EWW_CPU.avg, 1)}
       (label
         :text "GHz"
       )

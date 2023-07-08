@@ -1,6 +1,7 @@
 #!/bin/bash
 
 temp="$($HOME/.config/eww/bars/default/widgets/weather/scripts/get_temp.sh)"
+temp="${temp%*}"
 
 if [[ "$temp" -lt "20" ]]; then 
     echo "0"

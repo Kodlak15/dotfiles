@@ -5,7 +5,7 @@
       :class "ram"
       (label
         :class "ram-label"
-        :text "󰧑 "
+        :text " "
       )
       {round(EWW_RAM["used_mem_perc"], 1)}"%"
     )
