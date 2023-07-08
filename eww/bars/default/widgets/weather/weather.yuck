@@ -48,24 +48,24 @@
         }
         ;; Make classes for each icon
         :class {
-          get_icon == "01d" ? "sunny" :
-          get_icon == "01n" ? "sunny night" :
-          get_icon == "02d" ? "partly-cloudy" :
-          get_icon == "02n" ? "partly-cloudy night" :
-          get_icon == "03d" ? "cloudy" :
-          get_icon == "03n" ? "cloudy night" :
-          get_icon == "04d" ? "mostly-cloudy" :
-          get_icon == "04n" ? "mostly-cloudy night" :
-          get_icon == "09d" ? "showers" :
-          get_icon == "09n" ? "showers night" :
-          get_icon == "10d" ? "rain" :
-          get_icon == "10n" ? "rain night" :
-          get_icon == "11d" ? "thunderstorm" :
-          get_icon == "11n" ? "thunderstorm night" :
-          get_icon == "13d" ? "snow" :
-          get_icon == "13n" ? "snow night" :
-          get_icon == "50d" ? "haze" :
-          "haze night"
+          get_icon == "01d" ? "sunny weather-icon" :
+          get_icon == "01n" ? "sunny night weather-icon" :
+          get_icon == "02d" ? "partly-cloudy weather-icon" :
+          get_icon == "02n" ? "partly-cloudy night weather-icon" :
+          get_icon == "03d" ? "cloudy weather-icon" :
+          get_icon == "03n" ? "cloudy night weather-icon" :
+          get_icon == "04d" ? "mostly-cloudy weather-icon" :
+          get_icon == "04n" ? "mostly-cloudy night weather-icon" :
+          get_icon == "09d" ? "showers weather-icon" :
+          get_icon == "09n" ? "showers night weather-icon" :
+          get_icon == "10d" ? "rain weather-icon" :
+          get_icon == "10n" ? "rain night weather-icon" :
+          get_icon == "11d" ? "thunderstorm weather-icon" :
+          get_icon == "11n" ? "thunderstorm night weather-icon" :
+          get_icon == "13d" ? "snow weather-icon" :
+          get_icon == "13n" ? "snow night weather-icon" :
+          get_icon == "50d" ? "haze weather-icon" :
+          "haze night weather-icon"
         }
       )
     )

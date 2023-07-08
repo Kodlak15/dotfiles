@@ -50,14 +50,36 @@
   )
 )
 
+;; Dashboard
+
+(defwidget dashboard []
+  (button
+    :onclick "$HOME/bin/eww close dashboard -c $HOME/.config/eww/bars/default"
+    (box
+      :class "dashboard"
+      :orientation "v"
+      (box
+        :class "row"
+        (battery)
+        (weather)
+      )
+      (box
+        :class "row"
+        (battery)
+        (battery)
+      )
+    )
+  )
+)
+
 ;; Windows
 
 (defwindow bar
   :monitor 0
   :geometry (geometry 
-    :x "0%"
-    :y "0%"
-    :width "100%"
+    :x "5px"
+    :y "5px"
+    :width "99%"
     :height "2%"
     :anchor "top center"
   )
@@ -66,16 +88,16 @@
   (bar)
 )
 
-(defwindow powermenu
+(defwindow dashboard
   :monitor 0
-  :geometry (geometry 
-    :x "5px"
-    :y "5px"
-    :width "50px"
-    :height "10%"
-    :anchor "top left"
+  :geometry (geometry
+    :x "0px"
+    :y "15px"
+    :width "1500px"
+    :height "750px"
+    :anchor "center"
   )
   :stacking "fg"
   :exclusive true
-  (powermenu)
+  (dashboard)
 )
