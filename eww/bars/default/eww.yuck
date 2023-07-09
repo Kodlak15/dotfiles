@@ -25,7 +25,7 @@
   (box
     :class "left-container"
     :space-evenly false
-    (power)
+    ;; (power)
     (workspaces)
     (hardware)
   )
@@ -58,7 +58,7 @@
   :geometry (geometry 
     :x "5px"
     :y "5px"
-    :width "99%"
+    :width "100%"
     :height "2%"
     :anchor "top center"
   )

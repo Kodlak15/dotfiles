@@ -1,16 +1,15 @@
-@use "../../../themes/tokyo-night-night.scss" as tnn;
+@use '../../../themes/tokyo-night-night.scss' as tnn;
 
-* {
-  all: unset;
-}
-
-// Dashboard
+$margin-outer: 250px;
+$margin-inner: 5px;
 
 .dashboard {
   background: transparent;
-  border-radius: 20px;
+  margin: $margin-outer $margin-outer (35px + $margin-outer) $margin-outer; // Flush with all edges at margin: 0px 0px 35px 0px
 
-  // Widgets 
+  * {
+    border-radius: 20px;
+  }
 
   .time,
   .weather {
@@ -23,12 +22,19 @@
     background: tnn.$black;
     border: 2px solid tnn.$red;
     border-radius: 10px;
-    padding: 0 30px;
-    margin: 10px;
+    margin: $margin-inner;
   }
 
   .weather-icon {
     font-size: 50px;
     padding: 0;
+  }
+
+  .hardware {
+    font-size: 50px;
+    background: tnn.$black;
+    border: 2px solid tnn.$red;
+    border-radius: 10px;
+    margin: $margin-inner;
   }
 }

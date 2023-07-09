@@ -1,36 +1,39 @@
 (defwidget dashboard []
   (button
-    :onclick "$(which eww) close dashboard -c $HOME/.config/eww/bars/default"
+    ;; :onclick "$(which eww) close dashboard -c $HOME/.config/eww/bars/default"
+    :onclick "$HOME/.config/eww/scripts/toggle_dashboard.sh $HOME/.config/eww/bars/default"
     (box
       :class "dashboard"
-      :orientation "v"
       (box
-        :class "row"
-        (hardware)
+        :orientation "v"
         (box
+          :class "row"
+          (hardware)
           (box
-            :class "sub-row" :orientation "v"
-            (weather)
-            (weather)
-          )
-          (box
-            :class "sub-row"
-            :orientation "v"
-            (weather)
-            (weather)
+            (box
+              :class "sub-row" :orientation "v"
+              (weather)
+              (weather)
+            )
+            (box
+              :class "sub-row"
+              :orientation "v"
+              (weather)
+              (weather)
+            )
           )
         )
-      )
-      (box
-        :class "row"
-        :orientation "h"
-        (weather)
-        (weather)
-      )
-      (box
-        :class "row"
-        (weather)
-        (weather)
+        (box
+          :class "row"
+          :orientation "h"
+          (weather)
+          (weather)
+        )
+        (box
+          :class "row"
+          (weather)
+          (weather)
+        )
       )
     )
   )
@@ -42,9 +45,9 @@
   :monitor 0
   :geometry (geometry
     :x "0px"
-    :y "15px"
-    :width "1500px"
-    :height "750px"
+    :y "0px"
+    :width "100%"
+    :height "100%"
     :anchor "center"
   )
   :stacking "fg"
