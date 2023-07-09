@@ -23,14 +23,14 @@
       )
       (box
         :class "row"
-        (time)
+        :orientation "h"
+        (weather)
+        (weather)
       )
       (box
         :class "row"
-        ;; (battery)
-        ;; (battery)
-        ;; (battery)
-        ;; (battery)
+        (weather)
+        (weather)
       )
     )
   )
@@ -43,8 +43,6 @@
   :geometry (geometry
     :x "0px"
     :y "15px"
-    ;; :width "1500px"
-    ;; :height "750px"
     :width "1500px"
     :height "750px"
     :anchor "center"
