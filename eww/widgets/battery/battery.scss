@@ -1,4 +1,4 @@
-@use '../../../../themes/tokyo-night-night.scss' as tnn;
+@use '../../themes/tokyo-night-night.scss' as tnn;
 
 .battery_remaining {
   color: tnn.$white-bright;
@@ -26,14 +26,14 @@
   border: 2px solid tnn.$magenta-bright;
 }
 
-// Dashboard
-
-.dashboard {
-  .battery {
-    font-size: 32px;
-    background: tnn.$black;
-    border: 2px solid tnn.$red;
-    border-radius: 10px;
-    margin: 10px;
-  }
-}
+// // Dashboard
+//
+// .dashboard {
+//   .battery {
+//     font-size: 32px;
+//     background: tnn.$black;
+//     border: 2px solid tnn.$red;
+//     border-radius: 10px;
+//     margin: 10px;
+//   }
+// }

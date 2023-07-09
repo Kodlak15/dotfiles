@@ -1,16 +1,16 @@
 (defpoll get_temp
   :interval "30s"
-  "$HOME/.config/eww/bars/default/widgets/weather/scripts/get_temp.sh"
+  "$HOME/.config/eww/scripts/get_temp.sh"
 )
 
 (defpoll temp_level
   :interval "30s"
-  "$HOME/.config/eww/bars/default/widgets/weather/scripts/get_temp_level.sh"
+  "$HOME/.config/eww/scripts/get_temp_level.sh"
 )
 
 (defpoll get_icon
   :interval "30s"
-  "$HOME/bin/openweathercli --print icon"
+  "$(which openweathercli) --print icon"
 )
 
 (defwidget weather []

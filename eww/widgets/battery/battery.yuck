@@ -6,22 +6,22 @@
 
 (defpoll battery_charging
   :interval "3s"
-  "$HOME/.config/eww/bars/default/widgets/battery/scripts/is_charging.sh"
+  "$HOME/.config/eww/scripts/is_charging.sh"
 )
 
 (defpoll battery_low
   :interval "3s"
-  "$HOME/.config/eww/bars/default/widgets/battery/scripts/is_low.sh"
+  "$HOME/.config/eww/scripts/is_low.sh"
 )
 
 (defpoll is_laptop
   :interval "24h"
-  "$HOME/.config/eww/bars/default/widgets/battery/scripts/is_laptop.sh"
+  "$HOME/.config/eww/scripts/is_laptop.sh"
 )
 
 (defpoll bat_level
   :interval "3s"
-  "$HOME/.config/eww/bars/default/widgets/battery/scripts/get_level.sh"
+  "$HOME/.config/eww/scripts/get_level.sh"
 )
 
 (defwidget battery []

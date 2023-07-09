@@ -1,6 +1,6 @@
 (deflisten window 
   :initial "..." 
-  "sh $HOME/.config/eww/bars/default/widgets/hyprland/scripts/get_window_title.sh"
+  "sh $HOME/.config/eww/scripts/get_window_title.sh"
 )
 (defwidget window_w []
   (eventbox

@@ -1,0 +1,34 @@
+@use "../../../themes/tokyo-night-night.scss" as tnn;
+
+* {
+  all: unset;
+}
+
+// Dashboard
+
+.dashboard {
+  background: transparent;
+  border-radius: 20px;
+
+  // Widgets 
+
+  .time,
+  .weather {
+    border: 2px solid tnn.$yellow;
+    border-radius: 10px;
+  }
+
+  .weather {
+    font-size: 50px;
+    background: tnn.$black;
+    border: 2px solid tnn.$red;
+    border-radius: 10px;
+    padding: 0 30px;
+    margin: 10px;
+  }
+
+  .weather-icon {
+    font-size: 50px;
+    padding: 0;
+  }
+}
