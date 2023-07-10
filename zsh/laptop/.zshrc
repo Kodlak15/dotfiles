@@ -44,6 +44,7 @@ alias o='cd $(find * -type d | fzf)'
 alias ls='exa -l'
 alias lsa='exa -la'
 alias v='nvim'
+alias spotifyd="spotifyd --config-path /home/cody/.config/spotifyd/spotifyd.toml --no-daemon"
 
 # Git status info
 autoload -Uz vcs_info

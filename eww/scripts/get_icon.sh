@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OWCLI="$(which openweathercli)"
+OWCLI="HOME/bin/openweathercli"
 
 icon="$($OWCLI --print icon)"
 echo "$icon"

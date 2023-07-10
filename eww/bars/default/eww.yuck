@@ -25,7 +25,6 @@
   (box
     :class "left-container"
     :space-evenly false
-    ;; (power)
     (workspaces)
     (hardware)
   )

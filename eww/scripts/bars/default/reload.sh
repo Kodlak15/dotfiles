@@ -1,4 +1,4 @@
 #!/bin/bash
 
-EWW=$(which eww)
+EWW="$HOME/bin/eww"
 $EWW reload -c $HOME/.config/eww/bars/default/

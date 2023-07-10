@@ -4,10 +4,10 @@ set -e
 
 CONFIG="$HOME/.config/eww/bars/default"
 WIDGETS="$HOME/.config/eww/widgets"
-EWW="$(which eww)"
+EWW="$HOME/bin/eww"
 
 if [[ ! "$(pidof $EWW)" ]]; then
-    eww daemon
+    $EWW daemon
     sleep 1
 fi
 

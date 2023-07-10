@@ -6,6 +6,8 @@ $margin-inner: 5px;
 .dashboard {
   background: transparent;
   margin: $margin-outer $margin-outer (35px + $margin-outer) $margin-outer; // Flush with all edges at margin: 0px 0px 35px 0px
+  padding: 10px;
+  // border: 5px solid tnn.$green;
 
   * {
     border-radius: 20px;
@@ -13,7 +15,7 @@ $margin-inner: 5px;
 
   .time,
   .weather {
-    border: 2px solid tnn.$yellow;
+    border: 5px solid tnn.$green;
     border-radius: 10px;
   }
 
@@ -21,6 +23,7 @@ $margin-inner: 5px;
     font-size: 50px;
     background: tnn.$black;
     border: 2px solid tnn.$red;
+    border: 5px solid tnn.$green;
     border-radius: 10px;
     margin: $margin-inner;
   }
@@ -32,9 +35,17 @@ $margin-inner: 5px;
 
   .hardware {
     font-size: 50px;
-    background: tnn.$black;
     border: 2px solid tnn.$red;
+    border: 5px solid tnn.$green;
     border-radius: 10px;
     margin: $margin-inner;
+  }
+
+  .spotify {
+    background-size: 300px;
+    background-repeat: no-repeat;
+    margin: $margin-inner;
+    border: 5px solid tnn.$green;
+    border-radius: 10px;
   }
 }

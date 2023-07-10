@@ -1,39 +1,35 @@
+(defvar IMAGE "images/artwork.jpg")
+
+(defpoll get_spotify_artwork
+  :interval "5s"
+  "$HOME/Documents/projects/spapi/spapi.py"
+)
+
 (defwidget dashboard []
   (button
-    ;; :onclick "$(which eww) close dashboard -c $HOME/.config/eww/bars/default"
     :onclick "$HOME/.config/eww/scripts/toggle_dashboard.sh $HOME/.config/eww/bars/default"
     (box
       :class "dashboard"
+      :orientation "v"
       (box
-        :orientation "v"
         (box
-          :class "row"
-          (hardware)
-          (box
-            (box
-              :class "sub-row" :orientation "v"
-              (weather)
-              (weather)
-            )
-            (box
-              :class "sub-row"
-              :orientation "v"
-              (weather)
-              (weather)
-            )
-          )
+          :class "spotify"
+          :style "background-image: url('${IMAGE}');"
         )
+        (weather)
+        ;; (box
+        ;;   :class "spotify"
+        ;;   :style "background-image: url('${IMAGE}');"
+        ;; )
         (box
-          :class "row"
-          :orientation "h"
-          (weather)
-          (weather)
+          :class "spotify"
+          :style "background-image: url('${IMAGE}');"
         )
-        (box
-          :class "row"
-          (weather)
-          (weather)
-        )
+        (weather)
+      )
+      (box
+        (hardware)
+        (hardware)
       )
     )
   )
@@ -45,12 +41,12 @@
   :monitor 0
   :geometry (geometry
     :x "0px"
-    :y "0px"
+    :y "-35px"
     :width "100%"
     :height "100%"
-    :anchor "center"
+    :anchor "top center"
   )
   :stacking "fg"
-  :exclusive true
+  :exclusive false
   (dashboard)
 )
