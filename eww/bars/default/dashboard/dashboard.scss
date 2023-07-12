@@ -1,6 +1,6 @@
 @use '../../../themes/tokyo-night-night.scss' as tnn;
 
-$margin-outer: 250px;
+$margin-outer: 200px;
 $margin-inner: 5px;
 
 .dashboard {
@@ -42,7 +42,7 @@ $margin-inner: 5px;
   }
 
   .spotify {
-    background-size: 300px;
+    background-size: 310px;
     background-repeat: no-repeat;
     margin: $margin-inner;
     border: 5px solid tnn.$green;
