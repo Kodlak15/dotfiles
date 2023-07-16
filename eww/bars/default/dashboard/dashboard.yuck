@@ -47,6 +47,7 @@
     :anchor "top center"
   )
   :stacking "fg"
-  :exclusive false
+  ;; :exclusive false
+  :exclusive true 
   (dashboard)
 )

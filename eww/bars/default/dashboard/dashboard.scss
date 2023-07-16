@@ -15,15 +15,17 @@ $margin-inner: 5px;
 
   .time,
   .weather {
-    border: 5px solid tnn.$green;
+    // border: 5px solid tnn.$green;
+    border: $margin-inner solid tnn.$yellow;
     border-radius: 10px;
   }
 
   .weather {
     font-size: 50px;
     background: tnn.$black;
-    border: 2px solid tnn.$red;
-    border: 5px solid tnn.$green;
+    // border: 2px solid tnn.$red;
+    // border: 5px solid tnn.$green;
+    border: $margin-inner solid tnn.$yellow;
     border-radius: 10px;
     margin: $margin-inner;
   }
@@ -35,8 +37,9 @@ $margin-inner: 5px;
 
   .hardware {
     font-size: 50px;
-    border: 2px solid tnn.$red;
-    border: 5px solid tnn.$green;
+    // border: 2px solid tnn.$red;
+    // border: 5px solid tnn.$green;
+    border: $margin-inner solid tnn.$yellow;
     border-radius: 10px;
     margin: $margin-inner;
   }
@@ -45,7 +48,8 @@ $margin-inner: 5px;
     background-size: 310px;
     background-repeat: no-repeat;
     margin: $margin-inner;
-    border: 5px solid tnn.$green;
+    // border: 5px solid tnn.$green;
+    border: $margin-inner solid tnn.$yellow;
     border-radius: 10px;
   }
 }
