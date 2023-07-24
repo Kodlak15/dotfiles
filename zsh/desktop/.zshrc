@@ -10,7 +10,7 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-### Everything below is user added ###
+### Everything below is added by yours truly ###
 
 # Autocompletion
 zstyle ':completion:*' menu select
@@ -18,10 +18,6 @@ zstyle ':completion::complete:*' gain-privileges 1
 zstyle ':completion:*:descriptions' format '%U%B%d%b%u' 
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b' 
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
-# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source $HOME/git/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/repos/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 ### Add PATH directories ###
@@ -34,10 +30,6 @@ export PATH="$HOME/.cargo/:$PATH"
 export GTK_THEME=Adwaita:dark
 
 ### Aliases ###
-alias start='start_hyprland.sh'
-alias setup='setup.sh'
-alias hypr='start.sh'
-
 alias firefox="(firefox &) && exit"
 alias ff="(firefox &) && exit"
 alias brave="(brave-bin --enable-features=UseOzonePlatform --ozone-platform=wayland &) && exit"
@@ -49,6 +41,8 @@ alias o='cd $(find * -type d | fzf)'
 alias ls='exa -l'
 alias lsa='exa -la'
 alias v='nvim'
+alias vi='nvim'
+alias vim='nvim'
 
 # Git status info
 autoload -Uz vcs_info

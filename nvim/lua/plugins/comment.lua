@@ -8,8 +8,8 @@ return {
       end,
     },
     mappings = {
-      comment = "<leader>/",
-      comment_line = "<leader>/",
+      comment = "<leader>h",
+      comment_line = "<leader>h",
     },
   },
 }
