@@ -6,6 +6,7 @@
 (include "../../widgets/hyprland/window.yuck")
 (include "../../widgets/weather/weather.yuck")
 (include "../../widgets/time/time.yuck")
+(include "../../widgets/volume/volume.yuck")
 
 ;; Master container
 
@@ -44,6 +45,7 @@
     :class "right-container"
     :space-evenly false
     :halign "end"
+    (volume)
     (weather)
     (time)
     (battery)

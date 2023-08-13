@@ -28,7 +28,7 @@
   (eventbox
     ;; This is broken, best to open rofi with keybind
     ;; Command times out and clicking anywhere on bar will open this menu until reload
-    :onclick "$HOME/.config/rofi/applets/bin/battery.sh" 
+    ;; :onclick "$HOME/.config/rofi/applets/bin/battery.sh"
     :class "battery-event"
     (box
       :class {

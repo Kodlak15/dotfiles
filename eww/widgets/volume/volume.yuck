@@ -1,0 +1,35 @@
+(defpoll current-volume 
+  :interval "1s" 
+  :initial "0"
+  "wpctl get-volume 45 | awk -F ' ' '{print $2}' | awk '{print $1*100}'"
+)
+
+(defvar vol false)
+(defwidget volume []
+  (eventbox
+    :onhover "$(which eww) update vol=true"
+    :onhoverlost "$(which eww) update vol=false"
+    :class "volume-event"
+    (box
+      :class "volume"
+      :space-evenly false
+      :spacing 5
+      (label :text "" :class "volume-icon")
+      (revealer
+        :transition "slideright"
+        :reveal vol
+        :duration "550ms"
+        (scale
+          :class "volume-slider"
+          :value current-volume
+          :round-digits 0
+          ;; :tooltip "Volume: ${current-volume}"
+          :min 0
+          :max 101
+          :active true
+          :onchange "../../scripts/volume.sh {}"
+        )
+      )
+    )
+  )
+)

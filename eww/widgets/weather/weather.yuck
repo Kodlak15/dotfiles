@@ -10,7 +10,7 @@
 
 (defpoll get_icon
   :interval "30s"
-  "$(which openweathercli) --print icon"
+  "$(which openweathercli) --print icon 2> $HOME/.config/eww/widgets/weather/logs/get_icon.log"
 )
 
 (defwidget weather []

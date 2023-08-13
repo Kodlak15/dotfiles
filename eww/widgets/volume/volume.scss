@@ -1,0 +1,23 @@
+@use '../../themes/tokyo-night-night.scss' as tnn;
+
+.volume {
+  background: tnn.$black;
+  color: tnn.$yellow-bright;
+  border: 2px solid tnn.$cyan;
+  border-radius: 100em;
+  padding: 5px 10px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.volume-event:hover > * {
+  border: 2px solid tnn.$magenta-bright;
+}
+
+.volume-slider {
+  color: tnn.$white-bright;
+  background-color: tnn.$blue;
+  // border: 2px solid tnn.$yellow;
+  border-radius: 100em;
+  // padding: 0 3em;
+}
