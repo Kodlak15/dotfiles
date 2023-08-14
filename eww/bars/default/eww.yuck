@@ -45,7 +45,7 @@
     :class "right-container"
     :space-evenly false
     :halign "end"
-    (volume)
+    ;;(volume)
     (weather)
     (time)
     (battery)

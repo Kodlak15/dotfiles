@@ -21,3 +21,15 @@
   border-radius: 100em;
   // padding: 0 3em;
 }
+
+slider {
+  all: unset;
+  background: tnn.$yellow;
+}
+
+scale {
+  all: unset;
+  color: tnn.$red;
+  background: tnn.$red;
+  min-width: 50px;
+}
