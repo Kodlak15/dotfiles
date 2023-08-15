@@ -3,11 +3,20 @@
     :class "ram-event"
     (box
       :class "ram"
-      (label
-        :class "ram-label"
-        :text " "
+      :spacing 2
+      (label :text "RAM")
+      (circular-progress
+        :class "rambar"
+        :value {round(EWW_RAM["used_mem_perc"], 1)}
+        :start-at 75
+        :clockwise true
+        :thickness 3
       )
-      {round(EWW_RAM["used_mem_perc"], 1)}"%"
+      ;;(label
+      ;;  :class "ram-label"
+      ;;  :text " "
+      ;;)
+      ;;{round(EWW_RAM["used_mem_perc"], 1)}"%"
     )
   )
 )

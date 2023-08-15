@@ -26,15 +26,15 @@
   border: 2px solid tnn.$magenta-bright;
 }
 
-.cpubar {
-  color: tnn.$magenta;
-  background: tnn.$white-bright;
+circular-progress {
+  color: tnn.$white-bright;
+  background: tnn.$black-bright;
   margin: 4px;
 }
 
-circular-progress {
-  background: tnn.$white-bright;
-}
+// circular-progress {
+//   background: tnn.$white-bright;
+// }
 
 // .hardware label {
 //   //background: tnn.$green;

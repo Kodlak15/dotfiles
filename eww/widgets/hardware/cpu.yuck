@@ -3,10 +3,12 @@
     :class "cpu-event"
     (box
       :class "cpu"
+      :spacing 2
       ;;(label
       ;;  :class "cpu-label"
       ;;  :text " "
       ;;)
+      (label :text "CPU")
       (circular-progress
         :class "cpubar"
         :value {round(EWW_CPU.avg, 1)} 

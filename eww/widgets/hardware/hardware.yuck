@@ -7,6 +7,8 @@
     :class "hardware-event"
     (box
       :class "hardware"
+      :space-evenly false
+      :spacing 5
       (cpu)
       (ram)
     )
