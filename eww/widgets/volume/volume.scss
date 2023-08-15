@@ -14,22 +14,32 @@
   border: 2px solid tnn.$magenta-bright;
 }
 
-.volume-slider {
-  color: tnn.$white-bright;
-  background-color: tnn.$blue;
-  // border: 2px solid tnn.$yellow;
-  border-radius: 100em;
-  // padding: 0 3em;
+scale {
+  all: unset;
+  background: tnn.$red;
+  background: tnn.$background;
+  min-width: 50px;
+  min-height: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+trough {
+  all: unset;
+  //background: tnn.$green;
+  min-width: 0px;
+  min-height: 5px;
+  border-radius: 10px;
 }
 
 slider {
   all: unset;
-  background: tnn.$yellow;
+  background: tnn.$white;
+  border-radius: 10px;
 }
 
-scale {
+highlight {
   all: unset;
-  color: tnn.$red;
-  background: tnn.$red;
-  min-width: 50px;
+  background: tnn.$white;
+  border-radius: 10px;
 }
