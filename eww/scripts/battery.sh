@@ -46,8 +46,6 @@ is_low() {
 	fi
 }
 
-echo $1
-
 case "$1" in
 -r | --remaining) battery_remaining ;;
 -l | --level) get_level ;;

@@ -1,6 +1,5 @@
 (include "../../widgets/hardware/cpu.yuck")
 (include "../../widgets/hardware/ram.yuck")
-;; (include "$HOME/.config/eww/widgets/hardware/ram.yuck")
 
 (defwidget hardware []
   (eventbox

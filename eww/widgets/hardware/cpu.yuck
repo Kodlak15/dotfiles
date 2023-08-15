@@ -4,10 +4,6 @@
     (box
       :class "cpu"
       :spacing 2
-      ;;(label
-      ;;  :class "cpu-label"
-      ;;  :text " "
-      ;;)
       (label :text "CPU")
       (circular-progress
         :class "cpubar"
@@ -15,14 +11,7 @@
         :start-at 75
         :clockwise true
         :thickness 3
-        ;;(label
-        ;;  :text "%"
-        ;;)
       )
-      ;;{round(EWW_CPU.avg, 1)}
-      ;;(label
-      ;;  :text "%"
-      ;;)
     )
   )
 )
