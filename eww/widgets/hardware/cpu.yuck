@@ -3,14 +3,24 @@
     :class "cpu-event"
     (box
       :class "cpu"
-      (label
-        :class "cpu-label"
-        :text " "
+      ;;(label
+      ;;  :class "cpu-label"
+      ;;  :text " "
+      ;;)
+      (circular-progress
+        :class "cpubar"
+        :value {round(EWW_CPU.avg, 1)} 
+        :start-at 75
+        :clockwise true
+        :thickness 3
+        ;;(label
+        ;;  :text "%"
+        ;;)
       )
-      {round(EWW_CPU.avg, 1)}
-      (label
-        :text "GHz"
-      )
+      ;;{round(EWW_CPU.avg, 1)}
+      ;;(label
+      ;;  :text "%"
+      ;;)
     )
   )
 )

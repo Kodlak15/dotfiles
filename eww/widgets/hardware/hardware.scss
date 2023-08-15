@@ -26,6 +26,21 @@
   border: 2px solid tnn.$magenta-bright;
 }
 
+.cpubar {
+  color: tnn.$magenta;
+  background: tnn.$white-bright;
+  margin: 4px;
+}
+
+circular-progress {
+  background: tnn.$white-bright;
+}
+
+// .hardware label {
+//   //background: tnn.$green;
+//   color: tnn.$green;
+// }
+
 // .dashboard {
 //   .hardware {
 //     font-size: 50px;

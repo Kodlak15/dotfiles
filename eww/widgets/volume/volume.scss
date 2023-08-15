@@ -14,7 +14,7 @@
   border: 2px solid tnn.$magenta-bright;
 }
 
-scale {
+.volume scale {
   all: unset;
   background: tnn.$red;
   background: tnn.$background;
@@ -24,7 +24,7 @@ scale {
   margin: 0;
 }
 
-trough {
+.volume trough {
   all: unset;
   //background: tnn.$green;
   min-width: 0px;
@@ -32,13 +32,13 @@ trough {
   border-radius: 10px;
 }
 
-slider {
+.volume slider {
   all: unset;
   background: tnn.$white;
   border-radius: 10px;
 }
 
-highlight {
+.volume highlight {
   all: unset;
   background: tnn.$white;
   border-radius: 10px;
