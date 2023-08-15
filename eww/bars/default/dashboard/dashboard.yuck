@@ -7,7 +7,8 @@
 
 (defwidget dashboard []
   (button
-    :onclick "$HOME/.config/eww/scripts/toggle_dashboard.sh $HOME/.config/eww/bars/default"
+    ;;:onclick "$HOME/.config/eww/scripts/toggle_dashboard.sh $HOME/.config/eww/bars/default"
+    :onclick "../../../scripts/dashboard.sh -t $HOME/.config/eww/bars/default"
     (box
       :class "dashboard"
       :orientation "v"

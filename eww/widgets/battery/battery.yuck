@@ -1,27 +1,27 @@
 (defpoll battery_remaining 
   :class "battery_remaining"
   :interval "10s"
-  "acpi -b | awk -F ', ' '{print$2}' | awk -F '%' '{print$1}'"
+  "../../scripts/battery.sh -r"
 )
 
 (defpoll battery_charging
   :interval "3s"
-  "$HOME/.config/eww/scripts/is_charging.sh"
+  "../../scripts/battery.sh -c"
 )
 
 (defpoll battery_low
   :interval "3s"
-  "$HOME/.config/eww/scripts/is_low.sh"
+  "../../scripts/battery.sh -w"
 )
 
 (defpoll is_laptop
   :interval "24h"
-  "$HOME/.config/eww/scripts/is_laptop.sh"
+  "../../scripts/battery.sh -x"
 )
 
 (defpoll bat_level
   :interval "3s"
-  "$HOME/.config/eww/scripts/get_level.sh"
+  "../../scripts/battery.sh -l"
 )
 
 (defwidget battery []
