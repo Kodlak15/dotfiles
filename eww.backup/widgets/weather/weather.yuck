@@ -1,0 +1,73 @@
+(defpoll get_temp
+  :interval "30s"
+  "../../scripts/weather.sh --temp"
+)
+
+(defpoll temp_level
+  :interval "30s"
+  "../../scripts/weather.sh --level"
+)
+
+(defpoll get_icon
+  :interval "30s"
+  "../../scripts/weather.sh --icon"
+)
+
+(defwidget weather []
+  (eventbox
+    :class "weather-event"
+    (box
+      :class {
+        temp_level == "0" ? "weather cold" :
+        temp_level == "1" ? "weather cool" :
+        temp_level == "2" ? "weather moderate" :
+        temp_level == "3" ? "weather warm" :
+        "weather hot"
+      }
+      get_temp
+      (label 
+        :text {
+          get_icon == "01d" ? "" :
+          get_icon == "01n" ? "" :
+          get_icon == "02d" ? "󰖕" :
+          get_icon == "02n" ? "󰼱" :
+          get_icon == "03d" ? "󰖐" :
+          get_icon == "03n" ? "" :
+          get_icon == "04d" ? "" :
+          get_icon == "04n" ? "" :
+          get_icon == "09d" ? "" :
+          get_icon == "09n" ? "" :
+          get_icon == "10d" ? "" :
+          get_icon == "10n" ? "" :
+          get_icon == "11d" ? "" :
+          get_icon == "11n" ? "" :
+          get_icon == "13d" ? "" :
+          get_icon == "13n" ? "" :
+          get_icon == "50d" ? "" :
+          "" 
+        }
+        ;; Make classes for each icon
+        :class {
+          get_icon == "01d" ? "sunny weather-icon" :
+          get_icon == "01n" ? "sunny night weather-icon" :
+          get_icon == "02d" ? "partly-cloudy weather-icon" :
+          get_icon == "02n" ? "partly-cloudy night weather-icon" :
+          get_icon == "03d" ? "cloudy weather-icon" :
+          get_icon == "03n" ? "cloudy night weather-icon" :
+          get_icon == "04d" ? "mostly-cloudy weather-icon" :
+          get_icon == "04n" ? "mostly-cloudy night weather-icon" :
+          get_icon == "09d" ? "showers weather-icon" :
+          get_icon == "09n" ? "showers night weather-icon" :
+          get_icon == "10d" ? "rain weather-icon" :
+          get_icon == "10n" ? "rain night weather-icon" :
+          get_icon == "11d" ? "thunderstorm weather-icon" :
+          get_icon == "11n" ? "thunderstorm night weather-icon" :
+          get_icon == "13d" ? "snow weather-icon" :
+          get_icon == "13n" ? "snow night weather-icon" :
+          get_icon == "50d" ? "haze weather-icon" :
+          "haze night weather-icon"
+        }
+      )
+    )
+  )
+)

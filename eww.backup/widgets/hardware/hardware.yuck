@@ -1,0 +1,16 @@
+(include "../../widgets/hardware/cpu.yuck")
+(include "../../widgets/hardware/ram.yuck")
+
+(defwidget hardware []
+  (eventbox
+    :class "hardware-event"
+    (box
+      :class "hardware"
+      :space-evenly false
+      :spacing 5
+      (cpu)
+      (ram)
+    )
+  )
+)
+

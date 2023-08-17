@@ -1,0 +1,52 @@
+(defpoll battery_remaining 
+  :class "battery_remaining"
+  :interval "10s"
+  "../../scripts/battery.sh -r"
+)
+
+(defpoll battery_charging
+  :interval "3s"
+  "../../scripts/battery.sh -c"
+)
+
+(defpoll battery_low
+  :interval "3s"
+  "../../scripts/battery.sh -w"
+)
+
+(defpoll is_laptop
+  :interval "24h"
+  "../../scripts/battery.sh -x"
+)
+
+(defpoll bat_level
+  :interval "3s"
+  "../../scripts/battery.sh -l"
+)
+
+(defwidget battery []
+  (eventbox
+    ;; This is broken, best to open rofi with keybind
+    ;; Command times out and clicking anywhere on bar will open this menu until reload
+    ;; :onclick "$HOME/.config/rofi/applets/bin/battery.sh"
+    :class "battery-event"
+    (box
+      :class {
+        is_laptop == "false" ? "" :
+        battery_charging == "true" ? "battery charging" : 
+        battery_low == "true" ? "battery low" : 
+        "battery"
+      }
+      (label
+        :text {
+          is_laptop == "false" ? "" :
+          bat_level == "0" ? " " :
+          bat_level == "1" ? " " :
+          bat_level == "2" ? " " :
+          bat_level == "3" ? " " :
+          " " 
+        }
+      )
+    )
+  )
+)

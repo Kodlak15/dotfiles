@@ -1,0 +1,18 @@
+(defwidget cpu []
+  (eventbox
+    :class "cpu-event"
+    (box
+      :class "cpu"
+      :spacing 2
+      (label :text "CPU")
+      (circular-progress
+        :class "cpubar"
+        :value {round(EWW_CPU.avg, 1)} 
+        :start-at 75
+        :clockwise true
+        :thickness 3
+      )
+    )
+  )
+)
+
