@@ -1,66 +1,3 @@
-;;(defvar IMAGE "$HOME/Documents/projects/sptfycli/artwork.jpg")
-(defvar IMAGE "/home/cody/Documents/projects/sptfycli/artwork.jpg")
-
-(defpoll get_spotify_artwork
-  :interval "5s"
-  "$HOME/Documents/projects/sptfycli/sptfy.py -a"
-)
-
-;; Previously found an answer on github to solve problem with this
-(defpoll spotify_elapsed
-  :interval "1s"
-  "$HOME/Documents/projects/sptfycli/sptfy.py -e"
-)
-
-(defpoll spotify_duration
-  :interval "2s"
-  "$HOME/Documents/projects/sptfycli/sptfy.py -d"
-)
-
-(defpoll track_name
-  :interval "2s"
-  "$HOME/Documents/projects/sptfycli/sptfy.py --track"
-)
-
-(defpoll track_album
-  :interval "2s"
-  "$HOME/Documents/projects/sptfycli/sptfy.py --album"
-)
-
-(defpoll track_artist
-  :interval "2s"
-  "$HOME/Documents/projects/sptfycli/sptfy.py --artist"
-)
-
-(defwidget spotify []
-  (box
-    :class "spotify"
-    :orientation "v"
-    :space-evenly false
-    (box
-      :class "artwork"
-      :style "background-image: url('${IMAGE}');"
-      :height 400
-      :width 400
-      get_spotify_artwork
-    )
-    (box
-      :class "state"
-      :orientation "v"
-      (box
-        :class "track_info"
-        :orientation "v"
-        (label :text "${track_name}" :limit-width 30)
-        (label :text "${track_album}" :limit-width 30)
-        (label :text "${track_artist}" :limit-width 30)
-      )
-      (progress
-        :value spotify_elapsed
-      )
-    )
-  )
-)
-
 (defwidget dashboard []
   (button
     :onclick "../../../scripts/dashboard.sh -t $HOME/.config/eww/bars/default"
@@ -68,7 +5,7 @@
       :class "dashboard"
       :orientation "v"
       (box
-        (spotify)
+        (spotifydb)
         (box
           :orientation "v"
           (weather)

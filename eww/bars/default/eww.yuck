@@ -7,6 +7,7 @@
 (include "../../widgets/weather/weather.yuck")
 (include "../../widgets/time/time.yuck")
 (include "../../widgets/volume/volume.yuck")
+(include "../../widgets/music/spotify.yuck")
 
 ;; Master container
 
