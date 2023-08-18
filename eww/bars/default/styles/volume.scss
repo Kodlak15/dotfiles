@@ -1,0 +1,45 @@
+@use '../../../themes/tokyo-night-night.scss' as tnn;
+
+.volume {
+  background: tnn.$black;
+  color: tnn.$yellow-bright;
+  border: 2px solid tnn.$cyan;
+  border-radius: 100em;
+  padding: 5px 10px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.volume-event:hover > * {
+  border: 2px solid tnn.$magenta-bright;
+}
+
+.volume scale {
+  all: unset;
+  background: tnn.$red;
+  background: tnn.$background;
+  min-width: 50px;
+  min-height: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.volume trough {
+  all: unset;
+  //background: tnn.$green;
+  min-width: 0px;
+  min-height: 5px;
+  border-radius: 10px;
+}
+
+.volume slider {
+  all: unset;
+  background: tnn.$white;
+  border-radius: 10px;
+}
+
+.volume highlight {
+  all: unset;
+  background: tnn.$white;
+  border-radius: 10px;
+}

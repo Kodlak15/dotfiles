@@ -1,0 +1,16 @@
+@use '../../../themes/tokyo-night-night.scss' as tnn;
+
+.power {
+  font-size: 14px;
+  color: tnn.$yellow-bright;
+  background: tnn.$black;
+  border: 2px solid tnn.$cyan-bright;
+  border-radius: 100em;
+  padding: 2px 12px 2px 9px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.power-event:hover > * {
+  border: 2px solid tnn.$magenta;
+}

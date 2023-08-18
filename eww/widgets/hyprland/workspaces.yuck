@@ -1,8 +1,10 @@
-(deflisten workspaces :initial "[]" "$HOME/.config/eww/scripts/get_workspaces.sh")
-(deflisten current_workspace :initial "1" "$HOME/.config/eww/scripts/get_active_workspace.sh")
+;;(deflisten workspaces :initial "[]" "$HOME/.config/eww/scripts/get_workspaces.sh")
+(deflisten workspaces :initial "[]" "$HOME/.config/eww/scripts/hyprland.sh -w")
+;;(deflisten current_workspace :initial "1" "$HOME/.config/eww/scripts/get_active_workspace.sh")
+(deflisten current_workspace :initial "1" "$HOME/.config/eww/scripts/hyprland.sh -a")
 (defwidget workspaces []
   (eventbox 
-    :onscroll "bash $HOME/.config/eww/scripts/get_active_workspace.sh" 
+    :onscroll "bash $HOME/.config/eww/scripts/hyprland.sh -c" 
     :class "workspaces"
     (box 
       :class "workspaces-container"

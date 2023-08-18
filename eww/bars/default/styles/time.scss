@@ -1,0 +1,14 @@
+@use '../../../themes/tokyo-night-night.scss' as tnn;
+
+.time {
+  background: tnn.$black;
+  color: tnn.$yellow-bright;
+  border: 2px solid tnn.$cyan;
+  border-radius: 100em;
+  padding: 2px 10px;
+  margin-right: 5px;
+}
+
+.time-event:hover > * {
+  border: 2px solid tnn.$magenta-bright;
+}
