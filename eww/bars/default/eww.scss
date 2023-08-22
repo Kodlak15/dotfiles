@@ -1,15 +1,7 @@
-// @use '../../themes/tokyo-night-night.scss' as tnn;
-// @use './dashboard/dashboard.scss' as *;
-// @use '../../widgets/power/power.scss' as *;
-// @use '../../widgets/weather/weather.scss' as *;
-// @use '../../widgets/hyprland/hyprland.scss' as *;
-// @use '../../widgets/hardware/hardware.scss' as *;
-// @use '../../widgets/battery/battery.scss' as *;
-// @use '../../widgets/time/time.scss' as *;
-// @use '../../widgets/volume/volume.scss' as *;
 @use '../../themes/tokyo-night-night.scss' as tnn;
 @use './styles/dashboard.scss' as *;
 @use './styles/batteryd.scss' as *;
+@use './styles/calendard.scss' as *;
 @use './styles/power.scss' as *;
 @use './styles/weather.scss' as *;
 @use './styles/hyprland.scss' as *;

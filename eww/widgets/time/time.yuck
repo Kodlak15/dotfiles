@@ -7,6 +7,7 @@
 (defwidget time []
   (eventbox
     :class "time-event"
+    :onclick "/home/cody/.config/eww/scripts/dropdown.sh --calendar"
     (box
      :space-evenly false
      :halign "center"

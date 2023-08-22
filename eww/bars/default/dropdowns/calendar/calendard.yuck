@@ -1,0 +1,24 @@
+(defwidget calendard []
+  (eventbox
+    :onclick "/home/cody/.config/eww/scripts/dropdown.sh --calendar"
+    :class "calendar-dropdown"
+    (box
+      :class "calendar"
+      (calendar :class "calendar")
+    )
+  )
+)
+
+(defwindow calendard
+  :monitor 0
+  :geometry (geometry
+    :x "5px"
+    :y "5px"
+    :width "10%"
+    :height "10%"
+    :anchor "top right"
+  )
+  :stacking "fg"
+  :exclusive true
+  (calendard)
+)

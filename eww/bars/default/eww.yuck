@@ -1,6 +1,7 @@
 ;; Import windows
 (include "./dashboard/dashboard.yuck")
 (include "./dropdowns/battery/batteryd.yuck")
+(include "./dropdowns/calendar/calendard.yuck")
 
 ;; Import widgets
 (include "../../widgets/battery/battery.yuck")

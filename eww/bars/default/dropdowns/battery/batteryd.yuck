@@ -7,8 +7,6 @@
       :width 50
       (box
         :orientation "v"
-        ;;:space-evenly false
-        ;;:spacing 10
         (box
           :space-evenly false
           :spacing 10
