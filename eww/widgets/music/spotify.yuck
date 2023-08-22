@@ -1,4 +1,3 @@
-;;(defvar IMAGE "$HOME/Documents/projects/sptfycli/artwork.jpg")
 (defvar IMAGE "/home/cody/Documents/projects/sptfycli/artwork.jpg")
 
 (defpoll get_spotify_artwork

@@ -1,0 +1,9 @@
+(defwidget icon [action image ?class]
+  (eventbox
+    :class "${class}"
+    :onclick "${action}"
+    ;;(image
+    ;;  :path "${image}"
+    ;;)
+  )
+)

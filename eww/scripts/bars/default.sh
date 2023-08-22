@@ -32,10 +32,16 @@ inspect() {
 	"$EWW" inspector -c "$CONFIG"
 }
 
+windows() {
+	"$EWW" windows -c "$CONFIG"
+}
+
 case $1 in
 -s | --launch) launch ;;
 -l | --logs) logs ;;
 -k | --kill) kill_ ;;
 -r | --reload) reload ;;
 -i | --inspect) inspect ;;
+-w | --windows) windows ;;
+*) echo "Invalid command" ;;
 esac

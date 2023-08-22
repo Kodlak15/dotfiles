@@ -1,0 +1,5 @@
+@use '../../../themes/tokyo-night-night.scss' as tnn;
+
+.icon {
+  background: tnn.$black;
+}

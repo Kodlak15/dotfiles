@@ -1,4 +1,8 @@
+;; Import windows
 (include "./dashboard/dashboard.yuck")
+(include "./dropdowns/battery/batteryd.yuck")
+
+;; Import widgets
 (include "../../widgets/battery/battery.yuck")
 (include "../../widgets/power/power.yuck")
 (include "../../widgets/hyprland/workspaces.yuck")
@@ -8,6 +12,7 @@
 (include "../../widgets/time/time.yuck")
 (include "../../widgets/volume/volume.yuck")
 (include "../../widgets/music/spotify.yuck")
+(include "../../widgets/icon/icon.yuck")
 
 ;; Master container
 

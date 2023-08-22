@@ -3,8 +3,12 @@
 $margin-outer: 200px;
 $margin-inner: 5px;
 
+.grid {
+  background: tnn.$black;
+}
+
 .dashboard {
-  background: tnn.$background;
+  // background: tnn.$background;
   background: rgba($color: tnn.$background, $alpha: 0.9);
   margin: $margin-outer $margin-outer (35px + $margin-outer) $margin-outer; // Flush with all edges at margin: 0px 0px 35px 0px
   padding: 10px;

@@ -1,6 +1,18 @@
+(defwidget grid []
+  (box
+    :class "grid"
+    (icon
+      :class "icon"
+      :action "../../../scripts/open_links.sh --gh"
+      :image "/home/cody/dotfiles/eww/widgets/hyprland/images/logo.ico"
+    )
+  )
+)
+
 (defwidget dashboard []
   (button
-    :onclick "../../../scripts/dashboard.sh -t $HOME/.config/eww/bars/default"
+    ;; Temporary: should do this on actions instead
+    :onclick "/home/cody/.config/eww/scripts/dashboard.sh -t $HOME/.config/eww/bars/default"
     (box
       :class "dashboard"
       :orientation "v"
@@ -11,11 +23,12 @@
           (weather)
           (hardware)
         )
-        (box
-          :orientation "v"
-          (weather)
-          (hardware)
-        )
+        ;;(box
+        ;;  :orientation "v"
+        ;;  (weather)
+        ;;  (hardware)
+        ;;)
+        (grid)
       )
     )
   )
