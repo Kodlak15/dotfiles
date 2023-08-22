@@ -19,7 +19,7 @@
         :value "${battery_remaining}"
         :start-at 75
         :clockwise true
-        :thickness 3
+        :thickness 10
       )
     )
   )
