@@ -1,5 +1,7 @@
 @use '../../../themes/tokyo-night-night.scss' as tnn;
 
 .icon {
-  background: tnn.$black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-position: center;
 }

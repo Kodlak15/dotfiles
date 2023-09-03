@@ -3,10 +3,6 @@
 $margin-outer: 200px;
 $margin-inner: 5px;
 
-.grid {
-  background: tnn.$black;
-}
-
 .dashboard {
   // background: tnn.$background;
   background: rgba($color: tnn.$background, $alpha: 0.9);
@@ -75,5 +71,10 @@ $margin-inner: 5px;
     color: tnn.$white-bright;
     background: tnn.$white;
     border-radius: 10px;
+  }
+
+  .grid {
+    background: tnn.$green;
+    border: 5px solid tnn.$red;
   }
 }

@@ -2,8 +2,8 @@
   (eventbox
     :class "${class}"
     :onclick "${action}"
-    ;;(image
-    ;;  :path "${image}"
-    ;;)
+    (box
+      :style "background-image: url('${image}');"
+    )
   )
 )
