@@ -1,0 +1,65 @@
+// @use '../../../themes/tokyo-night-night.scss' as tnn;
+@use '../../../themes/nord' as nord;
+
+.hypr-logo {
+  // background: tnn.$black;
+  background: nord.$nord0;
+  // border: 2px solid tnn.$cyan-bright;
+  border: 2px solid nord.$nord9;
+  border-radius: 100em;
+  margin: 0 5px;
+  padding: 2px 4px;
+}
+
+.workspaces {
+  background: nord.$nord0;
+  color: nord.$nord9;
+  // border: 2px solid nord.$nord4;
+  border-radius: 100em;
+}
+
+.workspaces:hover {
+  // border: 2px solid tnn.$magenta;
+  // border: 2px solid nord.$nord11;
+  transition: 0.5s;
+}
+
+.workspaces-container {
+  padding: 2px 10px;
+}
+
+.workspace-entry {
+  // color: tnn.$black-bright;
+  color: nord.$nord0;
+  margin: 5px;
+}
+
+.workspace-entry:hover {
+  // border-bottom: 0.2em solid tnn.$magenta-bright;
+  // border: 2px solid nord.$nord12;
+}
+
+.occupied {
+  // color: tnn.$white-bright;
+  color: nord.$nord4;
+}
+
+.current {
+  // color: tnn.$red-bright;
+  color: nord.$nord9;
+}
+
+.window_w {
+  // background: tnn.$black;
+  background: nord.$nord0;
+  color: nord.$nord9;
+  border-radius: 100em;
+  padding: 2px 10px;
+  transition: 1s;
+  transition: 0.5s;
+}
+
+.window_w-event:hover > * {
+  // border: 2px solid tnn.$red;
+  // border: 2px solid nord.$nord12;
+}

@@ -1,0 +1,14 @@
+@use "../../../themes/tokyo-night-night.scss" as tnn;
+
+.calendar-dropdown {
+  background: tnn.$background;
+  border: 2px solid tnn.$cyan;
+  border-radius: 10px;
+}
+
+calendar {
+  color: tnn.$green;
+  font-weight: bold;
+  margin: 10px;
+  padding: 5px;
+}

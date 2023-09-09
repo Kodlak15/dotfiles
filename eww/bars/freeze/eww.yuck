@@ -1,0 +1,76 @@
+;; Import windows
+(include "./dashboard/dashboard.yuck")
+(include "./dropdowns/battery/batteryd.yuck")
+(include "./dropdowns/calendar/calendard.yuck")
+
+;; Import widgets
+(include "../../widgets/battery/battery.yuck")
+(include "../../widgets/power/power.yuck")
+(include "../../widgets/hyprland/workspaces.yuck")
+(include "../../widgets/hardware/hardware.yuck")
+(include "../../widgets/hyprland/window.yuck")
+(include "../../widgets/weather/weather.yuck")
+(include "../../widgets/time/time.yuck")
+(include "../../widgets/volume/volume.yuck")
+(include "../../widgets/music/spotify.yuck")
+(include "../../widgets/icon/icon.yuck")
+
+;; Master container
+
+(defwidget bar []
+  (box 
+    :class "bar"
+    :orientation "h"
+    (left_container)
+    (center_container)
+    (right_container)
+  )
+)
+
+;; Child containers
+
+(defwidget left_container [] 
+  (box
+    :class "left-container"
+    :space-evenly false
+    (workspaces)
+    (hardware)
+  )
+)
+
+(defwidget center_container []
+  (box
+    :class "center-container"
+    :space-evenly false
+    :halign "center"
+    (window_w)
+  )
+)
+
+(defwidget right_container []
+  (box
+    :class "right-container"
+    :space-evenly false
+    :halign "end"
+    (volume)
+    (weather)
+    (time)
+    (battery)
+  )
+)
+
+;; Windows
+
+(defwindow bar
+  :monitor 0
+  :geometry (geometry 
+    :x "0px"
+    :y "5px"
+    :width "99.6%"
+    :height "2%"
+    :anchor "top center"
+  )
+  :stacking "bg"
+  :exclusive true
+  (bar)
+)

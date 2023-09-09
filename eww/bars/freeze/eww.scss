@@ -1,0 +1,39 @@
+// @use '../../themes/tokyo-night-night.scss' as tnn;
+@use '../../themes/nord.scss' as nord;
+@use './styles/dashboard.scss' as *;
+@use './styles/batteryd.scss' as *;
+@use './styles/calendard.scss' as *;
+@use './styles/power.scss' as *;
+@use './styles/weather.scss' as *;
+@use './styles/hyprland.scss' as *;
+@use './styles/hardware.scss' as *;
+@use './styles/battery.scss' as *;
+@use './styles/time.scss' as *;
+@use './styles/volume.scss' as *;
+@use './styles/icon.scss' as *;
+
+* {
+  all: unset;
+}
+
+// Main bar
+
+.bar {
+  font-size: 12px;
+  background: nord.$nord0;
+  font-family: Fira Code Nerd Font;
+  border: 2px solid nord.$nord9;
+  border-radius: 20px;
+}
+
+.left-container {
+  margin-left: 5px;
+}
+
+.right-container {
+  border-radius: 100em;
+}
+
+window {
+  padding: 100px;
+}

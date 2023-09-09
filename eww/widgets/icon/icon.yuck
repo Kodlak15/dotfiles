@@ -1,9 +1,11 @@
 (defwidget icon [action image ?class]
-  (eventbox
+  (button
     :class "${class}"
     :onclick "${action}"
-    (box
-      :style "background-image: url('${image}');"
+    (image 
+      :path "${image}"
+      :image-height 20
+      :image-width 20
     )
   )
 )

@@ -1,0 +1,48 @@
+// @use '../../../themes/tokyo-night-night.scss' as tnn;
+@use '../../../themes/nord.scss' as nord;
+
+.volume {
+  background: nord.$nord0;
+  // color: tnn.$yellow-bright;
+  color: nord.$nord9;
+  // border: 2px solid tnn.$cyan;
+  border-radius: 100em;
+  padding: 5px 10px;
+  margin-right: 5px;
+  transition: 0.5s;
+}
+
+.volume-event:hover > * {
+  // border: 2px solid tnn.$magenta-bright;
+}
+
+.volume scale {
+  all: unset;
+  // background: nord.$nord10;
+  min-width: 50px;
+  min-height: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.volume trough {
+  all: unset;
+  //background: tnn.$green;
+  background: nord.$nord4;
+  min-width: 0px;
+  min-height: 5px;
+  border-radius: 10px;
+}
+
+.volume slider {
+  all: unset;
+  // background: nord.$nord11;
+  border-radius: 10px;
+}
+
+.volume highlight {
+  all: unset;
+  // background: tnn.$white;
+  background: nord.$nord11;
+  border-radius: 10px;
+}

@@ -1,0 +1,29 @@
+// @use "../../../../themes/tokyo-night-night.scss" as *;
+@use "../../../themes/tokyo-night-night.scss" as tnn;
+
+.battery-dropdown {
+  background: tnn.$background;
+  border: 2px solid tnn.$cyan;
+  border-radius: 10px;
+}
+
+.battery-dropdown circular-progress {
+  color: tnn.$green-bright;
+  background: tnn.$black-bright;
+  margin: 20px;
+}
+
+.battery-dropdown .data {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 32px;
+  color: tnn.$yellow;
+  margin-left: 20px;
+}
+
+.value {
+  color: tnn.$white-bright;
+}

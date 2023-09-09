@@ -1,0 +1,40 @@
+(defwidget batteryd []
+  (eventbox
+    :onclick "/home/cody/.config/eww/scripts/dropdown.sh --battery"
+    :class "battery-dropdown"
+    (box
+      :height 50
+      :width 50
+      (box
+        :orientation "v"
+        (box
+          :space-evenly false
+          :spacing 10
+          :class "data"
+          (label :class "icon" :text "󱐋")
+          (label :class "value" :text "${battery_remaining}%")
+        )
+      )
+      (circular-progress 
+        :value "${battery_remaining}"
+        :start-at 75
+        :clockwise true
+        :thickness 10
+      )
+    )
+  )
+)
+
+(defwindow batteryd
+  :monitor 0
+  :geometry (geometry
+    :x "5px"
+    :y "5px"
+    :width "10%"
+    :height "10%"
+    :anchor "top right"
+  )
+  :stacking "fg"
+  :exclusive true
+  (batteryd)
+)

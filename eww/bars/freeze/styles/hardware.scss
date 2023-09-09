@@ -1,0 +1,35 @@
+// @use '../../../themes/tokyo-night-night.scss' as tnn;
+@use '../../../themes/nord.scss' as nord;
+
+.hardware {
+  background: nord.$nord0;
+  color: nord.$nord9;
+  // border: 2px solid tnn.$cyan;
+  border-radius: 10em;
+  padding: 2px 10px;
+  margin-left: 5px;
+  transition: 0.5s;
+}
+
+.cpu {
+  padding-right: 5px;
+}
+
+.cpu-label {
+  // color: tnn.$green;
+}
+
+.ram-label {
+  // color: tnn.$blue;
+}
+
+.hardware-event:hover > * {
+  // border: 2px solid tnn.$magenta-bright;
+}
+
+circular-progress {
+  // color: tnn.$white-bright;
+  color: nord.$nord11;
+  background: nord.$nord4;
+  margin: 4px;
+}

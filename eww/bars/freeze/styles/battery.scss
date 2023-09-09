@@ -1,0 +1,39 @@
+@use '../../../themes/tokyo-night-night.scss' as tnn;
+
+.battery_remaining {
+  color: tnn.$white-bright;
+}
+
+.battery {
+  font-size: 14px;
+  background: tnn.$black;
+  color: tnn.$white-bright;
+  border: 2px solid tnn.$cyan;
+  border-radius: 100em;
+  padding: 2px 10px;
+  margin-right: 5px;
+}
+
+.battery.charging {
+  color: tnn.$green-bright;
+}
+
+.battery.low {
+  color: tnn.$red-bright;
+}
+
+.battery-event:hover > * {
+  border: 2px solid tnn.$magenta-bright;
+}
+
+// // Dashboard
+//
+// .dashboard {
+//   .battery {
+//     font-size: 32px;
+//     background: tnn.$black;
+//     border: 2px solid tnn.$red;
+//     border-radius: 10px;
+//     margin: 10px;
+//   }
+// }

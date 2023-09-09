@@ -1,0 +1,100 @@
+@use '../../../themes/tokyo-night-night.scss' as tnn;
+
+.weather {
+  background: tnn.$black;
+  border: 2px solid tnn.$cyan;
+  border-radius: 100em;
+  padding: 2px 5px 2px 10px;
+  transition: 0.5s;
+  margin-right: 5px;
+}
+
+.weather-event:hover > * {
+  border: 2px solid tnn.$magenta-bright;
+}
+
+.weather-icon {
+  font-size: 16px;
+  padding: 0px 10px 1px 10px;
+  color: tnn.$blue;
+}
+
+// Temperature modifiers
+
+.cold {
+  color: tnn.$magenta-bright;
+}
+
+.cool {
+  color: tnn.$cyan-bright;
+}
+
+.moderate {
+  color: tnn.$green-bright;
+}
+
+.warm {
+  color: tnn.$yellow-bright;
+}
+
+.hot {
+  color: tnn.$red-bright;
+}
+
+// Weather modifiers
+
+.sunny {
+  color: tnn.$yellow-bright;
+
+  &.night {
+    color: tnn.$white-bright;
+  }
+}
+
+.partly-cloudy {
+  color: tnn.$white-bright;
+
+  &.night {
+    color: tnn.$white-bright;
+  }
+}
+
+.cloudy {
+  color: tnn.$white-bright;
+
+  &.night {
+    color: tnn.$white-bright;
+  }
+}
+
+.mostly-cloudy {
+  color: tnn.$white-bright;
+
+  &.night {
+    color: tnn.$white-bright;
+  }
+}
+
+.thunderstorm {
+  color: tnn.$white-bright;
+
+  &.night {
+    color: tnn.$white-bright;
+  }
+}
+
+.snow {
+  color: tnn.$cyan-bright;
+
+  &.night {
+    color: tnn.$cyan-bright;
+  }
+}
+
+.haze {
+  color: tnn.$white-bright;
+
+  &.night {
+    color: tnn.$white-bright;
+  }
+}
