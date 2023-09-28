@@ -25,6 +25,7 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin/scripts/:$PATH"
 export PATH="$HOME/.cargo/:$PATH"
+export PATH="$HOME/bin/dart-sass/:$PATH"
  
 ### Set GTK Theme ###
 export GTK_THEME=Adwaita:dark
@@ -62,3 +63,6 @@ PERL5LIB="/home/cody/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/home/cody/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/cody/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/cody/perl5"; export PERL_MM_OPT;
+
+# Set up ghcup for Haskell dev
+[ -f "/home/cody/.ghcup/env" ] && source "/home/cody/.ghcup/env" # ghcup-env
