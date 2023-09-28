@@ -41,8 +41,8 @@ alias bb="(brave-bin --enable-features=UseOzonePlatform --ozone-platform=wayland
 alias lbw="(librewolf &) && exit"
 alias e='nvim $(fzf)'
 alias o='cd $(find * -type d | fzf)'
-alias ls='exa -l'
-alias lsa='exa -la'
+alias ls='eza -l'
+alias lsa='eza -la'
 alias v='nvim'
 alias spotifyd="spotifyd --config-path /home/cody/.config/spotifyd/spotifyd.toml --no-daemon"
 
@@ -65,3 +65,8 @@ PERL5LIB="/home/cody/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/home/cody/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/cody/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/cody/perl5"; export PERL_MM_OPT;
+
+# opam configuration
+[[ ! -r /home/cody/.opam/opam-init/init.zsh ]] || source /home/cody/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+[ -f "/home/cody/.ghcup/env" ] && source "/home/cody/.ghcup/env" # ghcup-env
