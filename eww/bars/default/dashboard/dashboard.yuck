@@ -14,6 +14,7 @@
       (weather)
     )
     (box
+      :class "icons"
       :halign "center"
       :orientation "h"
       (box
@@ -22,12 +23,10 @@
           :class "icon"
           :action "../../scripts/open_links.sh --gh"
           :image "/home/cody/dotfiles/eww/images/github.svg"
-          ;;:image "/home/cody/dotfiles/eww/images/librewolf.svg"
         )
         (icon
           :class "icon"
           :action "../../scripts/open_links.sh --rd"
-          ;;:image "/home/cody/dotfiles/eww/images/reddit.png"
           :image "/home/cody/dotfiles/eww/images/reddit.svg"
         )
       )
@@ -36,44 +35,12 @@
         (icon
           :class "icon"
           :action "../../scripts/open_links.sh"
-          ;;:image "/home/cody/dotfiles/eww/images/github.png"
           :image "/home/cody/dotfiles/eww/images/librewolf.svg"
         )
         (icon
           :class "icon"
-          :action "../../scripts/open_links.sh --rd"
-          ;;:image "/home/cody/dotfiles/eww/images/reddit.png"
-          :image "/home/cody/dotfiles/eww/images/reddit.svg"
-        )
-      )
-      (box
-        :orientation "v"
-        (icon
-          :class "icon"
-          :action "../../scripts/open_links.sh --gh"
-          ;;:image "/home/cody/dotfiles/eww/images/github.png"
-          :image "/home/cody/dotfiles/eww/images/librewolf.svg"
-        )
-        (icon
-          :class "icon"
-          :action "../../scripts/open_links.sh --rd"
-          ;;:image "/home/cody/dotfiles/eww/images/reddit.png"
-          :image "/home/cody/dotfiles/eww/images/reddit.svg"
-        )
-      )
-      (box
-        :orientation "v"
-        (icon
-          :class "icon"
-          :action "../../scripts/open_links.sh --gh"
-          ;;:image "/home/cody/dotfiles/eww/images/github.png"
-          :image "/home/cody/dotfiles/eww/images/librewolf.svg"
-        )
-        (icon
-          :class "icon"
-          :action "../../scripts/open_links.sh --rd"
-          ;;:image "/home/cody/dotfiles/eww/images/reddit.png"
-          :image "/home/cody/dotfiles/eww/images/reddit.svg"
+          :action "../../scripts/open_links.sh --gt"
+          :image "/home/cody/dotfiles/eww/images/gentoo.svg"
         )
       )
     )

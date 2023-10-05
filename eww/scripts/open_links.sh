@@ -7,7 +7,20 @@ close_dashboard() {
 }
 
 case $1 in
---gh) $cmd "https://github.com" && close_dashboard ;;
---rd) $cmd "https://reddit.com" && close_dashboard ;;
-*) $cmd && close_dashboard ;;
+--gh)
+	$cmd "https://github.com"
+	close_dashboard
+	;;
+--rd)
+	$cmd "https://reddit.com"
+	close_dashboard
+	;;
+--gt)
+	$cmd "https://gentoo.org"
+	close_dashboard
+	;;
+*)
+	$cmd
+	close_dashboard
+	;;
 esac
