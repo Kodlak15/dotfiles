@@ -1,43 +1,90 @@
+;; NOTE: file paths are to be relative to eww.yuck directory
+
 (defwidget grid []
   (box
     :class "grid"
     :orientation "v"
     (box
-      (icon
-        :class "icon"
-        :action "../../../scripts/open_links.sh --gh"
-        :image "/home/cody/dotfiles/eww/images/github.svg"
-      )
-      (icon
-        :class "icon"
-        :action "../../../scripts/open_links.sh --gh"
-        :image "/home/cody/dotfiles/eww/images/github.svg"
-      )
-      ;;(icon
-      ;;  :class "icon"
-      ;;  :action "../../../scripts/open_links.sh --rd"
-      ;;  :image "/home/cody/dotfiles/eww/images/reddit.svg"
-      ;;)
+      (weather)
     )
-    ;;(box
-    ;;  (icon
-    ;;    :class "icon"
-    ;;    :action "../../../scripts/open_links.sh --gh"
-    ;;    :image "/home/cody/dotfiles/eww/images/github.svg"
-    ;;  )
-    ;;  (icon
-    ;;    :class "icon"
-    ;;    :action "../../../scripts/open_links.sh --rd"
-    ;;    :image "/home/cody/dotfiles/eww/images/reddit.svg"
-    ;;  )
-    ;;)
+    (box
+      (weather)
+    )
+    (box
+      (weather)
+    )
+    (box
+      :halign "center"
+      :orientation "h"
+      (box
+        :orientation "v"
+        (icon
+          :class "icon"
+          :action "../../scripts/open_links.sh --gh"
+          :image "/home/cody/dotfiles/eww/images/github.svg"
+          ;;:image "/home/cody/dotfiles/eww/images/librewolf.svg"
+        )
+        (icon
+          :class "icon"
+          :action "../../scripts/open_links.sh --rd"
+          ;;:image "/home/cody/dotfiles/eww/images/reddit.png"
+          :image "/home/cody/dotfiles/eww/images/reddit.svg"
+        )
+      )
+      (box
+        :orientation "v"
+        (icon
+          :class "icon"
+          :action "../../scripts/open_links.sh"
+          ;;:image "/home/cody/dotfiles/eww/images/github.png"
+          :image "/home/cody/dotfiles/eww/images/librewolf.svg"
+        )
+        (icon
+          :class "icon"
+          :action "../../scripts/open_links.sh --rd"
+          ;;:image "/home/cody/dotfiles/eww/images/reddit.png"
+          :image "/home/cody/dotfiles/eww/images/reddit.svg"
+        )
+      )
+      (box
+        :orientation "v"
+        (icon
+          :class "icon"
+          :action "../../scripts/open_links.sh --gh"
+          ;;:image "/home/cody/dotfiles/eww/images/github.png"
+          :image "/home/cody/dotfiles/eww/images/librewolf.svg"
+        )
+        (icon
+          :class "icon"
+          :action "../../scripts/open_links.sh --rd"
+          ;;:image "/home/cody/dotfiles/eww/images/reddit.png"
+          :image "/home/cody/dotfiles/eww/images/reddit.svg"
+        )
+      )
+      (box
+        :orientation "v"
+        (icon
+          :class "icon"
+          :action "../../scripts/open_links.sh --gh"
+          ;;:image "/home/cody/dotfiles/eww/images/github.png"
+          :image "/home/cody/dotfiles/eww/images/librewolf.svg"
+        )
+        (icon
+          :class "icon"
+          :action "../../scripts/open_links.sh --rd"
+          ;;:image "/home/cody/dotfiles/eww/images/reddit.png"
+          :image "/home/cody/dotfiles/eww/images/reddit.svg"
+        )
+      )
+    )
   )
 )
 
 (defwidget dashboard []
-  (button
+  ;;(button
     ;; Temporary: should do this on actions instead
     ;; :onclick "/home/cody/.config/eww/scripts/dashboard.sh -t $HOME/.config/eww/bars/default"
+    ;; :onclick "/home/cody/dotfiles/eww/scripts/open_links.sh --gh"
     (box
       :class "dashboard"
       :orientation "v"
@@ -55,7 +102,7 @@
         )
       )
     )
-  )
+  ;;)
 )
 
 ;; Windows

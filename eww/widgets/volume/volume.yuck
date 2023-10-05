@@ -1,12 +1,10 @@
-(defvar eww "eww")
+(defvar eww "$HOME/bin/eww")
+(defvar reveal_volume false)
 
 (defpoll current_volume 
   :interval "100ms" 
   :initial "50"
-  ;;"../../scripts/volume.sh" 
-  ;;"../../widgets/volume/scripts/volume.sh"
   "amixer -D default sget Master | grep Left: | awk -F '[][]' '{print $2}' | tr -d '%'"
-  ;;"wpctl get-volume 45 | awk -F ' ' '{print $2}' | awk '{print $1*100}'"
 )
 
 (defwidget volume []
@@ -19,7 +17,6 @@
       :space-evenly false
       :spacing 10
       (label :text "" :class "volume-icon")
-      ;;(label :text {current_volume} :class "volume-icon")
       (scale
         :value current_volume
         :class "volume-slider"
@@ -34,5 +31,3 @@
     )
   )
 )
-
-(defvar reveal_volume false)

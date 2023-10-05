@@ -13,12 +13,8 @@ function change_volume() {
 	fi
 
 	if [[ $sign == '+' ]]; then
-		# echo $delta
-		# echo "Lezzgo"
 		wpctl set-volume @DEFAULT_AUDIO_SINK@ $delta+
 	else
-		# echo $delta
-		# echo "Yezzir"
 		wpctl set-volume @DEFAULT_AUDIO_SINK@ $delta-
 	fi
 

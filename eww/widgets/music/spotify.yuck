@@ -8,7 +8,8 @@
 ;; Previously found an answer on github to solve problem with this
 (defpoll spotify_elapsed
   :interval "1s"
-  "$HOME/Documents/projects/sptfycli/sptfy.py -e"
+  ;;"$HOME/Documents/projects/sptfycli/sptfy.py -e"
+  "$HOME/dotfiles/eww/scripts/spotify.sh -e"
 )
 
 (defpoll spotify_duration

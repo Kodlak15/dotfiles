@@ -1,15 +1,15 @@
 @use '../../themes/tokyo-night-night.scss' as tnn;
-@use './styles/dashboard.scss' as *;
-@use './styles/batteryd.scss' as *;
-@use './styles/calendard.scss' as *;
-@use './styles/power.scss' as *;
-@use './styles/weather.scss' as *;
-@use './styles/hyprland.scss' as *;
-@use './styles/hardware.scss' as *;
-@use './styles/battery.scss' as *;
-@use './styles/time.scss' as *;
-@use './styles/volume.scss' as *;
-@use './styles/icon.scss' as *;
+@use './styles/dashboard.scss';
+@use './styles/batteryd.scss';
+@use './styles/calendard.scss';
+@use './styles/power.scss';
+@use './styles/weather.scss';
+@use './styles/hyprland.scss';
+@use './styles/hardware.scss';
+@use './styles/battery.scss';
+@use './styles/time.scss';
+@use './styles/volume.scss';
+@use './styles/icon.scss';
 
 * {
   all: unset;

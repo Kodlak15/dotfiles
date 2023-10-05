@@ -2,5 +2,12 @@
 
 .icon {
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1000px;
+  border: 3px solid transparent;
+  border-radius: 200px;
+  padding: 0px 0px 64px 64px;
+
+  &:hover {
+    border: 3px solid tnn.$white;
+  }
 }

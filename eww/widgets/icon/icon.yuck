@@ -2,10 +2,8 @@
   (button
     :class "${class}"
     :onclick "${action}"
-    (image 
-      :path "${image}"
-      :image-height 20
-      :image-width 20
-    )
+    :style "background: url('${image}'); background-repeat: no-repeat;"
+    :halign "center"
+    :valign "center"
   )
 )
