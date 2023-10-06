@@ -4,8 +4,9 @@ $margin-outer: 200px;
 $margin-inner: 5px;
 
 .dashboard {
-  background: tnn.$background;
-  background: rgba($color: tnn.$background, $alpha: 0.9);
+  background: rgba($color: tnn.$black, $alpha: 0.95);
+  box-shadow: 0px 0px 10px 5px tnn.$white;
+  border-radius: 5px;
   margin: $margin-outer $margin-outer (35px + $margin-outer) $margin-outer; // Flush with all edges at margin: 0px 0px 35px 0px
   padding: 10px;
 
@@ -22,7 +23,8 @@ $margin-inner: 5px;
     background: tnn.$black;
     // border: $margin-inner solid tnn.$blue;
     border: none;
-    margin: $margin-inner;
+    // margin: $margin-inner;
+    margin: 0;
   }
 
   .weather-icon {
@@ -33,11 +35,12 @@ $margin-inner: 5px;
   .hardware {
     font-size: 50px;
     // border: $margin-inner solid tnn.$blue;
-    margin: $margin-inner;
+    // margin: $margin-inner;
+    margin: 0;
   }
 
   .spotify {
-    margin: $margin-inner;
+    // margin: $margin-inner;
     // border: $margin-inner solid tnn.$blue;
 
     .artwork {
@@ -73,7 +76,7 @@ $margin-inner: 5px;
     border-radius: 10px;
   }
 
-  // .grid {
-  //   border: 5px solid tnn.$blue;
-  // }
+  .grid {
+    background: tnn.$black;
+  }
 }

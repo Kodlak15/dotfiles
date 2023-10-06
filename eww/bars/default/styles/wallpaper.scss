@@ -1,0 +1,26 @@
+@use "../../../themes/tokyo-night-night.scss" as tnn;
+
+.wallpaper {
+  background: tnn.$black;
+  background-size: cover;
+
+  button {
+    font-size: 30px;
+    color: tnn.$white;
+    background: tnn.$black;
+    border-radius: 500px;
+
+    &.left {
+      margin: 300px 160px 10px 10px;
+    }
+
+    &.right {
+      margin: 300px 10px 10px 160px;
+    }
+
+    &:hover {
+      color: tnn.$blue;
+      border: 5px solid tnn.$blue;
+    }
+  }
+}

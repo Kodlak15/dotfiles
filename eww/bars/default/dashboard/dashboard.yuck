@@ -4,15 +4,7 @@
   (box
     :class "grid"
     :orientation "v"
-    (box
-      (weather)
-    )
-    (box
-      (weather)
-    )
-    (box
-      (weather)
-    )
+    (wallpaper)
     (box
       :class "icons"
       :halign "center"

@@ -14,6 +14,7 @@
 (include "../../widgets/volume/volume.yuck")
 (include "../../widgets/music/spotify.yuck")
 (include "../../widgets/icon/icon.yuck")
+(include "../../widgets/wallpaper/wallpaper.yuck")
 
 ;; Master container
 
