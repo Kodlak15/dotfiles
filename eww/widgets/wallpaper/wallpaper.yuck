@@ -1,12 +1,11 @@
 (defpoll current_wallpaper
-  :interval "2s"
+  :interval "1s"
   :initial ""
-  "../../scripts/wallpaper.sh -c"
+  "$HOME/bin/wpswap.sh -v"
 )
 
 (defwidget wallpaper []
   (box
-    ;;:style "background-image: url('/home/cody/images/wallpaper/mountains/mountains5.jpg')"
     :style "background-image: url('${current_wallpaper}')"
     :class "wallpaper"
     (box
@@ -16,17 +15,21 @@
         :height 20
         :width 20
         :class "left"
-        :onclick "../../scripts/wallpaper.sh -p"
+        :onclick "$HOME/bin/wpswap.sh -P --prev-temp"
         (label 
           :text ""
           :xalign 0.4
         )
       )
+      ;;(box
+        ;; TODO
+        ;; Make it possible to select a new wallpaper directory
+      ;;)
       (button
         :height 20
         :width 20
         :class "right"
-        :onclick "../../scripts/wallpaper.sh -n"
+        :onclick "$HOME/bin/wpswap.sh -n --next-temp"
         (label 
           :text ""
           :xalign 0.4
