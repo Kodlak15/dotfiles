@@ -5,9 +5,8 @@
 
 (defwidget window_w []
   (eventbox
-    :class "window_w-event"
+    :class "window_w"
     (box
-      :class "window_w"
       (label 
         :text "${window}"
         :limit-width 60

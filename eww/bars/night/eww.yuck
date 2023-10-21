@@ -1,0 +1,50 @@
+(include "../../widgets/hyprland/workspaces.yuck")
+(include "./widgets/window.yuck")
+;;(include "../../widgets/hyprland/window.yuck")
+(include "../../widgets/hardware/hardware.yuck")
+
+(defwidget bar []
+  (box 
+    :class "bar"
+    :orientation "h"
+    (left_container)
+    (center_container)
+    (right_container)
+  )
+)
+
+(defwidget left_container [] 
+  (box
+    :class "container--left"
+    :space-evenly false
+    (workspaces)
+  )
+)
+
+(defwidget center_container [] 
+  (box
+    :class "container--center"
+    :halign "center"
+    (window_w)
+  )
+)
+
+(defwidget right_container [] 
+  (box
+    :class "container--right"
+  )
+)
+
+;; Windows
+
+(defwindow bar
+  :monitor 0
+  :geometry (geometry 
+    :width "100%"
+    :height "2.5%"
+    :anchor "top center"
+  )
+  :stacking "bg"
+  :exclusive true
+  (bar)
+)

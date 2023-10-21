@@ -1,0 +1,50 @@
+@use "./styles/colors.scss" as c;
+
+.bar {
+  font-family: Fira Code Nerd Font;
+  font-size: 15px;
+  font-weight: bold;
+  background: c.$bg;
+  margin: 0;
+}
+
+.container--left {
+  // NOTE: Temporary
+  border-right: 2px solid c.$fg;
+
+  .workspaces {
+    .workspace-entry {
+      color: c.$fg;
+      padding-left: 5px;
+
+      &.empty {
+        color: c.$terminal-black;
+      }
+
+      &.occupied {
+        color: c.$fg;
+      }
+
+      &.current {
+        color: c.$green1;
+      }
+    }
+  }
+}
+
+.container--center {
+  .window_w {
+    color: c.$yellow;
+    transition: 0.5s;
+
+    &:hover {
+      color: c.$green1;
+    }
+  }
+}
+
+.container--right {
+  // NOTE: Temporary
+  border-left: 2px solid c.$fg;
+}
+

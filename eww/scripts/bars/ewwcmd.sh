@@ -27,6 +27,9 @@ run() {
 	freeze)
 		"$WORKDIR/freeze.sh" "$cmd"
 		;;
+	night)
+		"$WORKDIR/night.sh" "$cmd"
+		;;
 	*)
 		echo "No bar named $bar supported!"
 		help
