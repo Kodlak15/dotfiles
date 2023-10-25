@@ -46,6 +46,7 @@ alias ls='eza -l'
 alias lsa='eza -la'
 alias v='nvim'
 alias spotifyd="spotifyd --config-path /home/cody/.config/spotifyd/spotifyd.toml --no-daemon"
+alias discord="($HOME/bin/webcord --enable-features=UseOzonePlatform --ozone-platform=wayland &) && exit"
 
 # Git status info
 autoload -Uz vcs_info
